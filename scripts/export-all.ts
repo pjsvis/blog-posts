@@ -102,9 +102,13 @@ async function loadPost(filename: string): Promise<Post> {
   return { ...meta, filename, rawContent, body };
 }
 
-/** Export to Medium (HTML, title-only, no front-matter) */
+/** Export to Medium (HTML, no duplicate title — body h1 stripped, title from front-matter only) */
 function exportMedium(post: Post): string {
-  const htmlBody = post.body
+  // Strip the top-level heading from body (it's the duplicate title)
+  // Body starts with \n# Title — strip the leading newline and the heading line
+  const bodyWithoutTitle = post.body.replace(/^\n# .+\n\n?/, "");
+
+  const htmlBody = bodyWithoutTitle
     // Headings
     .replace(/^### (.+)$/gm, "<h3>$1</h3>")
     .replace(/^## (.+)$/gm, "<h2>$1</h2>")
@@ -127,9 +131,12 @@ function exportMedium(post: Post): string {
   return `<h1>${post.title ?? "Untitled"}</h1>\n<p>${htmlBody}</p>`;
 }
 
-/** Export to Substack (raw Markdown body, footnotes preserved) */
+/** Export to Substack (Markdown, title from front-matter only — no body h1 duplicate) */
 function exportSubstack(post: Post): string {
-  return `# ${post.title ?? "Untitled"}\n\n${post.body}`;
+  // Strip the top-level heading from body (title comes from front-matter)
+  // Body starts with \n# Title — strip the leading newline and the heading line
+  const bodyWithoutTitle = post.body.replace(/^\n# .+\n\n?/, "");
+  return `# ${post.title ?? "Untitled"}\n\n${bodyWithoutTitle}`;
 }
 
 /** Export to Hacker News (text block with link) */
@@ -138,21 +145,51 @@ function exportHN(post: Post): string {
   return `Title: ${post.title ?? "Untitled"}\nLink: ${githubUrl}\n\n---\n\n${post.body.split("\n\n")[0] ?? post.body}`;
 }
 
-/** Export to Twitter (chunked thread, ~280 char segments) */
+/** Export to Twitter (section-based thread, ~280 char segments — breaks on ## headings) */
 function exportTwitter(post: Post): string {
-  const lines = post.body.split("\n").filter(Boolean);
-  const segments: string[] = [];
-  let current = "";
+  // Strip top-level heading (it's the duplicate title)
+  // Body starts with \n# Title — strip the leading newline and the heading line
+  const body = post.body.replace(/^\n# .+\n\n?/, "");
 
-  for (const line of lines) {
-    if ((current + "\n" + line).length > 280) {
-      if (current) segments.push(current.trim());
-      current = line;
-    } else {
-      current += "\n" + line;
-    }
+  // Split on section headings (## ) to get coherent units
+  const rawSections = body.split(/(?=^## )/m).filter(Boolean);
+
+  const segments: string[] = [];
+
+  // Hook tweet (title + first paragraph)
+  const firstPara = body.replace(/^## .+$\n?/m, "").trim().split("\n\n")[0] ?? "";
+  if (firstPara) {
+    segments.push(firstPara.slice(0, 280));
   }
-  if (current) segments.push(current.trim());
+
+  // Section tweets
+  for (const section of rawSections) {
+    const heading = section.match(/^## (.+)$/m)?.[1] ?? "";
+    const content = section.replace(/^## .+$/m, "").trim();
+
+    if (!content && !heading) continue;
+
+    // Build tweet: heading if present, then content chunks
+    let tweet = heading ? `**${heading}**\n` : "";
+
+    for (const para of content.split("\n\n")) {
+      const trimmed = para.trim();
+      if (!trimmed) continue;
+
+      const candidate = tweet + trimmed;
+      if (candidate.length <= 280) {
+        tweet = candidate;
+      } else {
+        if (tweet.replace(/^\*\*.+\*\*\n?/, "")) segments.push(tweet.trim());
+        tweet = trimmed.slice(0, 280);
+      }
+    }
+    if (tweet.trim()) segments.push(tweet.trim());
+  }
+
+  // CTA tweet
+  const slug = post.filename.replace(".md", "");
+  segments.push(`Thread continues →`);
 
   return segments.map((s, i) => `${i + 1}/${segments.length}\n${s}`).join("\n\n---\n\n");
 }
@@ -177,14 +214,23 @@ async function main() {
   for (const post of posts) {
     console.log(`  Exporting: ${post.filename} (${post.title ?? "untitled"})`);
 
-    if (post.canonical_target?.includes("medium") ?? true) {
+    // canonical_target gates all platforms. If not set, export to all.
+    const targets = post.canonical_target?.length
+      ? post.canonical_target
+      : ["medium", "substack", "hn", "twitter"];
+
+    if (targets.includes("medium")) {
       await writeExport("medium", post, exportMedium(post));
     }
-    if (post.canonical_target?.includes("substack") ?? true) {
+    if (targets.includes("substack")) {
       await writeExport("substack", post, exportSubstack(post));
     }
-    await writeExport("hn", post, exportHN(post));
-    await writeExport("twitter", post, exportTwitter(post));
+    if (targets.includes("hn")) {
+      await writeExport("hn", post, exportHN(post));
+    }
+    if (targets.includes("twitter")) {
+      await writeExport("twitter", post, exportTwitter(post));
+    }
   }
 
   console.log(`\nExports written to _exported/ directory.`);

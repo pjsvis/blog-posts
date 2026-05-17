@@ -11,15 +11,7 @@ activate:
 # Check front-matter, registries, and export pipeline
 check:
   @echo "=== Front-matter validation ==="
-  @if [ -n "$(ls _posts/*.md 2>/dev/null)" ]; then \
-    for f in _posts/*.md; do \
-      if ! grep -q "^---" "$$f" 2>/dev/null; then \
-        echo "MISSING front-matter: $$f"; \
-      fi; \
-    done; \
-  else \
-    echo "(no posts to validate — _posts/ is empty)"; \
-  fi
+  @sh scripts/check-posts.sh
   @echo "=== Registry sync ==="
   @bun scripts/reg-sync.ts --all || true
   @echo "Check complete."

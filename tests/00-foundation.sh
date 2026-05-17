@@ -32,15 +32,15 @@ else
   FAILED=1
 fi
 
-# ---- Test 3: just check passes with empty _posts/ (no false positive) ----
-echo "[3/5] just check: clean pass with empty posts directory"
+# ---- Test 3: just check passes without false positives ----
+echo "[3/5] just check: no false positives"
 CHECK_OUTPUT=$(just check 2>&1)
-if echo "$CHECK_OUTPUT" | grep -q "no posts to validate"; then
-  echo "  PASS: empty posts handled correctly"
-else
-  echo "  FAIL: check produced false positive with no posts"
+if echo "$CHECK_OUTPUT" | grep -qi "MISSING\|error"; then
+  echo "  FAIL: check produced false positives"
   echo "$CHECK_OUTPUT" | grep -i "missing\|error\|fail"
   FAILED=1
+else
+  echo "  PASS: check ran cleanly"
 fi
 
 # ---- Test 4: all registries in sync ----
