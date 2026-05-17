@@ -18,25 +18,33 @@ published: false
 
 ## PURPOSE
 
-Triage is the continuous process of evaluating, categorizing, and prioritizing requirements based on their criticality, impact, and urgency — ensuring that limited development resources are allocated to the most vital features.
+Tensegrity is the structural principle preferred by living systems. A tensegrity structure — struts under compression, cables under tension — achieves stability not through the strength of individual components but through the relationship between them. The integrity is in the arrangement. It is not what you have; it is how you put it together.
 
-The methodology divides requirements into three categories:
+A software system under continuous development is, if designed well, a tensegrity structure. Its requirements fall into three categories that function as the structural elements:
 
-**Enable** — If this does not work, there is nothing to do. The feature is foundational: without it, no downstream feature matters. Not about quality; about existence. These receive resources first.
+**Enable** — The compression struts. Without them, the structure collapses. Not about quality; about existence.
 
-**Strengthen** — If this works, it must work deterministically. The feature exists and the system survives, but quality determines whether the system is worth using. These are addressed once enable-level requirements are settled, and the determinism constraint is non-negotiable.
+**Strengthen** — The tension cables. They maintain shape under load. The feature works; it must work deterministically. Remove them and the struts stand but will buckle under stress.
 
-**Enhance** — If this could be enhanced, let's think about it. The feature is functional; enhancement is optional. Not a rejection — a deferral. Addressed last, if capacity permits and the value justifies the cost.
+**Enhance** — Decorative elements, structurally optional. They may improve aesthetics or function; they cannot save a broken structure.
 
-Induced methodology — see RDM-2025-002 — generates requirements through systematic examination of the system. The agent surfaces gaps; the human performs triage. This advisory establishes the recommended practices for that function.
+Triage — the continuous process of evaluating and categorizing requirements — is the mechanism by which the system's tensegrity is maintained. The goal is not to fill the categories in order; it is to maintain the right relationships between them. A system with Enable and no Strengthen is a standing structure that will fail under load. A system with Strengthen and no Enable has nothing to strengthen.
 
-Project environments are volatile. Initial estimates are frequently inaccurate. Triage must therefore be performed early and often — not only at project outset, but continuously as system state, market conditions, and resource availability change. The goal is a realistic roadmap aligned with business value and technical feasibility: the most significant user needs delivered first.
+Induced methodology generates requirements through systematic examination of the system — see RDM-2025-002. The agent surfaces gaps; the human maintains the tensegrity. This advisory establishes the recommended practices for that function.
 
 ---
 
 ## FINDINGS
 
-### 4.1. Human Personnel Have Characteristic Triage Preferences
+### 4.1. The Categories Are Structural, Not Sequential
+
+The three categories — Enable, Strengthen, Enhance — are commonly treated as a sequence: fill Enable first, then Strengthen, then Enhance. This is wrong. They are structural roles. The sequence interpretation produces systems that are technically complete but unreliable under load — features exist, but they do not work deterministically.
+
+A healthy system maintains its tensegrity. Enable and Strengthen must be in equilibrium: enough Enable to give Strengthen something to work on, enough Strengthen to prevent the Enable layer from buckling under stress. Enhance is genuinely optional — structurally inert, but potentially valuable.
+
+The risk is not that Enhance gets ignored. The risk is that Strengthen is perpetually deferred while Enable grows. The cables stretch. The structure will stand — until it doesn't.
+
+### 4.2. Human Personnel Have Characteristic Triage Preferences
 
 These patterns are consistent enough to have been documented. They are not character flaws. They are cognitive tendencies with predictable effects on triage quality.
 
@@ -48,19 +56,23 @@ Other personnel prefer to understand the system before accepting requirements. T
 
 Neither pattern is inherently superior. Both have appropriate applications and failure modes. Awareness of one's own pattern allows for compensating scrutiny.
 
-### 4.2. Agents Remove Scope Constraints; They Do Not Have Judgment
+### 4.3. Agents Remove Scope Constraints; They Do Not Have Judgment
 
 Agentic systems performing systematic examination hold full system scope. They identify gaps across the entire project. They do not have working memory constraints.
 
-They also do not have judgment. They can determine that a gap exists. They cannot determine whether closing that gap is the correct action given competing demands, resource constraints, or operational context. These are human contributions. Without them, the agent surfaces gaps at equal priority regardless of urgency or dependencies. With them, the surface is filtered and converted into an actionable backlog.
+They also do not have judgment. They can determine that a gap exists. They cannot determine whether closing that gap is the correct action given competing demands, resource constraints, or operational context — and they certainly cannot assess whether the structural relationship between Enable, Strengthen, and Enhance remains in equilibrium. These are human contributions.
 
-The agent surfaces. The human decides.
+Without human triage, the agent surfaces gaps at equal priority regardless of structural role. With it, the surface is categorized and the system's tensegrity is maintained.
 
-### 4.3. Unstructured Triage Produces Inconsistent Outcomes
+The agent surfaces. The human maintains the structure.
 
-Requirements triage without structure produces inconsistent outcomes across personnel, over time, and between sessions. Approved requirements from one triage may conflict with those from another. Without a record, retrospective assessment is not possible. As the agent surface grows, unstructured human filtering becomes a bottleneck.
+### 4.4. Unstructured Triage Produces Structural Drift
 
-The brief/debrief process is the recommended structure. Use it.
+Requirements triage without structure produces inconsistent outcomes across personnel, over time, and between sessions. The structural relationships between categories are not maintained; the tensegrity degrades.
+
+Approved requirements from one triage may conflict with those from another. Strengthen-level requirements are deferred indefinitely while Enable-level requirements accumulate. Without a record, the drift is not visible until the structure buckles.
+
+The brief/debrief process is the recommended structure for maintaining the system's tensegrity. Use it.
 
 ---
 
@@ -68,54 +80,51 @@ The brief/debrief process is the recommended structure. Use it.
 
 ### 5.1. Triage Through the Brief/Report Process
 
-The agent surfaces requirements through the brief. Human personnel perform triage — categorizing each requirement as die, wounded, or bells and whistles. Decisions, including category assignment, are documented with rationale in the debrief. Implementation does not proceed until triage is complete.
+The agent surfaces requirements through the brief. Human personnel perform triage — assigning each requirement a structural category. Decisions, including category assignment, are documented with rationale in the debrief. The structural relationship between categories is assessed at each triage cycle, not assumed to be stable.
 
 Informal verbal approval is not a triage decision.
 
-### 5.2. Triage Categories
+### 5.2. The Three Structural Categories
 
-Each surfaced requirement is assigned one of three categories:
+**Enable** — The compression struts. If this does not work, there is nothing to do. No qualification, no deferral. Without this, no downstream feature matters. Assign this category when the feature's absence makes the system non-functional or unsafe.
 
-**Enable** — Foundation. No qualification, no deferral. Without this, nothing else matters.
+**Strengthen** — The tension cables. If this works, it must work deterministically. The feature exists; quality determines whether the system is worth using. The determinism constraint is non-negotiable — a feature that works unreliably is not strengthening the system; it is weakening it by introducing unpredictable failure under load. Assign this category when the feature exists and its reliability is the issue.
 
-**Strengthen** — Deterministic quality. The feature works; it must work reliably. Addressed after enable requirements are settled.
-
-**Enhance** — Optional improvement. Not a rejection; a deferral. Addressed last, if resource permits.
-
-Category assignment is the primary triage act. It determines when the requirement is addressed, not whether it is addressed. All three categories represent decisions — including the decision to place a requirement in bells and whistles.
+**Enhance** — Decorative elements. If this could be enhanced, let's think about it. The feature is functional; enhancement is optional. Not a rejection — a deferral. Addressed last, if capacity permits and the value justifies the cost.
 
 ### 5.3. Triage Criteria
 
 Within each category, secondary evaluation applies:
 
 **Gap Validity** — Is the gap real? Is the system state correctly assessed?
-**Requirement Correctness** — Is this the correct response? Are there better alternatives?
-**Implementation Feasibility** — Is the approach feasible given system state and constraints?
-**Urgency** — How has the gap changed since last triage? Has context shifted?
+**Structural Role** — Enable, Strengthen, or Enhance? Does the category assignment reflect the feature's actual structural contribution?
+**Determinism** — For Strengthen assignments: what does deterministic mean for this feature? Is the current state deterministic, or is the requirement to make it so?
+**Relationship** — Given the full agent surface, are Enable and Strengthen in equilibrium? Is one layer growing while the other is deferred?
 **Origin** — Induced (from examination) or imposed (from authority)? Does the category assignment differ?
 
 ### 5.4. Triage Frequency
 
 Triage is not a one-time event. It is a continuous process.
 
-Triage cycles occur monthly at minimum, weekly under volatile conditions. The trigger is not a calendar — it is a change in system state, resource availability, or market conditions that may alter category assignments or priorities.
+The structural relationship between categories changes as the system evolves. New Enable features change what needs to be Strengthened. Accumulated deferred Strengthen requirements stretch the cables. The trigger for a triage cycle is not a calendar — it is a change in system state, resource availability, or structural relationship that may alter category assignments.
 
-When triage is deferred, the backlog accumulates gaps at equal priority regardless of urgency, dependencies, or importance. This is not a neutral state. It is a backlog that will produce last-minute crises where die-level features are scrapped to meet deadlines.
+Monthly minimum. Weekly under volatile conditions. When triage is deferred, the structure drifts silently.
 
 ### 5.5. Compensating for Preference Patterns
 
-**Pattern A personnel** should apply equal scrutiny to induced and imposed requirements, resist approving imposed requirements without evaluation against system state, and recognize that spec clarity does not imply spec accuracy. Pattern A tends to assign requirements to die — verify that the assigned category reflects system impact, not just stated authority.
+**Pattern A personnel** should apply equal scrutiny to induced and imposed requirements, resist approving imposed requirements without evaluation against system state, and recognize that spec clarity does not imply structural correctness. Pattern A tends to assign requirements to Enable — verify that the category reflects the feature's structural role, not its stated authority.
 
-**Pattern B personnel** should use agentic systematic examination to extend scope visibility beyond personal working memory, and focus triage on judgment — priority, category assignment, feasibility — rather than gap identification.
+**Pattern B personnel** should use agentic systematic examination to extend scope visibility beyond personal working memory, and focus triage on the structural relationship between categories — not just whether individual gaps are real.
 
 ### 5.6. Managing Large Agent Surfaces
 
-When many requirements surface in one examination cycle, triage in this order:
+When many requirements surface in one examination cycle, assess structural relationships first:
 
-1. Requirements blocking other requirements (dependency precedence)
-2. Requirements addressing known system failures or degraded states (die-level)
-3. Requirements improving system visibility (registry, conventions — these affect triage accuracy)
-4. Requirements addressing new functionality (wounded or bells and whistles)
+1. Enable requirements that block other structural requirements (dependency precedence)
+2. Strengthen requirements for Enable features that currently exist but lack deterministic behavior (cables for existing struts)
+3. Strengthen requirements for features at risk of becoming non-deterministic as the system evolves
+4. Enhance requirements (structurally optional)
+5. New Enable requirements (struts for new structural additions)
 
 ---
 
