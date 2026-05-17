@@ -1,0 +1,15 @@
+---
+layout: default
+title: "pjsvis — Writing on Systems, AI, and Empirical Pragmatism"
+---
+
+<section class="posts-list">
+  <h2>Posts</h2>
+  {% for post in site.posts %}
+  <article class="post-preview">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt | strip_html }}</p>
+  </article>
+  {% endfor %}
+</section>

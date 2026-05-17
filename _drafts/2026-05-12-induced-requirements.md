@@ -1,4 +1,11 @@
-## The System Already Knows What It Needs — You Just Have to Listen
+---
+layout: post
+title: "Induced Requirements (Rev.2): The System Already Knows What It Needs"
+date: 2026-05-12T12:00:00 +0000
+published: false
+---
+
+# The System Already Knows What It Needs — You Just Have to Listen
 
 *Published June 2026 · 6 min read*
 

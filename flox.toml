@@ -26,6 +26,7 @@ just.pkg-path = "just"
 jq.pkg-path = "jq"
 watchexec.pkg-path = "watchexec"
 gh.pkg-path = "gh"
+ruby_3_3.pkg-path = "ruby_3_3"
 
 # ---- UI + INTERACTION (justfile, scripts) ----
 glow.pkg-path = "glow"

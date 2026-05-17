@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Induced Requirements: How Good Systems Tell You What They Need"
+date: 2026-05-11T12:00:00 +0000
+published: false
+---
+
 # Induced Requirements: How Good Systems Tell You What They Need
 
 *Published: 2026-05-11*

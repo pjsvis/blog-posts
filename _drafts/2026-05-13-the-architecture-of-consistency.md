@@ -1,3 +1,10 @@
+---
+layout: post
+title: "The Architecture of Consistency: Why AI Agents Need Logic Over Completeness"
+date: 2026-05-13T12:00:00 +0000
+published: false
+---
+
 # The Architecture of Consistency: Why AI Agents Need Logic Over Completeness
 
 In traditional software development, we were taught to aim for "Feature Completeness." We built massive specification documents and didn't consider a project "done" until every box was checked.

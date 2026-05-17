@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Why We Start Fresh Every Time: Context Windows and the Case Against Continuous Memory"
+date: 2026-05-11T12:00:00 +0000
+published: false
+---
+
 # Why We Start Fresh Every Time: Context Windows and the Case Against Continuous Memory
 
 *Published: 2026-05-11*
