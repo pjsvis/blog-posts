@@ -28,7 +28,7 @@ Here is what I find interesting: the idea never went away.
 
 It keeps coming back. Voyager had it — not just on Janeway's desk, but in the astrometrics lab. B'Elanna Torres is at Seven of Nine's console, processing letters from home. The holographic star map is behind her. The data is arriving one word at a time through a damaged relay station, and she is holding it on a PADD. The isolation does the work. The device holds what the network cannot carry.
 
-The justfile has it. A set of named commands, defined locally in a project, documented in plain text. You know what's available. You know what the verbs are. The justfile is not a network service — it is a list of things you can do, held in the project, available when you enter the context. The sync is deliberate. The data lives in the folder.
+The command vocabulary has it. A set of named commands, defined locally in a project, documented in plain text. You know what's available. You know what the verbs are. The commands are not a network service — they are a list of things you can do, held in the project, available when you enter the context. The sync is deliberate. The data lives in the folder.
 
 The silo has it. A folder on a disk that contains a complete working environment — context, conventions, lexicon, verbs. The agent enters the silo and knows where it is, what the constraints are, what has already been decided. The data lives in the silo. The network has nothing to do with it.
 
@@ -46,7 +46,7 @@ The Palm Pilot was built for this problem. Not because Palm anticipated network 
 
 Voyager's writers did not sit down and decide to model their technology on the Palm Pilot. They were working in 1995, when the Palm Pilot existed, when the assumed relationship between data and network was the same relationship the Palm Pilot encoded. The PADD is the Palm Pilot in a starship costume. The isolation of the Delta Quadrant is the network failure, made permanent.
 
-The justfile encodes the same assumption. The verbs are defined locally, in the project, because the project must work whether the agent has a live connection to some external reference or not. The agent enters the context and the verbs are there. The sync is not happening over a network — it is reading the file.
+The command vocabulary encodes the same assumption. The verbs are defined locally, in the project, because the project must work whether the agent has a live connection to some external reference or not. The agent enters the context and the verbs are there. The sync is not happening over a network — it is reading the file.
 
 The silo is the same idea at the architecture level. Not just verbs — the whole working environment. The conventions. The lexicon. The registry of what exists and where. All of it held locally, in the folder, available without a network call.
 
