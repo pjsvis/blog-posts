@@ -18,11 +18,15 @@ You synced it to your desktop computer when you got home. Plugged it into a crad
 
 That was 1996. That was the state of the art.
 
+![B'Elanna Torres at the astrometrics console, Voyager S4E15](/assets/images/415-hunters-286.jpg)
+
+*Season 4, Episode 15. Torres at Seven's console. Data arriving from the relay station. The holographic star map behind her. The letters downloaded one word at a time. The PADD held in her hand.*
+
 ---
 
 Here is what I find interesting: the idea never went away.
 
-It keeps coming back. Voyager had it — the PADD stack on Janeway's desk is the Palm Pilot logic applied to a ship with no network connection. The data lives on the device; the crew holds it. The isolation does the work. The Palm Pilot was the model.
+It keeps coming back. Voyager had it — not just on Janeway's desk, but in the astrometrics lab. B'Elanna Torres is at Seven of Nine's console, processing letters from home. The holographic star map is behind her. The data is arriving one word at a time through a damaged relay station, and she is holding it on a PADD. The isolation does the work. The device holds what the network cannot carry.
 
 The justfile has it. A set of named commands, defined locally in a project, documented in plain text. You know what's available. You know what the verbs are. The justfile is not a network service — it is a list of things you can do, held in the project, available when you enter the context. The sync is deliberate. The data lives in the folder.
 
