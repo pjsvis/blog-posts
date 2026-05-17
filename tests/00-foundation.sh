@@ -12,7 +12,7 @@ echo "=== Foundation Test Suite ==="
 echo ""
 
 # ---- Test 1: env-guard detects flox Ruby correctly ----
-echo "[1/5] env-guard: require-ruby-env passes with flox active"
+echo "[1/5] env-guard: require_ruby_env passes with flox active"
 . scripts/env-guard.sh 2>/dev/null || true
 if require_ruby_env 2>&1; then
   echo "  PASS"
