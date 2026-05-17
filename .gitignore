@@ -10,3 +10,10 @@ _exported/
 
 # Flox environment (generated — use flox.toml at root as source of truth)
 .flox/
+.sidecar/
+.sidecar-agent
+.sidecar-task
+.sidecar-pr
+.sidecar-start.sh
+.sidecar-base
+.td-root
