@@ -21,7 +21,7 @@ The silo supports two primary agent modes:
 
 Additional modes are permitted only where they describe a genuinely distinct relationship with the silo — not merely a different activity within the same relationship. The threshold for a new mode is: *does this mode require a fundamentally different onboarding procedure, a different artefact type, and a different set of silo commitments?* If not, it is a task variant, not a mode.
 
-The "+ or minus N" notation reflects this: two modes is the core; N is justified only by genuinely distinct relationships.
+The "2+N" notation reflects this: two modes is the core; N is justified only by genuinely distinct relationships.
 
 ## Alternatives Considered
 

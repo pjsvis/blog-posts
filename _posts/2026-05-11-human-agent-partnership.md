@@ -18,7 +18,19 @@ published: false
 
 ## PURPOSE
 
-Induced methodology is technically superior to imposed methodology — see RDM-2025-002. This does not eliminate the human contribution. The agent surfaces gaps; the human performs triage. This advisory establishes the recommended practices for that function.
+Triage is the continuous process of evaluating, categorizing, and prioritizing requirements based on their criticality, impact, and urgency — ensuring that limited development resources are allocated to the most vital features.
+
+The methodology divides requirements into three categories:
+
+**Die** — Critical features without which the system becomes unusable. These receive resources first, without exception.
+
+**Wounded** — Important features where the system survives but users are substantially affected by their absence. These are addressed once die-level requirements are settled.
+
+**Bells and Whistles** — Nice-to-have features that enhance the product but are not essential. These are addressed last, if at all.
+
+Induced methodology — see RDM-2025-002 — generates requirements through systematic examination of the system. The agent surfaces gaps; the human performs triage. This advisory establishes the recommended practices for that function.
+
+Project environments are volatile. Initial estimates are frequently inaccurate. Triage must therefore be performed early and often — not only at project outset, but continuously as system state, market conditions, and resource availability change. The goal is a realistic roadmap aligned with business value and technical feasibility: the most significant user needs delivered first.
 
 ---
 
@@ -56,34 +68,54 @@ The brief/debrief process is the recommended structure. Use it.
 
 ### 5.1. Triage Through the Brief/Report Process
 
-The agent surfaces requirements through the brief. Human personnel perform triage. Decisions — approved, modified, rejected — are documented with rationale in the debrief. Implementation does not proceed until triage is complete.
+The agent surfaces requirements through the brief. Human personnel perform triage — categorizing each requirement as die, wounded, or bells and whistles. Decisions, including category assignment, are documented with rationale in the debrief. Implementation does not proceed until triage is complete.
 
 Informal verbal approval is not a triage decision.
 
-### 5.2. Triage Criteria
+### 5.2. Triage Categories
 
-Each surfaced requirement is evaluated against:
+Each surfaced requirement is assigned one of three categories:
+
+**Die** — The system is unusable or unsafe without this feature. No qualification, no deferral.
+
+**Wounded** — The system functions but users are substantially affected. Addressed after die requirements are settled.
+
+**Bells and Whistles** — Enhances the product; not essential. Addressed last, if resource permits.
+
+Category assignment is the primary triage act. It determines when the requirement is addressed, not whether it is addressed. All three categories represent decisions — including the decision to place a requirement in bells and whistles.
+
+### 5.3. Triage Criteria
+
+Within each category, secondary evaluation applies:
 
 **Gap Validity** — Is the gap real? Is the system state correctly assessed?
 **Requirement Correctness** — Is this the correct response? Are there better alternatives?
 **Implementation Feasibility** — Is the approach feasible given system state and constraints?
-**Priority** — Given the full agent surface, is this the correct priority? What is blocked?
-**Origin** — Induced or imposed? Do the criteria apply differently?
+**Urgency** — How has the gap changed since last triage? Has context shifted?
+**Origin** — Induced (from examination) or imposed (from authority)? Does the category assignment differ?
 
-### 5.3. Compensating for Preference Patterns
+### 5.4. Triage Frequency
 
-**Pattern A personnel** should apply equal scrutiny to induced and imposed requirements, resist approving imposed requirements without evaluation against system state, and recognize that spec clarity does not imply spec accuracy.
+Triage is not a one-time event. It is a continuous process.
 
-**Pattern B personnel** should use agentic systematic examination to extend scope visibility beyond personal working memory, and focus triage on judgment — priority, correctness, feasibility — rather than gap identification.
+Triage cycles occur monthly at minimum, weekly under volatile conditions. The trigger is not a calendar — it is a change in system state, resource availability, or market conditions that may alter category assignments or priorities.
 
-### 5.4. Prioritizing Large Agent Surfaces
+When triage is deferred, the backlog accumulates gaps at equal priority regardless of urgency, dependencies, or importance. This is not a neutral state. It is a backlog that will produce last-minute crises where die-level features are scrapped to meet deadlines.
 
-When many requirements surface in one examination cycle:
+### 5.5. Compensating for Preference Patterns
+
+**Pattern A personnel** should apply equal scrutiny to induced and imposed requirements, resist approving imposed requirements without evaluation against system state, and recognize that spec clarity does not imply spec accuracy. Pattern A tends to assign requirements to die — verify that the assigned category reflects system impact, not just stated authority.
+
+**Pattern B personnel** should use agentic systematic examination to extend scope visibility beyond personal working memory, and focus triage on judgment — priority, category assignment, feasibility — rather than gap identification.
+
+### 5.6. Managing Large Agent Surfaces
+
+When many requirements surface in one examination cycle, triage in this order:
 
 1. Requirements blocking other requirements (dependency precedence)
-2. Requirements addressing known system failures or degraded states
-3. Requirements improving system visibility (registry, conventions)
-4. Requirements addressing new functionality
+2. Requirements addressing known system failures or degraded states (die-level)
+3. Requirements improving system visibility (registry, conventions — these affect triage accuracy)
+4. Requirements addressing new functionality (wounded or bells and whistles)
 
 ---
 
