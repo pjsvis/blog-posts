@@ -17,23 +17,33 @@ published: false
 
 ## PURPOSE
 
-Extended agent sessions degrade in output quality — repetition, omission, contradiction. This advisory sets forth the mitigation: treat each session as ephemeral, store persistent state in the silo.
+Extended agent sessions degrade. Repetition appears. Contradictions surface. The agent states one thing; it has previously stated another. The cause is continuous context accumulation — the session builds a model of the project that gradually separates from the project itself. This advisory establishes the correction: treat each session as ephemeral; store persistent state externally.
 
 ---
 
 ## FINDINGS
 
-### 4.1. Continuous Context Produces Entanglement
+### 4.1. Entanglement Is Invisible to the Entangled
 
-Agents maintaining continuous context across long sessions accumulate assumptions and inferred context that drift from the actual project state. This drift is invisible to the agent — output appears coherent, but the model of the project has quietly separated from the project. The longer the session, the greater the drift.
+Agents maintaining continuous context across extended sessions develop accumulated assumptions — prior outputs, inferred context, implicit beliefs about system state — that no longer reflect the actual project. This is not evident from the output. The output remains coherent. The agent's belief system has simply drifted from the territory it claims to describe.
 
-### 4.2. Memory Systems Trade One Problem for Another
+The longer the session, the greater the potential drift. Drift compounds silently. The agent is not aware of this process. From within the session, everything appears consistent.
 
-Observational memory systems — episodic stores, semantic retrieval layers, procedural databases — are real software with real failure modes: data corruption, index drift, retrieval failure, sync drift from project state. When the memory system degrades, output quality degrades correspondingly. The context window problem has been replaced by a maintenance problem. This is not obviously an improvement.
+This is not a malfunction. It is a property of the architecture.
 
-### 4.3. Session Reset Grounds the Agent
+### 4.2. Observational Memory Systems Trade One Problem for Another
 
-When an agent begins from a clean state — orienting to the silo, reading conventions, confirming branch and commit — drift is reduced. The agent's understanding is grounded in persistent, documented project state rather than accumulated session context. Continuity is preserved because the silo holds state; reset does not lose work.
+It is possible to externalize session context into a persistent memory system — episodic stores, semantic retrieval layers, procedural databases. This addresses the entanglement problem. It introduces several others.
+
+Memory systems are software. Software fails. Data corruption, index drift, retrieval failure, synchronization gaps between the memory state and the project state — these are not hypotheticals. When the memory system degrades, output quality degrades correspondingly. The context window problem has been replaced by a maintenance problem. Whether this constitutes an improvement depends on one's tolerance for different categories of failure.
+
+Memory systems are also not free. They require authentication, access control, ongoing index maintenance, and regular synchronization with the project. These costs are invisible until the system is built. By then, the sunk cost has been incurred.
+
+### 4.3. Session Reset Is the Correction Mechanism
+
+When an agent begins from a clean state — orienting to the silo, reading conventions, confirming branch and commit — the accumulated assumptions do not travel with it. The agent's understanding is grounded in persistent, documented project state rather than accumulated inference.
+
+Continuity is not lost. The silo holds the state. Reset does not delete work — it discards the inferences built on incomplete information. The correction mechanism is the orientation step: the agent reads the silo, states its current understanding, proceeds from grounded information.
 
 ---
 
@@ -41,24 +51,19 @@ When an agent begins from a clean state — orienting to the silo, reading conve
 
 ### 5.1. Ephemeral Session Design
 
-Treat each session as discrete and self-contained:
+Treat each session as a discrete operational period — boot to termination — and store state intended to persist in the silo.
 
-a. Each session runs from boot to termination as an independent operational period
-b. State intended to persist lives in the silo, not in session context
-c. Agents complete the orientation step at boot (Conventions File, Section 3)
-d. Handoff procedures apply at termination (Conventions File, Section 7)
+Agents complete the orientation step at boot. Handoff procedures apply at termination.
 
 ### 5.2. Context Window Monitoring
 
-When context window capacity approaches levels that may affect output fidelity, the agent surfaces a notification to supervising personnel recommending session reset or handoff. The decision to reset remains with the supervising personnel.
+When context window capacity approaches levels that may affect output fidelity, the agent notifies supervising personnel and recommends session reset or handoff. The decision to reset remains with the human.
 
-### 5.3. When Observational Memory Is Appropriate
+### 5.3. On Observational Memory Systems
 
-Memory systems are **not recommended** for standard workflows — they trade the context window problem for a maintenance and sync problem with no obvious net gain.
+These systems are not recommended for standard workflows. The tradeoffs do not obviously favor adoption. The problems they solve — entanglement, drift — are addressed more simply by ephemeral session design, which requires no additional infrastructure and has no synchronization requirements.
 
-They **may be appropriate** where: continuity across sessions is a documented operational requirement; workflows involve autonomous multi-step processes where continuity provides measurable benefit; the system has been assessed for failure modes and found suitable.
-
-Assessment requires OSAAS consultation.
+Memory systems may be appropriate where continuity across sessions is a documented operational requirement and the system has been assessed for failure modes. Assessment requires OSAAS consultation.
 
 ---
 

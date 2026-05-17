@@ -17,13 +17,13 @@ published: false
 
 ## PURPOSE
 
-Agentic systems operating without appropriate orientation produce outputs inconsistent with project conventions, reference assets that do not exist, or operate from incorrect assumptions about system state. The root cause: inadequate orientation to the silo environment upon session initiation. This advisory establishes the recommended onboarding procedure and the asset location hierarchy that governs where identity, configuration, and skill files are resolved during a session.
+Agentic systems operating without appropriate orientation produce outputs inconsistent with project conventions, reference assets that do not exist at the stated location, or proceed from incorrect assumptions about system state. The cause is inadequate orientation upon session initiation. This advisory establishes the recommended onboarding procedure and the asset location hierarchy that governs where identity, configuration, and skill files are resolved during a session.
 
 ---
 
 ## ASSET LOCATION HIERARCHY
 
-The asset location hierarchy follows a four-layer model. Later layers may override earlier ones.
+Four layers. Later layers may override earlier ones.
 
 | Layer | Location | Contents |
 |-------|----------|----------|
@@ -32,11 +32,11 @@ The asset location hierarchy follows a four-layer model. Later layers may overri
 | 3 | `{silo-root}/` | Project-specific rules, conventions, AGENTS.md |
 | 4 | `{silo-root}/.claude/` | Skills, extensions, session-level configuration |
 
-**Layer 1 — Global Platform:** Framework binary and documentation. Documentation is documentation-in-filesystem, not documentation-in-web. Read the `.md` files in the package docs directory.
+**Layer 1 — Global Platform:** Framework binary and associated package documentation. The documentation is in the filesystem, not on the web. Personnel seeking to understand framework features should read the relevant `.md` files rather than searching for a web reference that may not exist.
 
-**Layer 2 — Global Identity:** The Edinburgh Protocol. Defines fundamental operating principles. Read at every session initiation regardless of silo.
+**Layer 2 — Global Identity:** The Edinburgh Protocol — fundamental operating principles. Read at every session initiation regardless of silo.
 
-**Layer 3 — Project Identity:** Project-specific rules that override Layer 2 for sessions within this silo. **Important:** The project `AGENTS.md` overrides `~/.pi/agent/AGENTS.md` for sessions in this silo. Read both files; neither should be read in isolation.
+**Layer 3 — Project Identity:** Project-specific rules that override Layer 2 for sessions within this silo. **The project AGENTS.md overrides `~/.pi/agent/AGENTS.md` for sessions in this silo.** Both files should be read. Neither should be read in isolation.
 
 **Layer 4 — Session Config:** Skill files and extensions resolved from `.claude/skills/` within the current working directory.
 
@@ -44,7 +44,7 @@ The asset location hierarchy follows a four-layer model. Later layers may overri
 
 ## ONBOARDING PROCEDURE
 
-Upon session initiation, agents complete the following orientation steps in order:
+Upon session initiation, agents complete the following in order:
 
 a. Read the Edinburgh Protocol (Layer 2)
 b. Read the project AGENTS.md (Layer 3)
@@ -52,21 +52,17 @@ c. Read the conventions file (Layer 3, `playbooks/`)
 d. Verify asset locations — confirm referenced files exist at stated locations
 e. Establish system state — confirm branch and commit, identify in-flight work
 
-This takes approximately 20 seconds. It is a required investment, not overhead.
+Estimated time: 20 seconds. This is a required investment.
 
 ### Orientation Verification
 
-Following orientation, the agent should:
-
-- Confirm the conventions file has been read and understood
-- Confirm referenced skill files exist at stated locations
-- State current system state for human confirmation
+Following orientation, the agent confirms: the conventions file has been read; referenced skill files exist at stated locations; current system state is stated for human confirmation.
 
 If orientation cannot be completed — a referenced asset does not exist at the stated location — the agent surfaces the incomplete orientation to the human session owner before proceeding with substantive work.
 
 ### Session Termination
 
-When terminating a session: document current state and outstanding items in the handoff format; confirm all substantive changes are committed to the silo; confirm orientation state is preserved.
+When terminating: document current state and outstanding items in the handoff format; confirm all substantive changes are committed to the silo; confirm orientation state is preserved.
 
 ---
 
@@ -74,21 +70,21 @@ When terminating a session: document current state and outstanding items in the 
 
 **6.1. Two-Level Identity Requires Explicit Override Declaration**
 
-The two-level identity system (Layer 2: global; Layer 3: project) produces confusion during onboarding. New agents reading Layer 2 do not immediately understand that Layer 3 overrides it for silo sessions.
+The two-level identity system produces confusion during onboarding. Agents reading Layer 2 do not immediately understand that Layer 3 overrides it for silo sessions. This is not resolved by the agent knowing it is a "map" — the override relationship is a structural property that should be stated, not inferred.
 
-*Recommended mitigation:* Both AGENTS.md files should include explicit override declarations. The global file: *"In project silos with their own AGENTS.md, the project file overrides this one."* The project file: *"This file overrides ~/.pi/agent/AGENTS.md for sessions in this silo."*
+*Recommended mitigation:* Both AGENTS.md files include explicit override declarations. The global file: *"In project silos with their own AGENTS.md, the project file overrides this one."* The project file: *"This file overrides ~/.pi/agent/AGENTS.md for sessions in this silo."*
 
-**6.2. Skill System Lacks a Manifest**
+**6.2. The Skill System Lacks a Manifest**
 
-The skill system lacks a manifest — no single file lists all available skills, purposes, and locations. Agents performing systematic examination may not discover all available skills without one.
+There is no single file listing available skills, their purposes, and their locations. Agents performing systematic examination may not discover all available skills without examining each directory individually.
 
-*Recommended mitigation:* Each skills directory should contain a `SKILLS_INDEX.md` listing every skill with a one-line description and reference to the full `SKILL.md`.
+*Recommended mitigation:* Each skills directory contains a `SKILLS_INDEX.md` listing every skill with a one-line description and a reference to the full `SKILL.md`.
 
 **6.3. Framework and Project Documentation Are Not Cross-Referenced**
 
-Framework documentation (Layer 1) and project documentation (Layer 3) are functionally separate but not linked. An agent seeking to understand a framework feature must know where to look — framework docs or project docs.
+Framework documentation (Layer 1) and project documentation (Layer 3) are functionally separate. An agent seeking to understand a feature must determine which layer contains the relevant information — without guidance, this requires exploration.
 
-*Recommended mitigation:* A `SILO_MANIFEST.md` file at the silo root should document the locations of all major documentation assets in a single reference.
+*Recommended mitigation:* A `SILO_MANIFEST.md` file at the silo root documents the locations of all major documentation assets — framework docs, project docs, skill files, and identity files — in a single reference.
 
 ---
 
