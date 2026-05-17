@@ -11,11 +11,15 @@ activate:
 # Check front-matter, registries, and export pipeline
 check:
   @echo "=== Front-matter validation ==="
-  @for f in _posts/*.md; do \
-    if ! grep -q "^---" "$$f" 2>/dev/null; then \
-      echo "MISSING front-matter: $$f"; \
-    fi; \
-  done
+  @if [ -n "$(ls _posts/*.md 2>/dev/null)" ]; then \
+    for f in _posts/*.md; do \
+      if ! grep -q "^---" "$$f" 2>/dev/null; then \
+        echo "MISSING front-matter: $$f"; \
+      fi; \
+    done; \
+  else \
+    echo "(no posts to validate — _posts/ is empty)"; \
+  fi
   @echo "=== Registry sync ==="
   @bun scripts/reg-sync.ts --all || true
   @echo "Check complete."
@@ -29,14 +33,19 @@ export-post slug:
   bun scripts/export-all.ts --post={{slug}}
 
 # Preview Jekyll site locally
+# Guards: validates flox Ruby env before running. Escalates with clear error on failure.
 preview:
-  bundle install --quiet 2>/dev/null || bundle init
-  bundle add github-pages webrick --quiet 2>/dev/null || true
-  bundle exec jekyll serve --baseurl=""
+  @. scripts/env-guard.sh 2>/dev/null; require_ruby_env || exit 1
+  @flox activate -c "bundle install --quiet 2>/dev/null || bundle init" 2>/dev/null
+  @flox activate -c "bundle add github-pages webrick --quiet 2>/dev/null || true" 2>/dev/null
+  @flox activate -c "bundle exec jekyll serve --baseurl=''"
 
 # Build site (for local verification)
+# Guards: validates flox Ruby env before running. Escalates with clear error on failure.
 build:
-  bundle exec jekyll build
+  @. scripts/env-guard.sh 2>/dev/null; require_ruby_env || exit 1
+  @flox activate -c "bundle install --quiet 2>/dev/null || bundle init" 2>/dev/null
+  @flox activate -c "bundle exec jekyll build"
 
 # Orient: show current state
 orient:

@@ -1,4 +1,5 @@
 {"file":"barnacle-playbook.md","date":"2026-05-17","status":"canonical","summary":"Barnacle identification and removal — misdirection detection, Chesterton's Fence escalation, quarantine workflow","meta":{"source":"project"}}
+{"file":"blog-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"blog-posts-playbook.md","date":"2026-05-17","status":"canonical","summary":"Jekyll pipeline reference — layout, front-matter invariant, publishing workflow, anti-patterns","meta":{"source":"project"}}
 {"file":"briefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post briefs and epics — objective, content outline, research checklist, export checklist","meta":{"source":"project"}}
 {"file":"conventions-playbook.md","date":"2026-05-17","status":"canonical","summary":"Active conventions and barnacle removal — Jekyll underscore dirs, front-matter requirement, process barnacles","meta":{"source":"project"}}
