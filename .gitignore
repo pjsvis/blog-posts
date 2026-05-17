@@ -17,3 +17,4 @@ _exported/
 .sidecar-start.sh
 .sidecar-base
 .td-root
+.env
