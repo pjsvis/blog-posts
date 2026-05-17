@@ -1,7 +1,7 @@
 # Brief: blog-posts silo — state assessment and next steps
 
 **Date:** 2026-05-17
-**Status:** Open
+**Status:** Done — P0+P1 items resolved. P2 remain.
 
 ---
 
