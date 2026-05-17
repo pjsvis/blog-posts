@@ -2,6 +2,12 @@
 
 default: help
 
+# Activate Flox environment (silently — no stdout pollution)
+# Usage: eval "$(just activate)"  to apply it to the current shell.
+# Without eval, just spawns a subshell that is discarded on exit.
+activate:
+  @printf '%s' 'eval "$(flox activate 2>/dev/null)"'
+
 # Check front-matter, registries, and export pipeline
 check:
   @echo "=== Front-matter validation ==="
@@ -74,6 +80,7 @@ help:
   @echo "  just --list      — see all available recipes"
   @echo ""
   @echo "  Entry points:"
+  @echo "  just activate  — emit flox activation command (use with eval)"
   @echo "  just orient    — current state: branch, status, post count"
   @echo "  just check     — pre-commit validation: front-matter + registry sync"
   @echo "  just help      — this guide"

@@ -54,15 +54,33 @@ flox install        # Installs all packages from manifest
 flox activate       # Enters a subshell with all tools on PATH
 ```
 
+⚠️ **stdout pollution:** `flox activate` emits 3,244+ characters of `export`
+statements to **stdout**, not stderr. Any script that captures stdout
+(`$(flox activate)` or `$(flox run ...)`) will pollute its own output.
+
+**Correct patterns — do not pollute stdout:**
+
+```bash
+# Interactive shell: use eval to apply without emitting to stdout
+eval "$(flox activate 2>/dev/null)"
+
+# Or via just for consistent tooling:
+eval "$(just activate 2>/dev/null)"
+
+# One-shot command without entering a subshell:
+flox run -- just check
+```
+
+**Incorrect pattern — pollutes stdout:**
+
+```bash
+$(flox activate)           # Captures 3KB of export noise into the script's output
+just activate              # Same problem if output is captured
+```
+
 Activation layers the environment over your existing shell — aliases, dotfiles,
 and IDE config remain. It does not use containers.
 See [flox.dev/docs/concepts/activation](https://flox.dev/docs/concepts/activation).
-
-For one-shot commands without entering a subshell:
-
-```bash
-flox run -- just check
-```
 
 ### Edit the Manifest
 
