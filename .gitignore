@@ -1,0 +1,9 @@
+.todos/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
+Gemfile.lock
+_exported/
+.DS_Store

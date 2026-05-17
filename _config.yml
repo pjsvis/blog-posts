@@ -1,0 +1,45 @@
+title: "pjsvis blog-posts"
+description: "Writing on systems, AI, and empirical pragmatism"
+
+# GitHub Pages: project site → /blog-posts
+baseurl: "/blog-posts"
+url: "https://pjsvis.github.io"
+
+# Engine
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name/
+
+  drafts:
+    output: true
+    permalink: /drafts/:name/
+
+# Build exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - scripts/
+  - briefs/
+  - debriefs/
+  - decisions/
+  - playbooks/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+  - scope:
+      path: "_drafts"
+    values:
+      layout: post
+      published: false
