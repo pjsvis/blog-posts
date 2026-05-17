@@ -21,6 +21,8 @@ These files are core infrastructure. Modification requires user authorization.
 | `playbooks/export-playbook.md` | Multi-platform distribution logic |
 | `playbooks/conventions-playbook.md` | Conventions document — breaking it allows barnacles to return |
 | `playbooks/td-playbook.md` | Solo workflow protocol — keep current |
+| `playbooks/barnacle-playbook.md` | Barnacle identification and removal process |
+| `playbooks/blog-posts-playbook.md` | Jekyll pipeline reference — core layout and front-matter rules |
 
 ---
 
@@ -44,7 +46,7 @@ blog-posts/               ← Jekyll source (GitHub Pages)
  ├── _layouts/            ← HTML layout templates
  ├── _posts/              ← Published long-form content
  ├── _drafts/             ← Works in progress
- ├── briefs/              ← Internal: system briefs, epics, stories
+ ├── briefs/              ← Internal: post briefs and epics
  ├── debriefs/            ← Internal: retrospective documents
  ├── decisions/           ← Internal: architecture decision records
  ├── playbooks/           ← Internal: operational playbooks
@@ -59,8 +61,8 @@ blog-posts/               ← Jekyll source (GitHub Pages)
 
 - **Branch before editing.** Never commit directly to `main`.
 - **Commit cadence.** One logical change per commit.
-- **Write a brief before starting.** See `playbooks/briefs-playbook.md`.
-- **Write a debrief after finishing.** See `playbooks/debriefs-playbook.md`.
+- **Write a brief before drafting.** See `playbooks/briefs-playbook.md`.
+- **Write a debrief after publishing.** See `playbooks/debriefs-playbook.md`.
 - **Capture decisions as ADRs.** See `playbooks/decisions-playbook.md`.
 - **Pre-publish gate:** Run `just check` before pushing content to production.
-- **Export before distribution.** Run `scripts/export-all.ts` to prepare content for Substack, Medium, and other platforms.
+- **Export before distribution.** Run `bun run scripts/export-all.ts` to prepare content for Substack, Medium, and other platforms.

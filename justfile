@@ -2,7 +2,7 @@
 
 default: help
 
-# Check front-matter and export pipeline
+# Check front-matter, registries, and export pipeline
 check:
   @echo "=== Front-matter validation ==="
   @for f in _posts/*.md; do \
@@ -10,17 +10,17 @@ check:
       echo "MISSING front-matter: $$f"; \
     fi; \
   done
-  @echo "=== Export pipeline check ==="
-  @bun run scripts/export-all.ts --dry-run 2>/dev/null || echo "(export-all.ts: add --dry-run to enable)"
+  @echo "=== Registry sync ==="
+  @bun scripts/reg-sync.ts --all || true
   @echo "Check complete."
 
 # Export all posts to distribution channels
 export:
-  bun run scripts/export-all.ts
+  bun scripts/export-all.ts
 
 # Export a single post (usage: just export-post my-slug)
 export-post slug:
-  bun run scripts/export-all.ts --post={{slug}}
+  bun scripts/export-all.ts --post={{slug}}
 
 # Preview Jekyll site locally
 preview:
@@ -44,12 +44,45 @@ orient:
 live:
   open "https://pjsvis.github.io/blog-posts"
 
+# Registry commands
+reg-sync:
+  bun scripts/reg-sync.ts --all
+
+reg-sync-fix:
+  bun scripts/reg-sync.ts --all --fix
+
+reg-list:
+  @echo "Available: briefs | debriefs | decisions | playbooks"
+  @echo "Usage: bun scripts/reg-list.ts <registry>"
+
+reg-briefs:
+  bun scripts/reg-list.ts briefs
+
+reg-debriefs:
+  bun scripts/reg-list.ts debriefs
+
+reg-decisions:
+  bun scripts/reg-list.ts decisions
+
+reg-playbooks:
+  bun scripts/reg-list.ts playbooks
+
 help:
   @echo "Blog Posts — available commands:"
-  @echo "  just check       — validate front-matter and export pipeline"
+  @echo ""
+  @echo "  Publishing:"
+  @echo "  just check       — front-matter + registry sync"
   @echo "  just export      — export all posts to Substack/Medium/HN/Twitter"
-  @echo "  just export-post — export single post (usage: just export-post slug)"
+  @echo "  just export-post — export single post"
   @echo "  just preview     — run Jekyll locally at localhost:4000"
   @echo "  just build       — build site locally"
   @echo "  just orient      — show current state"
   @echo "  just live        — open GitHub Pages site"
+  @echo ""
+  @echo "  Registries:"
+  @echo "  just reg-sync        — check all registries for drift"
+  @echo "  just reg-sync-fix    — regenerate registries from filesystem"
+  @echo "  just reg-briefs      — list briefs"
+  @echo "  just reg-debriefs    — list debriefs"
+  @echo "  just reg-decisions   — list decisions"
+  @echo "  just reg-playbooks   — list playbooks"

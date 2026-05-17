@@ -1,166 +1,123 @@
-Utilizing a Jekyll-powered GitHub Pages pipeline as our publishing engine aligns perfectly with the principle of **Deductive Minimalism (`COG-12`)**. It allows us to treat our markdown artifacts as raw, pure source files while offloading the compilation mechanics entirely to GitHub's infrastructure.
+# Blog Posts Playbook — Jekyll & GitHub Pages Pipeline
 
-By decoupling the content repository from specialized publishing frontends, we establish **Workflow Durability (`PHI-13`)**. This playbook provides the definitive constraint stack for compiling, organizing, and distributing markdown files (such as our System Briefs, Playbooks, and Blog Assets) across public directories, personal spaces, and content distribution channels.
+## Purpose
 
----
+This playbook establishes the layout parameters, front-matter configurations, and publishing gates for the blog-posts Jekyll pipeline.
 
-# THE AGENTIC PUBLISHING PLAYBOOK: JEKYLL & GITHUB PAGES PIPELINE (APP-002)
-
-## 1. PURPOSE & CORE OPERATIONAL INTENT
-
-This playbook establishes the strict layout parameters, front-matter configurations, and publishing gates required to transform raw Markdown repository assets into optimized web assets via GitHub Pages and Jekyll.
-
-The core architectural boundary requires an **Abstraction Depth $N \le 2$** (`AP-002`). The source files must render into clean static layouts without relying on custom runtime plugins that obscure content structure from AI scrapers, search indices, or content aggregators.
+Jekyll is the single source of truth. All content lives in `_posts/` (published) or `_drafts/` (in-progress). The pipeline transforms raw Markdown into optimized web assets via GitHub Pages.
 
 ---
 
-## 2. PIPELINE SEPARATION MATRIX
-
-To distribute content cleanly across multi-platform hubs (GitHub Pages, Substack, Medium, Hacker News), the repository layout must follow strict specialized boundaries:
+## Directory Structure
 
 ```
-[ Your Repository Root ]
- ├── assets/                   <-- Static media assets (Images, SVGs, CSS)
- ├── _layouts/                 <-- Structural layouts (Default, Post, Doc)
- ├── _posts/                   <-- Public long-form content (Substack/Medium targets)
- ├── _briefs/                  <-- Internal system contexts (System Briefs, Playbooks)
- └── _config.yml               <-- Unified pipeline configuration file
-
+blog-posts/
+ ├── _config.yml           ← Pipeline configuration (baseurl, collections)
+ ├── _layouts/             ← HTML layout templates (default.html, post.html)
+ ├── _posts/               ← Published long-form content
+ ├── _drafts/              ← Works in progress (excluded from build)
+ ├── assets/               ← Static media (CSS, images)
+ ├── briefs/               ← Internal: post briefs and epics
+ ├── debriefs/             ← Internal: retrospective documents
+ ├── decisions/            ← Internal: architecture decision records
+ ├── playbooks/            ← Internal: operational playbooks
+ ├── scripts/              ← Export automation (Bun/TypeScript)
+ └── .github/workflows/    ← CI/CD: Jekyll → GitHub Pages deploy
 ```
+
+**Note:** Jekyll underscore directories (`_posts/`, `_drafts/`, `_layouts/`, `_config.yml`) are hard-coded by Jekyll. Do not rename them. See `playbooks/conventions-playbook.md`.
 
 ---
 
-## 3. CORE LIFECYCLE PHASES
+## Front-Matter Invariant
 
-### Phase 1: Ingest the Global Configuration (`_config.yml`)
+Every Markdown file in `_posts/` must declare its identity at the top using YAML front-matter. **No exceptions.**
 
-The engine's global settings must be kept strictly minimal to eliminate runtime build overhead. Create an uncompromised configuration at the repository root:
-
-```yaml
-title: "Virtual Information Systems Architecture"
-description: "Empirical Pragmatism & Synthetic Intelligence Execution Frameworks"
-baseurl: "" # Keep blank for user/organization sites (<user>.github.io)
-url: "https://virtual-information-systems.github.io"
-
-# Engine Parameters
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge # Strict compile-time syntax highlighting
-
-# Specialization Collections (PHI-14)
-collections:
-  briefs:
-    output: true
-    permalink: /briefs/:name/
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
-
-```
-
-### Phase 2: Establish the Structural Base Layers (`_layouts/`)
-
-To preserve code and token locality, layout layers are restricted to two basic templates. Create `_layouts/default.html` to define the system's unyielding outer skin:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Home</a> | <a href="/briefs/">System Briefs</a>
-    </nav>
-  </header>
-  
-  <main>
-    {{ content }} 
-  </main>
-</body>
-</html>
-
-```
-
-### Phase 3: Enforce Token Front-Matter Invariant
-
-Every Markdown file slated for publication must declare its identity explicitly at the exact `Turn 0` token position using YAML Front-Matter. **No exceptions allowed.**
-
-#### Pattern A: Long-Form Blog Assets (`_posts/YYYY-MM-DD-filename.md`)
+### Post Format
 
 ```markdown
 ---
-layout: default
-title: "The Good Parts for Agents: Why LLMs Prefer Flat Code"
-date: 2026-05-17 12:00:00 +0000
-categories: architecture ai
-tags: [master-context, edinburgh-protocol]
-canonical_target: "https://substack.com/@yourprofile"
+layout: post
+title: "Your Post Title"
+date: 2026-05-17T12:00:00 +0000
+categories: [ai, systems]
+tags: [tag1, tag2]
+canonical_target: [substack, medium]
 ---
-# The Content Begins Safely Here...
+
+# Your Content Begins Here...
 
 ```
 
-#### Pattern B: Operational Briefs & Frameworks (`_briefs/filename.md`)
+### Draft Format
 
 ```markdown
 ---
-layout: default
-title: "The Edinburgh Protocol System Playbook"
-type: operational-manifest
-version: 2.0
-entropy_bounds: "low"
+layout: post
+title: "Draft: Your Post Title"
+draft: true
 ---
-# System Guardrails Begin Here...
+
+# Your Content...
 
 ```
 
----
-
-## 4. MULTI-PLATFORM EXPORT ROUTING (THE LOGISTICAL GRID)
-
-Jekyll serves as our single source of truth. When content is finalized, use this operational matrix to deploy across our targeted target distributions:
-
-| Target Hub | Distribution Source File | Format Gate Constraint | Optimization Rule |
-| --- | --- | --- | --- |
-| **GitHub Pages** | Pure Markdown File via Git Commit | Strict Jekyll Layout Rendering (`_layouts/`) | Automatically built and deployed asynchronously via GitHub Actions pipelines. |
-| **Substack / Medium** | Raw Body Text of `_posts/` | Pure long-form text blocks, including Footnotes | Strip layout metadata blocks; paste directly into the provider's text interface. |
-| **Hacker News** | Dedicated submission block from `Channel Assets Extraction` | Plain Text Block + Live GitHub Link | Post as a Text Submission thread to gather immediate engineering review feedback. |
-| **Twitter / X** | Chunked Thread Segments from `Channel Assets Extraction` | Post-Blocks optimized for exact string characters | Sequence using numbers (1/4) to maximize delivery visibility. |
+| Field | Required | Purpose |
+|-------|----------|---------|
+| `layout` | Yes | Must be `post` |
+| `title` | Yes | Used in `<title>`, export headers, and platform distribution |
+| `date` | Yes | Sets permalink structure (`/_posts/YYYY-MM-DD-slug/`) |
+| `categories` | No | Taxonomic grouping |
+| `tags` | No | Semantic tags for search and classification |
+| `canonical_target` | No | List of platforms to export to; omit exports to all |
+| `draft` | No | Marks unpublished work |
 
 ---
 
-## 5. LOCAL PREVIEW VERIFICATION WORKFLOW
+## Publishing Workflow
 
-Before committing changes to the production branch, you must internally review your layout formatting to prevent rendering regressions.
+### 1. Draft
+
+Create in `_drafts/`. Use the content outline from your brief. Keep drafts internal — they are excluded from Jekyll builds and export pipeline.
+
+### 2. Brief
+
+Before starting a draft, create `briefs/brief-[topic]-[YYYY-MM-DD].md`. See `playbooks/briefs-playbook.md`.
+
+### 3. Review
+
+Move from `_drafts/` to `_posts/YYYY-MM-DD-slug.md`. Run `just check` to validate front-matter.
+
+### 4. Publish
+
+Commit to `main`. GitHub Actions automatically builds and deploys to `https://pjsvis.github.io/blog-posts/`.
+
+### 5. Export
+
+Run `bun run scripts/export-all.ts` to generate platform-specific output in `_exported/`. Review before distributing. See `playbooks/export-playbook.md`.
+
+### 6. Debrief
+
+After publishing and distributing, write `debriefs/YYYY-MM-DD-topic.md`. See `playbooks/debriefs-playbook.md`.
+
+---
+
+## Local Preview
 
 ```bash
-# Step 1: Initialize local Ruby dependencies via Bundler
-bundle init
-
-# Step 2: Declare the required GitHub Pages environment gems
-bundle add github-pages webrick --group :jekyll_plugins
-
-# Step 3: Run the local compiler server bypassing repository base URL properties
-bundle exec jekyll serve --baseurl=""
-
+just preview   # runs: bundle exec jekyll serve --baseurl=""
 ```
 
-*Verification Check:* Open your local browser environment to `http://localhost:4000`. Run an validation pass over headings, footnote bindings, and highlighted code snippets.
+Open `http://localhost:4000/blog-posts/` to preview before committing.
 
 ---
 
-## 6. ANTI-PATTERNS VS. RECOMMENDED BEST PRACTICES
+## Anti-Patterns
 
-| ❌ Banned Anti-Patterns (High Entropy) | Recommended Best Practices (Low Entropy) |
-| --- | --- |
-| **Commiting custom compiled JavaScript plugins** that break standard GitHub Actions compiler runners. | **Using default Jekyll themes or raw custom CSS layouts** located securely in the `/assets/` directory. |
-| **Splitting a single post's layout** across multiple sub-include files. | **Keeping long-form content completely continuous** to preserve raw token context for downstream reading sub-agents. |
-| **Mixing administrative repository documentation** with public-facing technical publication assets. | **Explicitly separating system operational assets** into standalone custom `collections` layouts (`_briefs`). |
+| ❌ Don't | ✅ Do |
+|----------|-------|
+| Draft in `_posts/` | Keep drafts in `_drafts/` until ready |
+| Publish without `just check` | Validate front-matter before every commit |
+| Export without reviewing output | Open `_exported/` files before distributing |
+| Hard-code links in post body | Use `{{ site.baseurl }}` or full GitHub Pages URLs |
+| Mix internal docs with public posts | Keep `briefs/`, `debriefs/`, `decisions/`, `playbooks/` separate |

@@ -1,7 +1,6 @@
 # TD Playbook — Solo Workflow
 
-> This playbook defines how to work on the TradingAgents project using `td` for task management.
-> For the archived multi-agent version, see `archive/playbooks/td-playbook.md`.
+> This playbook defines how to work on the blog-posts project using `td` for task management.
 
 ---
 
@@ -10,8 +9,9 @@
 At the start of every session:
 
 ```bash
-just orient    # see branch, git status, last commit, in-flight tasks
+just orient    # see branch, git status, last commit
 git fetch origin
+td usage --new-session   # new session identity
 ```
 
 ---
@@ -38,7 +38,7 @@ td comment td-abc123 "I'd like to work on this — can you handoff?"
 After substantive changes:
 
 ```bash
-td log "completed phase 1, found issue with X"
+td log "completed phase 1, drafted outline for post X"
 ```
 
 ---
@@ -58,7 +58,7 @@ just check
 Capture context before closing:
 
 ```bash
-td handoff td-abc123 --done "schema updated" --remaining "dashboard route"
+td handoff td-abc123 --done "post drafted and reviewed" --remaining "export and distribute"
 td review td-abc123           # submit for review
 ```
 
@@ -101,4 +101,4 @@ td ws end               # end current workspace
 ## Related
 
 - `AGENTS.md` — Project identity and coding rules
-- `playbooks/conventions-playbook.md` — Coding conventions
+- `playbooks/conventions-playbook.md` — Coding conventions and barnacle removal
