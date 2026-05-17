@@ -22,11 +22,11 @@ Triage is the continuous process of evaluating, categorizing, and prioritizing r
 
 The methodology divides requirements into three categories:
 
-**Die** — Critical features without which the system becomes unusable. These receive resources first, without exception.
+**Enable** — If this does not work, there is nothing to do. The feature is foundational: without it, no downstream feature matters. Not about quality; about existence. These receive resources first.
 
-**Wounded** — Important features where the system survives but users are substantially affected by their absence. These are addressed once die-level requirements are settled.
+**Strengthen** — If this works, it must work deterministically. The feature exists and the system survives, but quality determines whether the system is worth using. These are addressed once enable-level requirements are settled, and the determinism constraint is non-negotiable.
 
-**Bells and Whistles** — Nice-to-have features that enhance the product but are not essential. These are addressed last, if at all.
+**Enhance** — If this could be enhanced, let's think about it. The feature is functional; enhancement is optional. Not a rejection — a deferral. Addressed last, if capacity permits and the value justifies the cost.
 
 Induced methodology — see RDM-2025-002 — generates requirements through systematic examination of the system. The agent surfaces gaps; the human performs triage. This advisory establishes the recommended practices for that function.
 
@@ -76,11 +76,11 @@ Informal verbal approval is not a triage decision.
 
 Each surfaced requirement is assigned one of three categories:
 
-**Die** — The system is unusable or unsafe without this feature. No qualification, no deferral.
+**Enable** — Foundation. No qualification, no deferral. Without this, nothing else matters.
 
-**Wounded** — The system functions but users are substantially affected. Addressed after die requirements are settled.
+**Strengthen** — Deterministic quality. The feature works; it must work reliably. Addressed after enable requirements are settled.
 
-**Bells and Whistles** — Enhances the product; not essential. Addressed last, if resource permits.
+**Enhance** — Optional improvement. Not a rejection; a deferral. Addressed last, if resource permits.
 
 Category assignment is the primary triage act. It determines when the requirement is addressed, not whether it is addressed. All three categories represent decisions — including the decision to place a requirement in bells and whistles.
 
