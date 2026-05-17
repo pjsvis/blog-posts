@@ -1,10 +1,12 @@
-{"file":"barnacle-playbook.md","date":"2026-05-17","status":"canonical","summary":"Barnacle identification and removal process — misdirection detection, Chesterton's Fence escalation, quarantine workflow","meta":{"source":"project"}}
-{"file":"blog-posts-playbook.md","date":"2026-05-17","status":"canonical","summary":"Jekyll pipeline reference — layout parameters, front-matter invariant, publishing workflow, anti-patterns","meta":{"source":"project"}}
-{"file":"briefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post briefs and epics — objective, content outline, research checklist, export checklist","meta":{"source":"project"}}
-{"file":"conventions-playbook.md","date":"2026-05-17","status":"canonical","summary":"Active conventions and barnacle removal — Jekyll underscore directories, front-matter requirement, process barnacles","meta":{"source":"project"}}
-{"file":"debriefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post debriefs — accomplishments, problems, lessons learned, platform notes, post-debrief checklist","meta":{"source":"project"}}
-{"file":"decisions-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write ADRs — when to write, format, status lifecycle, differences from briefs and debriefs","meta":{"source":"project"}}
-{"file":"export-playbook.md","date":"2026-05-17","status":"canonical","summary":"Multi-platform content distribution — export pipeline, Substack/Medium/HN/Twitter distribution workflow, import process","meta":{"source":"project"}}
-{"file":"playbooks-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write and maintain playbooks — when to write, structure, maintenance, deprecation, the knowledge system","meta":{"source":"project"}}
-{"file":"registry-playbook.md","date":"2026-05-17","status":"canonical","summary":"Document index system — unified JSONL schema, registry-specific mappings, reg-sync and reg-list tools, justfile integration","meta":{"source":"project"}}
-{"file":"td-playbook.md","date":"2026-05-17","status":"canonical","summary":"Solo workflow using td task manager — session startup, claiming work, progress logging, pre-commit gate, branch hygiene","meta":{"source":"project"}}
+{"file":"barnacle-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"blog-posts-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"briefs-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"conventions-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"debriefs-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"decisions-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"export-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"flox-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"playbooks-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"registry-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"silo-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"td-playbook.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}

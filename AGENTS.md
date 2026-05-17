@@ -18,11 +18,15 @@ These files are core infrastructure. Modification requires user authorization.
 | File | Why protected |
 |------|---------------|
 | `_config.yml` | Jekyll pipeline — broken config breaks all publishing |
+| `flox.toml` | Reproducible toolchain — all agents must use the same tools |
+| `SILO_MANIFEST.md` | Asset map and silo identity — all assets must be findable here |
 | `playbooks/export-playbook.md` | Multi-platform distribution logic |
 | `playbooks/conventions-playbook.md` | Conventions document — breaking it allows barnacles to return |
 | `playbooks/td-playbook.md` | Solo workflow protocol — keep current |
 | `playbooks/barnacle-playbook.md` | Barnacle identification and removal process |
 | `playbooks/blog-posts-playbook.md` | Jekyll pipeline reference — core layout and front-matter rules |
+| `playbooks/silo-playbook.md` | Silo structure and conventions — directory compartments, justfile facade |
+| `playbooks/flox-playbook.md` | Flox environment management — reproducible toolchain setup |
 
 ---
 

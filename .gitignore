@@ -7,3 +7,6 @@ node_modules/
 Gemfile.lock
 _exported/
 .DS_Store
+
+# Flox environment (generated — use flox.toml at root as source of truth)
+.flox/

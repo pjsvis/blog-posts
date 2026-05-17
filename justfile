@@ -109,6 +109,9 @@ help:
   @echo "  just reg-briefs    — list all briefs"
   @echo "  just reg-playbooks — list all playbooks"
   @echo ""
+  @echo "  Environment: run `flox activate` to enter the silo toolchain"
+  @echo "  (just, jq, glow, gum, gh, ripgrep, fd, tree — see flox.toml)"
+  @echo ""
   @echo "See playbooks/blog-posts-playbook.md for the full pipeline reference."
 
 # Project rationale and origin
@@ -139,5 +142,9 @@ info:
   @echo "  - Export output (_exported/) must be reviewed before distributing"
   @echo "  - Registries (INDEX.jsonl files) must stay in sync with the filesystem"
   @echo ""
-  @echo "  See playbooks/export-playbook.md for the full distribution matrix" 
-  @echo "  and playbooks/barnacle-playbook.md for the misdirection-detection process."
+  @echo "  Environment: flox.toml declares the required toolchain (just, jq, glow,"
+  @echo "  gum, gh, ripgrep, fd, tree). Run `flox activate` to enter the environment."
+  @echo ""
+  @echo "  See playbooks/export-playbook.md for the full distribution matrix,"
+  @echo "  playbooks/barnacle-playbook.md for the misdirection-detection process,"
+  @echo "  and playbooks/silo-playbook.md for the silo structure."
