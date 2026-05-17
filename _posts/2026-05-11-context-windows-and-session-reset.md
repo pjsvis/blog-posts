@@ -2,6 +2,9 @@
 layout: post
 title: "Advisory on Ephemeral Session Management and Continuous Context Accumulation in Agentic Workflows"
 date: 2026-05-11T12:00:00 +0000
+categories: [ai, systems, agentic-workflows]
+tags: [ephemeral-sessions, context-windows, session-management, edinburgh-protocol]
+canonical_target: [substack]
 published: false
 ---
 

@@ -2,6 +2,9 @@
 layout: post
 title: "Advisory on Agentic Framework Orientation and Asset Location Verification for Silo Onboarding"
 date: 2026-05-12T12:00:00 +0000
+categories: [ai, systems, agentic-workflows]
+tags: [silo-architecture, onboarding, asset-location, edinburgh-protocol]
+canonical_target: [substack]
 published: false
 ---
 

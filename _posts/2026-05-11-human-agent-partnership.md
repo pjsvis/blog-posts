@@ -2,6 +2,9 @@
 layout: post
 title: "Advisory on Human-Agent Partnership in Requirements Triage and Induced Methodology"
 date: 2026-05-11T12:00:00 +0000
+categories: [ai, systems, requirements]
+tags: [human-agent-partnership, induced-requirements, triage, edinburgh-protocol]
+canonical_target: [substack]
 published: false
 ---
 

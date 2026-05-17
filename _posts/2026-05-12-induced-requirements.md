@@ -2,6 +2,9 @@
 layout: post
 title: "Advisory on Requirements Derivation from System Artefacts — Induced vs. Imposed Methodology"
 date: 2026-05-12T12:00:00 +0000
+categories: [ai, systems, requirements]
+tags: [induced-requirements, imposed-requirements, requirements-derivation, edinburgh-protocol]
+canonical_target: [substack]
 published: false
 ---
 
