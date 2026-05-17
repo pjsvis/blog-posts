@@ -50,3 +50,18 @@ Third iteration: established two-mode silo agent architecture (ADR-002) and docu
 - Review and publish existing drafts in Substack editor
 - Export to Medium from `_exported/medium/` (after Substack publishes)
 - Consider Twitter thread for the architecture-of-consistency post
+
+## Agent Concepts Folder — 2026-05-17
+
+Built `agent/concepts/` — a collection of 11 discrete concept files that document the silo's terminology and relationships. Each concept is a named thing: silo, onboarding, agent-modes, edinburgh-protocol, triage, tensegrity, conceptual-entropy, visitor-book, brief-debrief, justfile, registry.
+
+The organizing principle: discrete rooms, not a stream. An agent reads one, decides if it applies, moves on. No flowchart required.
+
+Orientation script at `agent/orient.sh`:
+- `./orient.sh` — list all concepts
+- `./orient.sh triage` — structural concepts
+- `./orient.sh process` — process concepts
+- `./orient.sh identity` — identity concepts
+- `./orient.sh [name]` — read specific concept
+
+Also dropped the justfile reference from the-return-of-the-palm-pilot.md — replaced with "command vocabulary" for broader legibility.
