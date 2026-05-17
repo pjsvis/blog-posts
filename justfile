@@ -24,6 +24,13 @@ export:
 export-post slug:
   bun scripts/export-all.ts --post={{slug}}
 
+# Publish all substack-targeted posts as drafts on Substack
+# Requires: SUBSTACK_SID, SUBSTACK_SUBDOMAIN env vars
+publish-substack:
+  @echo "Publishing to Substack drafts..."
+  @SUBSTACK_SID="${SUBSTACK_SID}" SUBSTACK_SUBDOMAIN="${SUBSTACK_SUBDOMAIN}" bun scripts/publish-substack.ts --all
+  @echo "Done. Check https://${SUBSTACK_SUBDOMAIN:-YOUR_SUBDOMAIN}.substack.com/publish/home"
+
 # Preview Jekyll site locally
 # Guards: validates flox Ruby env before running. Escalates with clear error on failure.
 preview:
