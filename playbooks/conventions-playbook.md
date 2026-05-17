@@ -42,6 +42,7 @@ justify it in one sentence, delete it.
 
 | Convention | Justification | Since |
 |------------|---------------|-------|
+| Jekyll underscore directories | Jekyll hard-codes `_posts/`, `_drafts/`, `_layouts/`, `_config.yml` — no config override exists; renaming breaks the build | 2026-05-17 |
 | `justfile` lowercase | Tool default; formatter compatibility | 2026-05-07 |
 | `.tsx` for JSX files | Biome parser requirement (JSX in `.ts` fails) | 2026-04-28 |
 | `bun` over `node` where both work | Project standard; faster; native TS | 2026-04-20 |
