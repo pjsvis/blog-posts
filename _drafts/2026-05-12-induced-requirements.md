@@ -1,118 +1,228 @@
 ---
 layout: post
-title: "Induced Requirements (Rev.2): The System Already Knows What It Needs"
+title: "Advisory on Requirements Derivation from System Artefacts — Induced vs. Imposed Methodology"
 date: 2026-05-12T12:00:00 +0000
 published: false
 ---
 
-# The System Already Knows What It Needs — You Just Have to Listen
+# ADVISORY: Requirements Derivation from System Artefacts — Induced vs. Imposed Methodology
 
-*Published June 2026 · 6 min read*
-
----
-
-Here's a mistake I see over and over in software teams:
-
-Someone writes a spec. The team builds it. It ships. And then everyone realizes the spec was wrong. Not dramatically wrong — just *slightly* wrong. The system does something the spec didn't account for. A gap opens up. Technical debt starts compounding.
-
-The fix isn't a better spec. It's a different way of writing specs entirely.
-
-## Imposed vs. Induced
-
-Most requirements are **imposed**. A manager says "we need a code registry." A consultant says "use a vector database for semantic search." A competitor launches a feature, so you add one too. The requirement exists *before* the system does. It's dropped on top of the codebase like a blueprint for a building that's already been built.
-
-Imposed requirements aren't evil. They're just incomplete. They answer *"what does someone think we need?"* — not *"what does the system actually need?"*
-
-That gap between those two questions? That's where all your technical debt lives.
-
-**Induced requirements** are different. They come from *inside* the system. You look at what exists. You notice what's missing. You write the brief that closes the gap.
-
-Here's a real example from a recent project:
-
-> The document registry (`reg-sync.ts` → `*/INDEX.jsonl`) tracked docs, briefs, debriefs, playbooks. When it indexed everything, it covered `docs/` — but not `src/`. The system literally told us: *"I can tell you what's in your docs, but I have no idea what's in your code."* A brief was written to close that gap. It didn't come from a manager. It came from the system itself.
-
-That's induced. The system *induced* the requirement by existing.
-
-## Why Nobody Does This (Until Now)
-
-Induced requirements require **looking**. Not just reading — *looking*. Comparing. Noticing the absence of something that should be there.
-
-For a human, this is brutally hard. You have to:
-
-1. Know the full scope of what exists
-2. Hold it all in working memory
-3. Compare it to a mental model of what *should* exist
-4. Identify the gap precisely
-5. Formulate it as a brief
-
-Steps 1 and 2 are where humans break down. Codebases are large. Working memory is not. You default to the scope of your current task — not the whole system.
-
-The traditional fix? Architecture reviews, design docs, spec reviews. These try to externalize system state so humans can look at it. They help. But they're **snapshots**. They go stale the moment the system changes.
-
-## Enter the Coding Agent
-
-A coding agent doesn't have working memory limits. It can:
-
-- Read the full scope of the project
-- Compare that scope to the project's own conventions
-- Identify gaps between what's documented and what actually exists
-- Write a brief in the same register and language as the project
-
-The agent isn't doing original design. It's doing **systematic induction**: *"Here's what the project says about itself. Here's what's actually there. Here's the gap."*
-
-This is what happened in that project. The document registry wasn't reviewed to build a code registry. It was reviewed to *understand what existed*. The gap surfaced. The agent wrote the brief. The brief wasn't imposed. The system induced it.
-
-## Why Agents Prefer Induced Requirements
-
-Here's something interesting: an agent trained on good system design will *prefer* induced requirements over imposed ones. Why?
-
-**Imposed requirements are risky.** The manager doesn't know what's actually in the codebase. The consultant is working from general principles, not this project's specifics. The competitor's feature solves a different problem. Imposed requirements require massive rework to align with reality.
-
-**Induced requirements are reliable.** They come from the artefacts. They describe a gap that *actually exists*. The work is already validated — the gap is real, the brief is accurate.
-
-An agent that induces requirements closes real gaps. An agent that implements imposed ones might just build the wrong thing, faster.
-
-This is why **agent orientation matters so much**. An agent that boots into a silo, reads the conventions, and understands the system's current state *before* acting — that's the right kind of agent. One that's handed a spec and told to implement it is working in the dark.
-
-## The Human's Role (It's Still Judgment)
-
-Humans are more complicated. Some prefer imposed requirements — they feel safer. A spec is a spec. You know what's being asked. Less ambiguity.
-
-But that safety is an illusion. A spec that's wrong still has to be built. You know what's being asked — but it doesn't match the system. You spend weeks building something that doesn't fit.
-
-Others prefer induced requirements — they want to understand the system before acting. That's the right instinct. But they hit the working memory wall: they understand the local problem, not the global gap.
-
-The best setup? **A partnership.**
-
-The agent induces. The human approves. The agent does the systematic work of finding gaps. The human does the triage — *"yes, that gap is real"* or *"no, that's not the right fix."*
-
-The agent surfaces. The human decides. Together, they close the loop.
-
-## The Infrastructure That Makes This Work
-
-The document registry system turned out to be the right infrastructure for induced requirements. Here's why:
-
-| Property | Why It Matters |
-|---|---|
-| **Visibility** | When everything is indexed, gaps are visible. You see what's missing by comparing the index to the project. |
-| **Feedback** | The register updates continuously. Gaps surface as the system changes, not just once at kickoff. |
-| **Consistency** | The same language — briefs, debriefs, decisions — is used whether the requirement is imposed or induced. Origin doesn't change the process. |
-| **Audit** | You can see the history of what was induced, when, and why. Did the agent find the right gaps? Was the brief accurate? |
-
-The code registry (`scripts/reg-sync.ts` → `code/INDEX.jsonl`) extends this to the last major surface that wasn't in the feedback loop: the code itself. Once code is indexed, the loop closes. Documents and code — both visible, both inducing requirements when gaps appear.
-
-## The Bottom Line
-
-Induced requirements are better than imposed ones. More accurate. Less risky. More aligned with how software actually works — incrementally, in response to *actual* gaps, not hypothetical ones.
-
-Coding agents make induced requirements practical at scale. They don't have working memory limits. They can read the full scope. They find the gaps humans miss.
-
-The human's role is **judgment**. When the agent surfaces a gap, the human approves the brief. The agent does the systematic work. The human does the triage. Together, you build a system that's *actually needed* — not just what was spec'd.
-
-The register is the infrastructure that makes this possible. Without it, the loop is broken — documents exist, code exists, but they're not connected. With it, every gap has a path to a brief, and every brief has a path to a fix.
-
-That's a learning system. That's the goal.
+**Advisory Reference:** RDM-2025-002
+**Issuing Authority:** Office of Silo Architecture and Agentic Systems (OSAAS)
+**Effective Date:** 2026-05-12
+**Review Date:** 2027-05-12
+**Classification:** Internal — Operational Guidance
+**Supersedes:** N/A (Initial Issue)
 
 ---
 
-*Tags: #systemdesign #requirements #codingagents #inducedrequirements #softwareengineering*
+## 1. PURPOSE
+
+This advisory is issued to inform all personnel engaged in system design, requirements gathering, and workflow architecture of the distinction between two methodological approaches to requirements derivation: the imposed approach and the induced approach.
+
+It is observed that in the majority of documented system failures, the originating cause is a misalignment between stated requirements and the actual state of the system at time of implementation. This misalignment is a direct consequence of the imposed requirements methodology, in which requirements are generated prior to, or independently of, systematic examination of the target system.
+
+This advisory sets forth the recommended methodology for requirements derivation and identifies the conditions under which the alternative (imposed) methodology may be appropriate.
+
+---
+
+## 2. SCOPE
+
+This advisory applies to:
+
+a. Requirements generation activities for any new system or subsystem within the organizational silo environment
+b. Requirements review activities for existing systems undergoing modification
+c. Workflow design activities where agentic systems are expected to perform without direct supervisory intervention
+
+This advisory does **not** apply to:
+
+- Regulatory or compliance-driven requirements (which are, by definition, externally imposed and non-negotiable)
+- Time-critical requirements where systematic examination is operationally infeasible
+- Security-related requirements that cannot be induced from artefacts
+
+Personnel uncertain regarding applicability are advised to consult OSAAS.
+
+---
+
+## 3. DEFINITIONS
+
+For the purposes of this advisory, the following terms are defined:
+
+**Imposed Requirement:** A requirement that exists independently of a systematic examination of the target system. Imposed requirements originate from sources external to the system — including but not limited to management direction, external consultancy, competitive analysis, or industry benchmarking. An imposed requirement exists prior to the system; it is applied to the system from above.
+
+**Induced Requirement:** A requirement that emerges from a systematic examination of the target system. An induced requirement is derived by comparing the system's current state to its documented state, identifying gaps, and formalizing those gaps as requirements. An induced requirement exists because the system exists and exhibits the gap — it is pulled from the artefacts, not applied to them.
+
+**Systematic Examination:** A structured process of reviewing system artefacts — including but not limited to source code, documentation, configuration files, registry entries, and conventions files — for the purpose of establishing the system's current state and identifying gaps between current state and documented requirements.
+
+**Requirement Gap:** A discrepancy between the documented state of the system (as recorded in conventions, specifications, or registry entries) and the actual state of the system (as determined through systematic examination).
+
+**Technical Debt:** The accumulated cost of deviations from system requirements, whether imposed or induced, that have not been formally addressed. Technical debt compounds over time as the deviation between stated requirements and actual system state increases.
+
+---
+
+## 4. FINDINGS
+
+### 4.1. Imposed Requirements Frequently Misalign with System State
+
+It has been consistently observed that imposed requirements — while frequently valid as general principles — tend to misalign with the actual state of the target system upon implementation.
+
+This misalignment is not a failure of the requirement. It is a consequence of the methodology. An imposed requirement is generated without reference to the system's current state. The person or entity generating the requirement does not have direct knowledge of what the system actually does; they have knowledge of what they believe the system should do. These are different things.
+
+The gap between belief and reality is where technical debt lives. The system is built to the requirement. The requirement does not match the system. The deviation is technical debt.
+
+### 4.2. The Working Memory Constraint
+
+Human personnel engaged in requirements gathering are subject to a fundamental cognitive limitation: the finite capacity of working memory.
+
+The systematic examination of a system requires:
+
+a. Knowledge of the full scope of what exists
+b. Retention of that scope in working memory
+c. Comparison of the scope to a mental model of what should exist
+d. Identification of the precise gap between actual and ideal
+e. Formulation of the gap as a formal requirement
+
+Steps (a) and (b) are where human personnel consistently underperform. The scope of a codebase or system is typically large; working memory is finite. Human personnel default to the scope of their current task, not the scope of the entire system. The systematic examination required for induced requirements is cognitively expensive and routinely under-resourced.
+
+The traditional mitigation — process documentation, architecture reviews, design specifications — is an attempt to externalize system state so that human personnel can examine it without holding it in working memory. This mitigation is partially effective but introduces a further finding: documentation snapshots are subject to staleness. The documentation describes a system state that existed at the time of writing. As the system changes, the documentation does not.
+
+A stale document is worse than no document: it provides false confidence in the accuracy of the systematic examination.
+
+### 4.3. Agentic Systems Remove the Working Memory Constraint
+
+It is observed that agentic systems operating within the silo environment do not exhibit the working memory constraints described in Section 4.2.
+
+Agentic systems operating with appropriate orientation to the target system are capable of:
+
+- Reading the full scope of the project (subject to time and token constraints)
+- Comparing the observed scope to documented conventions
+- Identifying gaps between documented and actual system state
+- Formulating identified gaps as formal briefs in the same register and language as the project
+
+The agentic system is not performing original design. It is performing systematic induction: the systematic examination described in Section 4.2, executed without the working memory constraint that limits human personnel.
+
+This capability represents a material improvement in the feasibility of induced requirements methodology at operational scale.
+
+### 4.4. Induced Requirements Are More Reliable Than Imposed Requirements
+
+It is observed, through documented case studies within the organizational silo environment, that requirements generated through induced methodology exhibit higher alignment with system state at implementation than requirements generated through imposed methodology.
+
+This finding is consistent with the mechanism described in Section 4.1: induced requirements describe gaps that actually exist. The work has been validated by the system — the gap is real, the requirement is accurate. Imposed requirements describe gaps that are believed to exist; accuracy depends on the accuracy of the belief, which is not independently validated until implementation.
+
+The reliability of induced requirements does not eliminate the human role. The human role is **judgment**: when the agentic system surfaces a gap, the human performs triage — confirming that the gap is real, that the proposed requirement is the correct response, and that the implementation approach is appropriate. The agent surfaces; the human decides. This partnership is the recommended operating model.
+
+---
+
+## 5. RECOMMENDED PRACTICES
+
+### 5.1. Induced Requirements as Default Methodology
+
+All requirements generation activities within the silo environment are advised to begin with induced methodology as the default approach.
+
+Under the induced methodology:
+
+a. The system is examined systematically prior to any requirement generation
+b. Gaps between documented and actual system state are identified and recorded
+c. Requirements are formulated in response to identified gaps, not in advance of examination
+d. All requirements — whether induced or imposed — are reviewed against the examined system state prior to implementation
+
+### 5.2. Agentic System as Systematic Examination Infrastructure
+
+Agentic systems operating within the silo are the primary infrastructure for systematic examination. Personnel are advised to:
+
+a. Ensure that agentic systems performing systematic examination have appropriate orientation to the target system (conventions files read, registry state confirmed, scope established)
+b. Require that agentic systems performing systematic examination document the examined scope (what was read, what was compared, what was found)
+c. Route identified gaps through the established brief/debrief process for human triage
+
+The brief process is described in the conventions file, Section 4 (Brief Process). The debrief process is described in the conventions file, Section 5 (Debrief Process).
+
+### 5.3. Register as Requirements Infrastructure
+
+The document registry system (`scripts/reg-sync.ts` → `*/INDEX.jsonl`) is the primary infrastructure for systematic examination. The registry provides:
+
+- **Visibility:** When all artefacts are indexed, gaps between documented and actual state are visible through comparison of the registry to the project
+- **Feedback:** The registry is updated continuously. Gaps surface as the system changes, not only at initial examination
+- **Consistency:** The same language — briefs, debriefs, decisions — is used regardless of requirement origin. The origin does not change the process
+- **Audit:** The registry and associated briefs provide a complete history of induced requirements, enabling retrospective assessment of accuracy and completeness
+
+Personnel are advised to ensure that all substantive system artefacts are included in the appropriate registry index. Gaps in the registry are gaps in the systematic examination capability.
+
+### 5.4. When Imposed Requirements Are Appropriate
+
+The imposed methodology is appropriate when:
+
+a. Regulatory or compliance requirements mandate specific functionality regardless of system state
+b. Operational constraints preclude systematic examination prior to requirement generation
+c. An external authority has issued a requirement that cannot be challenged through the induced process
+
+Imposed requirements shall be reviewed against system state prior to implementation. If the imposed requirement conflicts with system state, the conflict shall be documented and escalated through the established process.
+
+### 5.5. The Partnership Model
+
+The recommended operating model for requirements generation is a partnership between agentic systems and human personnel:
+
+- **Agentic system:** Performs systematic examination, identifies gaps, drafts requirements
+- **Human personnel:** Performs triage on identified gaps, approves or rejects requirements, approves implementation
+
+Neither party operates independently. The agentic system surfaces; the human decides. This model preserves the reliability advantages of induced methodology while retaining human judgment at the critical decision point.
+
+---
+
+## 6. COMPLIANCE
+
+### 6.1. Required Actions
+
+The following actions are **required** for all personnel engaged in requirements generation:
+
+a. Adopt induced methodology as the default approach for requirements generation
+b. Ensure that agentic systems performing systematic examination have appropriate orientation and documented scope
+c. Route all identified requirements through the brief/debrief process for human triage
+d. Review all imposed requirements against system state prior to implementation
+
+### 6.2. Exceptions
+
+Requests for exception to the practices recommended in this advisory shall be submitted to OSAAS in writing. Exceptions shall include:
+
+- A description of the operational constraint that precludes induced methodology
+- An assessment of the risk associated with the imposed requirement
+- A proposed mitigation for the misalignment risk identified in Section 4.1
+
+Exceptions shall be reviewed within 10 business days of submission.
+
+### 6.3. Monitoring
+
+OSAAS shall monitor adherence to recommended practices through periodic review of requirements documentation and implementation outcomes. Non-adherence that results in documented system failures shall be addressed through corrective action.
+
+---
+
+## 7. REFERENCES
+
+- Conventions File, Section 4 (Brief Process)
+- Conventions File, Section 5 (Debrief Process)
+- Registry System Documentation (`scripts/reg-sync.ts`)
+- Advisory AWC-2025-001 (Ephemeral Session Management)
+- Advisory RDM-2025-002 (this document)
+
+---
+
+## 8. POINTS OF CONTACT
+
+| Role | Responsibility | Contact |
+|------|---------------|---------|
+| Issuing Authority | OSAAS, Silo Architecture | Internal |
+| Requirements Review | OSAAS, Systems Engineering | Internal |
+| Exception Requests | OSAAS, Director | Internal |
+
+---
+
+## 9. ACKNOWLEDGMENT
+
+Personnel are requested to confirm receipt and understanding of this advisory by updating the acknowledgment log maintained in the silo conventions directory.
+
+*This advisory is issued under the authority of OSAAS. Questions regarding content or applicability should be directed to the Points of Contact listed in Section 8.*
+
+---
+
+*Advisory issued: 2026-05-12*
+*Next review: 2027-05-12*
+*File reference: RDM-2025-002*

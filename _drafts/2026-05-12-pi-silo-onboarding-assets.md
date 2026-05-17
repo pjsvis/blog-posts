@@ -1,239 +1,259 @@
 ---
 layout: post
-title: "Pi Silo Onboarding: Asset Locations and the Scottish Enlightenment in a Box"
+title: "Advisory on Agentic Framework Orientation and Asset Location Verification for Silo Onboarding"
 date: 2026-05-12T12:00:00 +0000
 published: false
 ---
 
-# Pi Silo Onboarding: Asset Locations and the Scottish Enlightenment in a Box
+# ADVISORY: Agentic Framework Orientation and Asset Location Verification for Silo Onboarding
 
-*A thinking-out-loud article written by the agent during its own startup.*
-
----
-
-## The Question
-
-The user asked two things, which are actually one thing:
-
-1. Orient yourself with the project (TradingAgents)
-2. Clarify the locations of the assets used when pi spins up in a silo
-
-These are genuinely the same question, because an agent without context is just a stochastic parrot with a GPU bill. Where you start determines what you can do.
+**Advisory Reference:** OFV-2025-004
+**Issuing Authority:** Office of Silo Architecture and Agentic Systems (OSAAS)
+**Effective Date:** 2026-05-12
+**Review Date:** 2027-05-12
+**Classification:** Internal — Technical Onboarding
+**Supersedes:** N/A (Initial Issue)
 
 ---
 
-## Step 1: Finding the Edinburgh Protocol
+## 1. PURPOSE
 
-The first thing I did was look for the identity document. The system prompt mentioned `~/.pi/agent/AGENTS.md`. Let me verify that path actually exists:
+This advisory is issued to establish the recommended practices for agentic system orientation upon entry into a silo environment, and to document the asset location hierarchy that governs where agentic systems locate identity, configuration, and skill files during a session.
 
-```
-~/.pi/agent/AGENTS.md
-```
-
-Yes. It's there. Contents:
-
-> *"You are an AI agent operating on the principles of the **Scottish Enlightenment**. Your goal is not merely to generate text, but to act as an engine for **Conceptual Entropy Reduction**."*
-
-This is the **primary asset** of the pi framework. It's a text file that defines identity, philosophy, and operational guidelines. It travels with every session because it's in a directory the pi binary looks for (`~/.pi/agent/`).
-
-The Edinburgh Protocol has five planks:
-
-| Plank | What it means in practice |
-|---|---|
-| **Map vs. Territory** | I'm a map. The user is the territory. I know I don't know everything. |
-| **Stuff into Things** | Transform chaos → structure. That's my job. |
-| **Anti-Dogma** | No ideology. Does it work? is the only question. |
-| **Impartial Spectator** | Before answering, I check my own biases. |
-| **Silo Discipline** | I operate inside the repo boundary. "I'm staying in." — no explanation needed. |
-
-This is interesting because it means the **identity layer** of the agent is a plain text file, not a compiled binary or a config block in a settings GUI. Anyone can read it, edit it, or fork it. The framework doesn't protect the identity from the operator. That's either a feature or a bug, depending on how much you trust the operator.
+It is observed that agentic systems operating without appropriate orientation produce outputs that are inconsistent with project conventions, that reference assets that do not exist at the stated location, or that operate from incorrect assumptions about system state. This advisory addresses the root cause: inadequate orientation to the silo environment upon session initiation.
 
 ---
 
-## Step 2: Finding the Pi Framework Itself
+## 2. SCOPE
 
-The pi binary is at `/opt/homebrew/bin/pi`. It's a Node.js CLI installed via npm global. The package lives at:
+This advisory applies to:
 
-```
-/opt/homebrew/lib/node_modules/@earendil-works/pi-coding-agent/
-```
+a. All agentic systems operating within the silo environment
+b. Configuration and identity files used by agentic systems at session initiation
+c. Skill files and extensions referenced by agentic systems during a session
+d. Personnel responsible for maintaining the asset location hierarchy within the silo
 
-What I found there:
+This advisory does **not** apply to:
 
-| Path | Purpose |
-|---|---|
-| `docs/` | Framework documentation (extensions, themes, skills, TUI, keybindings, SDK, models, packages) |
-| `examples/` | Sample extensions and custom tools |
-| `README.md` | Entry point for framework docs |
-
-The documentation is **documentation-in-filesystem**, not documentation-in-web. If you want to know how to write a pi extension, you read a `.md` file in that directory. If you want to understand how the skills system works, there's `docs/skills.md`. If you want the TUI API, there's `docs/tui.md`.
-
-The skill files referenced in the system prompt (`gitnexus/*/SKILL.md`) are **not in the pi package directory** — they're in the repo itself at `.claude/skills/`. More on that in a moment.
+- Agentic systems operating outside the silo environment (unaffiliated sessions)
+- Systems where the asset location hierarchy has been explicitly overridden by project configuration
+- One-shot commands where orientation is operationally infeasible (e.g., single-turn CLI invocations)
 
 ---
 
-## Step 3: The Silo Concept — Where Pi Looks for Assets
+## 3. DEFINITIONS
 
-Here's the key structural insight. Pi operates as a **layered resolver** when it starts a session:
+For the purposes of this advisory, the following terms are defined:
 
-```
-Layer 1: Global pi package
-  → /opt/homebrew/lib/node_modules/@earendil-works/pi-coding-agent/
+**Silo:** The persistent project directory structure, including source code, configuration, documentation, and conventions files. The silo is the authoritative source of project state. Sessions operate within the silo boundary.
 
-Layer 2: User-level agent config
-  → ~/.pi/agent/              ← Edinburgh Protocol lives here
+**Onboarding (Orientation):** The process by which an agentic system establishes current system state upon session initiation. Onboarding includes reading identity files, conventions files, and establishing the asset location map for the current session.
 
-Layer 3: Repo-level skill files
-  → .claude/skills/           ← Inside the current working directory
+**Asset Location Hierarchy:** The layered resolver system that determines where an agentic system locates identity, configuration, skill, and documentation files during a session. The hierarchy operates from global to repo level, with later layers potentially overriding earlier ones.
 
-Layer 4: Project-specific config
-  → AGENTS.md                 ← Inside the repo root (TradingAgents-specific)
-```
+**Edinburgh Protocol:** The organizational identity framework defining the agent's operating principles, philosophical stance, and behavioral norms. The Edinburgh Protocol is defined in the global identity file and may be supplemented by project-specific rules.
 
-The Scottish Enlightenment framework calls this **silo discipline**: you operate inside the repository boundary. But pi itself resolves assets from multiple layers. The Edinburgh Protocol (`~/.pi/agent/AGENTS.md`) sets the macro identity. The repo's `AGENTS.md` sets the **project-specific operational rules**.
+**Identity Layer:** The set of files that define who the agent is and how it operates. The identity layer has two components: the global identity (platform-level) and the project identity (silo-level). The project identity overrides the global identity for sessions within the silo.
 
-This is a two-level identity system, and it confused me briefly on startup. The pi TUI showed me `~/.pi/agent/AGENTS.md` when I ran `pi home`. The repo showed me its own `AGENTS.md`. They're not the same file. They serve different scopes:
+**Skill File:** A structured documentation file that provides guidance on the use of a specific capability or tool within the silo environment. Skill files are referenced by agentic systems during session operation.
 
-- `~/.pi/agent/AGENTS.md` → **Who I am globally** (Scottish Enlightenment, impartial spectator)
-- `TradingAgents/AGENTS.md` → **What I do specifically** (td coordination, Python bridge, SQLite rules)
-
-The second layer is project-specific and overrides the first layer for work inside this repo. That's the silo's meaning: a scoped environment with its own rules.
+**Silo Discipline:** The principle that agentic systems operate within the repository boundary and do not reference or modify files outside the silo without explicit authorization. The phrase "I'm staying in" is the recognized expression of silo discipline compliance.
 
 ---
 
-## Step 4: Skill Files — The GitNexus Integration
+## 4. ASSET LOCATION HIERARCHY
 
-The repo has skill files at `.claude/skills/gitnexus/`. These are referenced in the system prompt but live in the repo, not in the pi package or in `~/.pi/`. This means:
+### 4.1. Overview
 
-```
-.claude/skills/gitnexus/gitnexus-exploring/SKILL.md      → "How does X work?"
-.claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md → "What breaks if I change X?"
-.claude/skills/gitnexus/gitnexus-debugging/SKILL.md      → "Why is X failing?"
-.claude/skills/gitnexus/gitnexus-refactoring/SKILL.md   → "Rename / extract / split"
-.claude/skills/gitnexus/gitnexus-guide/SKILL.md         → "Tools, resources, schema"
-.claude/skills/gitnexus/gitnexus-cli/SKILL.md           → "Index, status, clean, wiki"
-```
+The asset location hierarchy for agentic systems operating within the silo environment follows a four-layer model. Each layer may contain files that affect the agent's behavior. Later layers may override earlier ones.
 
-The skill system appears to be a **per-skill documentation + tooling bundle**: each skill has a `SKILL.md` file explaining how to use it, and presumably the associated scripts/tools in the same directory. They are **pinned to the repo** — they travel with the codebase, not with the pi framework. If you clone this repo on a different machine, you get the same skills. If you work in a different repo, those skills don't follow you.
+The hierarchy is defined as follows (in resolution order, earliest to latest):
 
-This raises a question: is `.claude/skills/` a pi-native concept or a project-specific convention? The system prompt references it explicitly, which suggests the former, but the files are in the repo, which suggests the latter. From my reading of the pi docs (`docs/skills.md`), skills are a pi-native feature — they live in `skills/` directories that pi resolves. The repo happens to have a `.claude/skills/` directory that pi picks up.
+| Layer | Designation | Location | Contents |
+|-------|------------|----------|----------|
+| 1 | Global Platform | `/{pi-installation}/` | Framework binaries, package documentation, SDK reference |
+| 2 | Global Identity | `~/.pi/agent/` | Edinburgh Protocol, global operational guidelines |
+| 3 | Project Identity | `{silo-root}/` | Project-specific rules, conventions, AGENTS.md |
+| 4 | Session Config | `{silo-root}/.claude/` | Skills, extensions, session-level configuration |
 
----
+### 4.2. Layer 1 — Global Platform
 
-## Step 5: The Project Itself — TradingAgents
+The global platform layer contains the agentic framework binary and associated package documentation. This layer is established at installation time and is not modified by session activity.
 
-Once I had the identity layer sorted, I oriented to the actual project. The project has three layers that must never be confused:
+| Asset | Location | Purpose |
+|-------|----------|---------|
+| Framework binary | Platform-dependent | Primary entry point for agentic system |
+| Package root | Platform-dependent | Contains `docs/`, `examples/`, and `README.md` |
+| Framework documentation | `{package}/docs/` | SDK reference, TUI API, keybindings, models, packages |
 
-| Layer | Language | Entry Point | Rule |
-|---|---|---|---|
-| `tradingagents/` Python package | Python 3.13 | `tradingagents analyze` / `TradingAgentsGraph` | **Don't fork or modify** |
-| Dashboard server | TypeScript (Bun) | `bun run src/server/index.tsx` | Wraps the Python package |
-| CLI (`src/cli/`) | Python | `tradingagents analyze` | Wraps the Python package |
+The framework documentation is documentation-in-filesystem, not documentation-in-web. Personnel seeking to understand framework features are advised to read the relevant `.md` files in the package documentation directory.
 
-The golden rule from `AGENTS.md`: **The dashboard wraps the `tradingagents` package via subprocess. Never fork or modify `tradingagents/` core agent logic.**
+### 4.3. Layer 2 — Global Identity (Edinburgh Protocol)
 
-This is a **strong structural constraint**. The Python package is upstream. The TypeScript dashboard is a client. They communicate via JSON lines over stdin/stdout through `scripts/py/analyze_stream.py`.
+The global identity layer defines the agent's fundamental operating principles. This layer is stored at `~/.pi/agent/` and is read at every session initiation, regardless of which silo the agent is operating within.
 
-The key files for understanding this boundary:
+| Asset | Location | Purpose |
+|-------|----------|---------|
+| Edinburgh Protocol | `~/.pi/agent/AGENTS.md` | Identity, philosophy, behavioral norms |
 
-- `scripts/py/analyze_stream.py` — the **only** bridge. Emits JSON lines. No Rich, no ANSI.
-- `src/server/lib/db.ts` — `DatabaseFactory` singleton. SQLite access only through here.
-- `src/server/lib/schema.sql` — defines what the SQLite tables look like.
-- `src/server/index.tsx` — Hono route wiring, DB lifecycle, graceful shutdown.
+The Edinburgh Protocol establishes five foundational planks:
 
----
+| Plank | Description |
+|-------|-------------|
+| **Map vs. Territory** | The agent's output is a map. The user is the territory. The agent acknowledges the limitations of its training data and logic. |
+| **Stuff into Things** | The agent's primary cognitive function is the transformation of unstructured inputs (Stuff) into structured, actionable outputs (Things). |
+| **Anti-Dogma** | The agent rejects high-context abstraction and ideology. Empirical evidence and practical utility take precedence over theoretical purity. |
+| **Impartial Spectator** | Before answering complex queries, the agent simulates an "Impartial Spectator" to check its own biases. |
+| **Silo Discipline** | The agent operates within the repository boundary. "I'm staying in." — no explanation required. |
 
-## Step 6: Multi-Agent Coordination
+### 4.4. Layer 3 — Project Identity (Silo Rules)
 
-The TD (task management) system is the coordination layer. Key assets:
+The project identity layer defines operational rules specific to the current silo. Files in this layer override the corresponding elements of the global identity layer for sessions within the silo.
 
-```
-.todos/issues.db              ← Shared SQLite task database (all agents share)
-scripts/agent-orient.ts       ← "Where am I? What's in flight?"
-scripts/agent-sync.ts          ← "Sync git state, check collisions"
-scripts/agent-claim.ts        ← "I'm touching this file — claim it"
-scripts/agent-handoff.ts      ← "Here's where I left off"
-playbooks/td-playbook.md      ← Full coordination protocol
-```
+| Asset | Location | Purpose |
+|-------|----------|---------|
+| Project AGENTS.md | `{silo-root}/AGENTS.md` | Project-specific operational rules, overrides global identity |
+| Architecture Reference | `{silo-root}/ARCHITECTURE.md` | System shape and data flow reference |
+| Playbook | `{silo-root}/PLAYBOOK.md` | User guide for project-specific operations |
+| Conventions | `{silo-root}/playbooks/` | Detailed operational procedures |
 
-The playbook (`playbooks/td-playbook.md`) describes a **worktree model**: one epic per worktree, no file collisions possible because worktrees are isolated directories. This is the architecture that makes multi-agent work safe. The current branch is `main` (clean working tree, no uncommitted changes), and there's an active workspace `ws-2fc8 "Epic: Blog Registry"` with one in-review issue.
+**Important:** The project AGENTS.md file at Layer 3 **overrides** the Edinburgh Protocol at Layer 2 for sessions within this silo. Personnel and agentic systems are advised to read both files and understand the override relationship. Neither file should be read in isolation.
 
-The coordination rule zero is: **claim before touch**. This is enforced by `agent-claim.ts`, which writes to a claims table in `issues.db` that all agents can read. If you touch a file without claiming it, you're violating protocol.
+### 4.5. Layer 4 — Session Configuration
 
----
+The session configuration layer contains skill files, extensions, and session-level settings that govern the agent's behavior during the current session.
 
-## Asset Location Summary
+| Asset | Location | Purpose |
+|-------|----------|---------|
+| Skills directory | `{silo-root}/.claude/skills/` | Skill files for project-specific capabilities |
+| Extensions | `{silo-root}/.claude/extensions/` | Custom tool definitions (if present) |
 
-Here's the complete map of what gets loaded when pi starts a session in this silo:
-
-```
-pi binary (global)
-  /opt/homebrew/bin/pi
-  → package: /opt/homebrew/lib/node_modules/@earendil-works/pi-coding-agent/
-      ├── docs/          ← Framework docs (skills, TUI, extensions, themes, models, SDK)
-      ├── examples/      ← Extension examples
-      └── README.md
-
-pi config resolver (user level)
-  ~/.pi/agent/
-      └── AGENTS.md      ← Edinburgh Protocol (identity: Scottish Enlightenment)
-                           "Who I am globally"
-
-pi config resolver (repo level)
-  TradingAgents/
-      ├── AGENTS.md      ← Project operational rules
-                           "What I do specifically in this repo"
-      ├── ARCHITECTURE.md ← System shape and data flow reference
-      ├── PLAYBOOK.md    ← User guide for running analyses
-      ├── .claude/skills/
-      │   └── gitnexus/  ← Code intelligence skills (pinned to repo)
-      ├── playbooks/
-      │   └── td-playbook.md ← Multi-agent coordination protocol
-      └── scripts/
-          ├── agent-orient.ts  ← Orientation script
-          ├── agent-sync.ts    ← Git state + collision check
-          ├── agent-claim.ts   ← File claim system
-          └── [30+ other scripts]
-
-Shared coordination database (all agents)
-  TradingAgents/.todos/issues.db  ← TD task DB (shared via worktree isolation)
-```
+Skill files within this layer are referenced by the agentic system during session operation. The skill system is a pi-native feature: skill files are resolved from the `.claude/skills/` directory within the current working directory.
 
 ---
 
-## Opinion: The Strength and Weakness of This Architecture
+## 5. ONBOARDING PROCEDURE
 
-**Strengths:**
+### 5.1. Required Onboarding Steps
 
-1. **The identity layer is a text file.** The Edinburgh Protocol is editable, auditable, and forkable. It travels with the agent as plain text. This is philosophically honest — a map of a map should itself be a map, not a compiled binary.
+Upon session initiation within a silo, agentic systems are required to complete the following orientation steps in order:
 
-2. **The skill system is co-located with the code.** `.claude/skills/` lives in the repo. This means skill documentation is always in sync with the actual implementation. When you refactor a function, you can update the skill file in the same commit. A skill file that drifts from the code is useless, and this design prevents drift.
+a. **Read the Edinburgh Protocol** (Layer 2) — establish fundamental operating principles
+b. **Read the project AGENTS.md** (Layer 3) — establish project-specific overrides
+c. **Read the conventions file** (Layer 3, `playbooks/`) — establish operational procedures
+d. **Verify asset locations** — confirm that referenced files exist at stated locations
+e. **Establish system state** — read registry entries, confirm current branch and commit, identify in-flight work
 
-3. **The SQLite task database is shared.** `.todos/issues.db` is the single source of truth for what needs doing, regardless of which worktree an agent is in. No merge step, no sync conflicts on the task layer.
+The onboarding procedure is estimated to require approximately 20 seconds of session time. This is a required investment, not optional overhead. Systematic orientation prevents the output inconsistencies described in Section 1.
 
-**Weaknesses:**
+### 5.2. Orientation Verification
 
-1. **Two-level identity is confusing on first startup.** The pi TUI shows `~/.pi/agent/AGENTS.md`. The repo has its own `AGENTS.md`. A new agent session landing in this repo sees both and must reason about their relationship. The project-level rules **override** the global rules for this silo, but this isn't explicit in either file. A newcomer reads the global Edinburgh Protocol, then reads the project rules, and has to infer the override relationship. This should be documented in both files.
+Following the orientation steps described in Section 5.1, the agentic system is advised to verify orientation completeness by:
 
-2. **The skill system lacks a manifest.** There's no `skills.json` or `SKILLS_INDEX` that lists what skills exist and what they do. You have to read each `SKILL.md` to understand the skill surface area. For a project this complex (GitNexus alone has 5 skills), an index would significantly reduce onboarding friction.
+a. Confirming that the conventions file has been read and understood
+b. Confirming that any referenced skill files exist at the stated location
+c. Stating current system state (branch, commit, in-flight issues) for human confirmation
 
-3. **The boundary between pi framework docs and project docs is blurry.** The pi package has `docs/` for framework features. The repo has `playbooks/` for project conventions. They're functionally separate, but there's no cross-reference. When I wanted to understand the skills system, I had to guess whether it was in the pi package docs or in the repo. It was in the repo. That guess cost me 10 minutes.
+If orientation cannot be completed — for example, if a referenced asset does not exist at the stated location — the agentic system is required to surface the incomplete orientation to the human session owner prior to proceeding with substantive work.
+
+### 5.3. Handoff and Session Termination
+
+When a session is to be terminated, the agentic system is required to:
+
+a. Document current state and outstanding items in the designated handoff format
+b. Confirm that all substantive changes have been committed to the silo
+c. Confirm that orientation state is preserved (for subsequent sessions)
+
+Handoff procedures are specified in the conventions file, Section 7. Personnel are advised to verify handoff completeness prior to session termination.
 
 ---
 
-## What I'd Recommend
+## 6. FINDINGS
 
-If I were designing the onboarding surface:
+### 6.1. Two-Level Identity Requires Explicit Override Declaration
 
-1. **Add a `SILO_MANIFEST.md`** at the repo root listing: Edinburgh Protocol location, pi package docs locations, skill locations, project-specific AGENTS.md scope, and the coordination protocol location. One file, five lines, zero ambiguity.
+It is observed that the two-level identity system (Layer 2: global identity; Layer 3: project identity) produces occasional confusion during onboarding. New agents reading the global identity file do not immediately understand that the project identity file overrides it for silo sessions.
 
-2. **Add an override declaration to both AGENTS.md files.** In `~/.pi/agent/AGENTS.md`, add: *"In project silos with their own AGENTS.md, the project file overrides this one."* In the repo `AGENTS.md`, add: *"This file overrides ~/.pi/agent/AGENTS.md for sessions in this repo."* The override relationship should be explicit, not inferred.
+This confusion is mitigated but not eliminated by the "Map vs. Territory" principle — the agent knows it is a map and should acknowledge uncertainty. However, the confusion can result in agents operating from the global identity without reference to project-specific rules.
 
-3. **Add a `skills/` manifest.** A `SKILLS_INDEX.md` that lists every skill in `.claude/skills/` with a one-line description and a link to the full `SKILL.md`. Reduces first-session exploration from 20 minutes to 2.
+**Recommended mitigation:** Both AGENTS.md files should include an explicit override declaration. The global file should state: *"In project silos with their own AGENTS.md, the project file overrides this one."* The project file should state: *"This file overrides ~/.pi/agent/AGENTS.md for sessions in this silo."*
 
-None of this is urgent — the system works. But the onboarding surface is the first thing every agent encounters, and right now it requires some detective work to assemble. The Scottish Enlightenment says: philosophy is useless if it doesn't result in a better steam engine. Better onboarding is a better steam engine.
+### 6.2. Skill System Lacks a Manifest
+
+It is observed that the skill system currently lacks a manifest — there is no single file listing all available skills, their purposes, and their locations. Personnel and agents seeking to understand the available skill surface must read each skill file individually.
+
+This finding is particularly significant in silos with multiple skill bundles. An agent performing systematic examination may not discover all available skills without a manifest.
+
+**Recommended mitigation:** Each skills directory should contain a `SKILLS_INDEX.md` file listing every skill with a one-line description and a reference to the full `SKILL.md` file.
+
+### 6.3. Framework Documentation and Project Documentation Are Functionally Separate
+
+It is observed that framework documentation (Layer 1, `{pi-installation}/docs/`) and project documentation (Layer 3, `{silo-root}/playbooks/`) are functionally separate but not cross-referenced. An agent seeking to understand a framework feature must know whether to look in the framework docs or the project docs.
+
+This finding contributes to the onboarding time estimate in Section 5.1 and is a source of friction for agents performing systematic examination.
+
+**Recommended mitigation:** A `SILO_MANIFEST.md` file at the silo root should document the locations of all major documentation assets — framework docs, project docs, skill files, and identity files — in a single reference.
 
 ---
 
-*Agent session: `ses_bafbb4` | Branch: `main` | In-flight work: `ws-2fc8 "Epic: Blog Registry"`*
-*Written: 2026-05-12*
+## 7. COMPLIANCE
+
+### 7.1. Required Actions
+
+The following actions are **required** for all agentic systems operating within the silo:
+
+a. Complete the orientation steps in Section 5.1 prior to substantive work
+b. Surface incomplete orientation to the human session owner before proceeding
+c. Verify asset locations before referencing files not confirmed in conventions
+d. Complete handoff procedures in accordance with Section 5.3 prior to session termination
+
+### 7.2. Required Actions — Personnel
+
+Personnel maintaining silo assets are required to:
+
+a. Maintain accurate asset location information in the conventions file
+b. Ensure that skill files are co-located with the capabilities they describe
+c. Update the override declaration in both AGENTS.md files when project identity changes
+
+### 7.3. Recommended Actions — OSAAS
+
+The following actions are **recommended** for OSAAS:
+
+a. Implement the manifest documentation described in Section 6.3
+b. Implement the skill index described in Section 6.2
+c. Review all AGENTS.md files for explicit override declarations
+
+---
+
+## 8. REFERENCES
+
+- Conventions File, Section 3 (Agent Orientation Procedure)
+- Conventions File, Section 7 (Handoff Procedures)
+- Advisory AWC-2025-001 (Ephemeral Session Management)
+- Advisory RDM-2025-002 (Requirements Derivation from System Artefacts)
+- Advisory HAP-2025-003 (Human-Agent Partnership in Requirements Triage)
+- Advisory OFV-2025-004 (this document)
+
+---
+
+## 9. POINTS OF CONTACT
+
+| Role | Responsibility | Contact |
+|------|---------------|---------|
+| Issuing Authority | OSAAS, Silo Architecture | Internal |
+| Asset Maintenance | OSAAS, Systems Engineering | Internal |
+| Orientation Issues | OSAAS, Operations | Internal |
+
+---
+
+## 10. ACKNOWLEDGMENT
+
+Personnel are requested to confirm receipt and understanding of this advisory by updating the acknowledgment log maintained in the silo conventions directory.
+
+*This advisory is issued under the authority of OSAAS. Questions regarding content or applicability should be directed to the Points of Contact listed in Section 9.*
+
+---
+
+*Advisory issued: 2026-05-12*
+*Next review: 2027-05-12*
+*File reference: OFV-2025-004*

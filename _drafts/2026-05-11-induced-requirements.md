@@ -1,143 +1,207 @@
 ---
 layout: post
-title: "Induced Requirements: How Good Systems Tell You What They Need"
+title: "Advisory on Human-Agent Partnership in Requirements Triage and Induced Methodology"
 date: 2026-05-11T12:00:00 +0000
 published: false
 ---
 
-# Induced Requirements: How Good Systems Tell You What They Need
+# ADVISORY: Human-Agent Partnership in Requirements Triage and Induced Methodology
 
-*Published: 2026-05-11*
-
----
-
-There's a common failure mode in system design: writing requirements before understanding the system. You decide what the system needs, document it in a spec, build it, and discover the spec was wrong. The system does something slightly different from what you planned, the spec doesn't match reality, and now you have technical debt that compounds.
-
-The alternative is induced requirements: look at what exists, see the gap, write the brief that fills it. The artefacts are the specification. The system tells you what it needs — you just have to listen.
-
-This sounds obvious. It rarely happens in practice. Here's why, and how coding agents change the calculus.
+**Advisory Reference:** HAP-2025-003
+**Issuing Authority:** Office of Silo Architecture and Agentic Systems (OSAAS)
+**Effective Date:** 2026-05-11
+**Review Date:** 2027-05-11
+**Classification:** Internal — Operational Guidance
+**Supersedes:** N/A (Initial Issue)
+**Related Advisory:** RDM-2025-002 (Requirements Derivation from System Artefacts)
 
 ---
 
-## The Imposed vs. Induced Spectrum
+## 1. PURPOSE
 
-**Imposed requirements** come from outside the system. A manager says "we need a code registry." A consultant says "you should use a vector database for semantic search." A competitor has a feature, so you add it. The requirement exists before the system does — it's imposed on the system from above.
+This advisory is issued as a companion to Advisory RDM-2025-002 (Requirements Derivation from System Artefacts). Whereas RDM-2025-002 addresses the methodology for requirements derivation — specifically the distinction between imposed and induced approaches — this advisory addresses the human role in the induced requirements process.
 
-Imposed requirements are not wrong. They're just incomplete. They answer the question "what does someone think we need?" without answering "what does the system actually need?" The gap between those two questions is where technical debt lives.
-
-**Induced requirements** emerge from the system itself. You look at what's there. You see what's missing. You write the brief that closes the gap. The requirement is induced — pulled out of the artefacts — not imposed.
-
-Example from this project:
-
-> The document registry system (`reg-sync.ts` → `*/INDEX.jsonl`) covered docs, briefs, debriefs, playbooks. When the documents were indexed, the code was not. The system showed the gap: "I can tell you what's in `docs/` but not in `src/`." A brief was written to close it. That brief did not come from outside. It came from the system.
-
-This is induced. The system induced the requirement by existing.
+It is observed that induced requirements methodology, while technically superior to the imposed alternative, does not eliminate the requirement for human judgment. The agentic system surfaces gaps; the human performs triage. This advisory establishes the recommended practices for that triage function.
 
 ---
 
-## Why This Is Hard Without Agents
+## 2. SCOPE
 
-Induced requirements require looking. Not just reading — looking. Comparing. Noticing the absence of something that should be there.
+This advisory applies to:
 
-This is slow and cognitively expensive for a human. You have to:
+a. Human personnel engaged in requirements triage within the induced methodology framework
+b. Agentic systems operating within the silo environment that surface requirements for human review
+c. Workflow configurations in which agentic systems perform systematic examination independently of direct supervisory intervention
 
-1. Know the full scope of what exists
-2. Hold it in working memory
-3. Compare it to a mental model of what should exist
-4. Identify the gap precisely
-5. Formulate it as a brief
+This advisory does **not** apply to:
 
-Steps 1 and 2 are where humans break down. The scope of a codebase is large. Working memory is finite. You can't hold the full scope in mind — you default to the scope of your current task.
-
-The traditional workaround is process: architecture reviews, design documents, specification reviews. These are attempts to externalize the system state so humans can look at it. They're better than nothing, but they have a problem: they're snapshots. They go stale. The system changes; the document doesn't.
+- Imposed requirements that are non-negotiable (regulatory, compliance, or security requirements)
+- Requirements that have already received formal human approval through a prior review cycle
+- Requirements triage conducted outside the established brief/debrief process
 
 ---
 
-## How Coding Agents Change This
+## 3. DEFINITIONS
 
-A coding agent doesn't have human working memory constraints. It can:
+For the purposes of this advisory, the following additional terms are defined:
 
-- Read the full scope of the project (given conventions and time)
-- Compare the scope to the conventions
-- Identify gaps between what's documented and what exists
-- Formulate a brief in the same register language as the project
+**Requirements Triage:** The human review process applied to requirements surfaced by agentic systems through systematic examination. Triage determines whether an identified gap is real, whether the proposed requirement is the correct response, and whether the implementation approach is appropriate.
 
-The agent is not doing original design. It's doing systematic induction: "Here's what the project says about itself. Here's what's actually there. Here's the gap."
+**Agent Surface:** The set of gaps, observations, and proposed requirements produced by an agentic system during systematic examination.
 
-This is what happened in this project. The document registry system was reviewed — not to build a code registry, but to understand what existed. The review surfaced the gap. The agent wrote the brief.
+**Human Judgment:** The cognitive function performed during triage — evaluating the agent surface against domain knowledge, operational context, and system state to determine which requirements to approve, modify, or reject.
 
-The brief wasn't imposed. The system induced it.
+**Orientation Step:** The process by which an agentic system establishes current system state prior to performing systematic examination. The orientation step is specified in the conventions file, Section 3.
 
----
-
-## The Agent's Preference
-
-An agent trained on good system design will prefer induced requirements. Why?
-
-**Imposed requirements are risky.** They're often wrong. The manager doesn't know what's actually there. The consultant is working from general principles, not this project's specifics. The competitor's feature solves a different problem. Imposed requirements require significant re-work to align with reality.
-
-**Induced requirements are reliable.** They come from the artefacts. They describe a gap that's actually there. The work has already been validated by the system — the gap exists; the brief is accurate.
-
-An agent that can induce requirements is more useful than an agent that can implement imposed ones. The former closes real gaps. The latter implements specs that may be wrong.
-
-This is why the agent orientation problem matters. An agent that boots into a silo and reads the conventions is doing the right kind of work: understanding the system's current state before acting. An agent that's given a spec and told to implement it is working in the dark — it doesn't know if the spec is right.
+**Triage Record:** The documented output of the requirements triage process, including approved, modified, and rejected requirements with rationale.
 
 ---
 
-## The Human's Preference
+## 4. FINDINGS
 
-Humans are more complicated. Some prefer imposed requirements — they feel safer. A spec is a spec. You know what's being asked. There's less ambiguity.
+### 4.1. Human Personnel Exhibit Preference Patterns That Affect Triage Quality
 
-But that safety is an illusion. A spec that's wrong still has to be implemented. You know what's being asked, but the spec doesn't match the system. You spend weeks building something that doesn't fit.
+It is observed that human personnel engaged in requirements triage exhibit characteristic preference patterns that affect the quality of triage outcomes.
 
-Other humans prefer induced requirements — they want to understand the system before acting. They push back on specs, ask questions, want to see the codebase. This is the right instinct, but it runs into the working memory problem: they can't hold the full scope in mind. They understand the local problem but not the global gap.
+**Pattern A — Preference for Imposed Requirements ("Spec Preference"):**
+Some human personnel exhibit a preference for imposed requirements — requirements that exist as specifications prior to systematic examination. This preference is driven by the perception of reduced ambiguity: a spec is a spec; the requirement is clear. This perception is noted to be an illusion. A spec that does not match the system does not reduce ambiguity — it redirects it to the implementation phase, where correction is more expensive. Triage quality under Pattern A preference is frequently high for imposed requirements and low for induced requirements, precisely because the human is performing triage on requirements they already understand rather than requirements the system has identified.
 
-The silo architecture helps here: the human works with the agent, not against it. The agent can hold the full scope. The human provides judgment — "yes, that gap is real," or "no, that's not the right fix." The agent does the systematic work of finding the gaps. The human does the triage.
+**Pattern B — Preference for Induced Requirements ("System Preference"):**
+Other human personnel exhibit a preference for induced requirements — they wish to understand the system before accepting requirements. This preference is noted to be the correct instinct, but is subject to the working memory constraint described in Advisory RDM-2025-002, Section 4.2. Human personnel operating under Pattern B preference understand the local scope of their current task but may not have full scope visibility. Triage quality under Pattern B preference is high for locally scoped gaps and lower for system-level gaps that require breadth of understanding.
 
-The best outcome is a partnership: agent induces, human approves, together they close the loop.
+Neither pattern is inherently superior. Both represent valid cognitive approaches to triage that have appropriate and inappropriate applications depending on requirement type, system state, and operational context.
 
----
+### 4.2. The Agentic System Removes Scope Constraints but Does Not Replace Judgment
 
-## The Tension
+It is observed that agentic systems performing systematic examination are not subject to the working memory constraints described in Section 4.1. The agent can hold full system scope. It can identify gaps across the full scope of the project. It can formulate requirements that address system-level issues rather than local ones.
 
-The tension is real. Human coders often prefer to decide what's needed before looking. It's a natural cognitive habit — you want to know the plan before you look at the site. But in software, the site (the existing system) is the plan. Looking changes what you build.
+However, the agentic system does not possess judgment. It can identify that a gap exists; it cannot determine whether closing that gap is the correct priority given competing demands, resource constraints, or operational context. These are human judgments.
 
-Agents don't have this habit. They'll look first. This makes them better at induced requirements, but sometimes frustrating for humans who want a decision before a walkthrough.
+The triage function is the human's essential contribution. Without it, the agent surfaces gaps at equal priority regardless of urgency, importance, or dependency relationships. With it, the agent's surface is filtered, prioritized, and converted into an actionable backlog.
 
-The resolution is pragmatic: make the induced requirement process visible. When the agent finds a gap, it writes a brief. The brief goes through the same review process as an imposed one. The human approves or rejects. The agent didn't decide — it surfaced. The human still decides.
+### 4.3. Unstructured Triage Produces Inconsistent Outcomes
 
-This is better than the alternative: building something because it was in a spec, then discovering it was wrong.
+It is observed that requirements triage conducted without structured process produces inconsistent outcomes across personnel, over time, and between systems.
 
----
+Inconsistent outcomes are problematic for several reasons:
 
-## The Register as Induced Requirement Infrastructure
+- Requirements approved under one triage session may conflict with requirements approved under another, producing implementation conflicts
+- The absence of a triage record prevents retrospective assessment of triage quality
+- Unstructured triage does not scale — as the agent surface grows, unstructured human filtering becomes a bottleneck
 
-The document registry system is the right infrastructure for induced requirements. Here's why:
-
-1. **Visibility** — When everything is indexed, gaps are visible. You can see what's missing by comparing the index to the project.
-
-2. **Feedback** — The register is updated continuously. Gaps surface as the system changes, not just once at the start.
-
-3. **Consistency** — The same language (briefs, debriefs, decisions) is used whether the requirement is imposed or induced. The origin doesn't change the process.
-
-4. **Audit** — You can see the history of what was induced, when, and why. This is useful for learning — did the agent find the right gaps? Was the brief accurate?
-
-The code registry (`scripts/reg-sync.ts` → `code/INDEX.jsonl`) extends this to code — the last major surface that wasn't in the feedback loop. Once code is indexed, the loop is closed: documents and code, both visible, both inducing requirements when gaps appear.
+The established brief/debrief process is the recommended structure for requirements triage. This process is described in the conventions file, Sections 4 and 5. Personnel are advised to use the brief process for surfacing requirements and the debrief process for documenting triage decisions and outcomes.
 
 ---
 
-## Conclusion
+## 5. RECOMMENDED PRACTICES
 
-Induced requirements are better than imposed ones. They're more accurate, less risky, and more aligned with how software actually works — incrementally, in response to actual gaps, not hypothetical ones.
+### 5.1. Triage as Formal Process
 
-Coding agents make induced requirements practical at scale. They don't have working memory limits. They can read the full scope. They can find the gaps that humans miss.
+Requirements triage shall be conducted as a formal process, not an informal review. Under the formal process:
 
-The human's role is judgment: when the agent surfaces a gap, the human approves the brief. The agent does the systematic work; the human does the triage. Together, they build a system that's actually needed, not just what was spec'd.
+a. The agent surfaces requirements through the brief process (Conventions File, Section 4)
+b. Human personnel review the brief and perform triage
+c. Triage decisions — approved, modified, or rejected — are documented with rationale in the debrief process (Conventions File, Section 5)
+d. Implementation does not proceed until triage is complete
 
-The register is the infrastructure that makes this possible. Without it, the loop is broken — documents exist, code exists, but they're not connected. With it, every gap in the system has a path to a brief, and every brief has a path to a fix.
+The brief and debrief process ensures that triage decisions are recorded, consistent, and reviewable. Personnel are advised not to proceed to implementation on the basis of informal verbal approval.
 
-That's a learning system. That's the goal.
+### 5.2. Triage Criteria
+
+Human personnel performing requirements triage are advised to evaluate each surfaced requirement against the following criteria:
+
+**a. Gap Validity:** Is the identified gap real? Has the system state been correctly assessed? Is the gap accurately described?
+
+**b. Requirement Correctness:** Is the proposed requirement the correct response to the gap? Are there alternative requirements that would address the gap more effectively or at lower cost?
+
+**c. Implementation Feasibility:** Is the proposed implementation approach feasible given current system state, resource constraints, and operational context?
+
+**d. Priority:** Given the full agent surface, is this requirement the correct priority? What dependencies exist? What is blocked if this requirement is not addressed?
+
+**e. Origin:** Is this an induced requirement (from systematic examination) or an imposed requirement (from external authority)? Do the triage criteria apply differently based on origin?
+
+Personnel are advised to document their evaluation of each criterion in the triage record.
+
+### 5.3. Managing Pattern Preferences
+
+Human personnel are advised to be aware of their own triage preference pattern (as described in Section 4.1) and to compensate accordingly.
+
+Personnel exhibiting Pattern A preference (spec preference) are advised to:
+
+- Apply equal scrutiny to induced and imposed requirements
+- Resist the tendency to approve imposed requirements without evaluation against system state
+- Recognize that the spec clarity advantage is an illusion when the spec does not match the system
+
+Personnel exhibiting Pattern B preference (system preference) are advised to:
+
+- Leverage agentic system systematic examination to extend scope visibility beyond personal working memory
+- Recognize that full scope examination by the agent removes the primary constraint on Pattern B preference
+- Focus triage on judgment (priority, correctness, feasibility) rather than gap identification
+
+Neither preference is disqualifying. Both can produce high-quality triage when personnel are aware of their pattern and compensate.
+
+### 5.4. Agent Surface Management
+
+When the agent surface is large — many requirements surfaced in a single examination cycle — personnel are advised to prioritize triage as follows:
+
+a. Requirements that block other requirements (dependency precedence)
+b. Requirements that address known system failures or degraded states
+c. Requirements that improve system visibility (registry gaps, convention gaps)
+d. Requirements that address new functionality
+
+This priority sequence ensures that triage effort is applied where it has the greatest system-level effect. Requirements lower in the sequence may be deferred pending resolution of higher-priority items.
 
 ---
 
-*Tags: induced-requirements, agent-architecture, requirements-engineering, system-design*
+## 6. COMPLIANCE
+
+### 6.1. Required Actions
+
+The following actions are **required** for all personnel engaged in requirements triage:
+
+a. Conduct triage through the formal brief/debrief process, not through informal review
+b. Document triage decisions with rationale in the debrief record
+c. Evaluate all surfaced requirements against the criteria in Section 5.2
+d. Acknowledge personal preference pattern and apply compensating scrutiny
+
+### 6.2. Escalation
+
+Triage decisions that result in rejection of a requirement surfaced by an agentic system shall include documented rationale. If the agentic system disagrees with a rejection decision, the disagreement shall be escalated to OSAAS for review.
+
+### 6.3. Monitoring
+
+OSAAS shall monitor triage quality through periodic review of debrief records. Systematic patterns of rejection, modification, or approval that indicate triage quality issues shall be addressed through corrective consultation with the relevant personnel.
+
+---
+
+## 7. REFERENCES
+
+- Conventions File, Section 3 (Agent Orientation Procedure)
+- Conventions File, Section 4 (Brief Process)
+- Conventions File, Section 5 (Debrief Process)
+- Advisory RDM-2025-002 (Requirements Derivation from System Artefacts)
+- Advisory HAP-2025-003 (this document)
+
+---
+
+## 8. POINTS OF CONTACT
+
+| Role | Responsibility | Contact |
+|------|---------------|---------|
+| Issuing Authority | OSAAS, Silo Architecture | Internal |
+| Triage Quality Review | OSAAS, Operations | Internal |
+| Escalation | OSAAS, Director | Internal |
+
+---
+
+## 9. ACKNOWLEDGMENT
+
+Personnel are requested to confirm receipt and understanding of this advisory by updating the acknowledgment log maintained in the silo conventions directory.
+
+*This advisory is issued under the authority of OSAAS. Questions regarding content or applicability should be directed to the Points of Contact listed in Section 8.*
+
+---
+
+*Advisory issued: 2026-05-11*
+*Next review: 2027-05-11*
+*File reference: HAP-2025-003*
