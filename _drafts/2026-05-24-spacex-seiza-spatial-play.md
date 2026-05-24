@@ -40,7 +40,7 @@ Seiza minimizes this. In seiza, head movements are constrained. You turn at the 
 
 The workstation itself is a curved desk with integrated displays, a radiation-shielded computing unit, and a restraint system that requires no straps — your body weight, even at 0.5g, is sufficient to keep you seated without floating away. A hot drink sits securely in a recessed cup holder. The curve of the desk matches the curve of the habitat wall. You face inward, toward the hub, where colleagues in other workstations are visible across the interior volume — 20 meters away, slightly rotated relative to your reference frame, suspended in the graduated gravity field like figures in a Chagall painting.
 
-This is not a shipping container. This is a place where a human being might choose to spend nine months.
+This is not a shipping container. This is a place where a human being would choose to spend nine months.
 
 ---
 
