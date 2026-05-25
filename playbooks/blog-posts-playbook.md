@@ -66,11 +66,34 @@ draft: true
 |-------|----------|---------|
 | `layout` | Yes | Must be `post` |
 | `title` | Yes | Used in `<title>`, export headers, and platform distribution |
-| `date` | Yes | Sets permalink structure (`/_posts/YYYY-MM-DD-slug/`) |
+| `date` | Yes | Sets permalink structure (`/_posts/YYYY-MM-DD-slug/`); **frozen after first publish — see URL Stability below** |
+| `permalink` | Recommended | Explicit stable URL, decoupled from filename date. See URL Stability below. |
 | `categories` | No | Taxonomic grouping |
 | `tags` | No | Semantic tags for search and classification |
+| `canonical_url` | Yes | Absolute URL of the canonical source (GitHub Pages). See ADR-003. |
 | `canonical_target` | No | List of platforms to export to; omit exports to all |
 | `draft` | No | Marks unpublished work |
+| `published` | Yes (in `_posts/`) | Must be `true` once the post is in `_posts/` |
+| `series` | No | Series slug for multi-post series (e.g., `spacex-ipo`) |
+| `series_order` | No | Integer position in series |
+
+### URL Stability — Frozen Date Rule
+
+**The date in a `_posts/` filename must never change after first publish.** Changing it breaks every existing link (bookmarks, shared URLs, email references) — all return 404. This is the single most destructive publishing error.
+
+**Why filenames and URLs are coupled by default:** Jekyll's default permalink derives the URL from the filename's date prefix (`/_posts/YYYY-MM-DD-slug/`). Changing the filename date changes the URL.
+
+**The fix: explicit `permalink:` in every post.** Decouple the filename from the URL by declaring the URL explicitly in front matter:
+
+```yaml
+permalink: /posts/2026-05-25-slug/   # stable URL — filename date is now irrelevant to the URL
+```
+
+With an explicit `permalink:`, you can revise a post's content, update its front-matter metadata, and even correct the filename date — all without changing the URL. The URL stays stable.
+
+**When revising a published post:** Write the revision to the same `_posts/YYYY-MM-DD-slug.md` file. Jekyll overwrites the page at the same URL. No links break.
+
+**When you must change a date (correction only, not revision):** Configure `redirect_from:` before renaming the file — see ADR-004.
 
 ---
 
@@ -121,3 +144,6 @@ Open `http://localhost:4000/blog-posts/` to preview before committing.
 | Export without reviewing output | Open `_exported/` files before distributing |
 | Hard-code links in post body | Use `{{ site.baseurl }}` or full GitHub Pages URLs |
 | Mix internal docs with public posts | Keep `briefs/`, `debriefs/`, `decisions/`, `playbooks/` separate |
+| Move a `_posts/` file to change its date | Keep the filename; update content in place |
+| Rename a published post's file | Never — it changes the URL and breaks all links |
+| Publish to `_posts/` without `permalink:` | Always declare `permalink:` to decouple filename from URL |
