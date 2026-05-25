@@ -6,7 +6,7 @@ categories: [space, systems, biology]
 tags: [spacex, s-1, ipo, mars, artificial-gravity, rgem, perky-pat, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-s1-perky-pat-layout/
-published: false
+published: true
 series: spacex-ipo
 series_order: 1
 ---

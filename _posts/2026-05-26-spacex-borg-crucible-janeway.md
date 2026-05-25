@@ -6,7 +6,7 @@ categories: [space, systems, incentives]
 tags: [spacex, s-1, ipo, mars, borg, seven-of-nine, elon-musk, incentive-structures, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-borg-crucible-janeway/
-published: false
+published: true
 series: spacex-ipo
 series_order: 2
 ---
