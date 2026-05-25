@@ -5,6 +5,9 @@ description: "Writing on systems, AI, and empirical pragmatism"
 baseurl: "/blog-posts"
 url: "https://pjsvis.github.io"
 
+# Show posts with future dates
+future: true
+
 # Engine
 markdown: kramdown
 kramdown:
