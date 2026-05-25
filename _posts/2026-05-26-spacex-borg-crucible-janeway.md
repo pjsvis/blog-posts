@@ -1,23 +1,24 @@
 ---
 layout: post
-title: "The Borg and the Crucible: Why SpaceX's Mars Milestones Have No Janeway"
-date: 2026-05-25T12:00:00 +0000
+title: "One Million Martians Who Can't Walk"
+subtitle: "The Borg and the Crucible"
+date: 2026-05-26T12:00:00 +0000
 categories: [space, systems, incentives]
 tags: [spacex, s-1, ipo, mars, borg, seven-of-nine, elon-musk, incentive-structures, edinburgh-protocol]
 canonical_target: [substack, medium]
-canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-borg-crucible-janeway/
 published: true
 series: spacex-ipo
 series_order: 2
 ---
 
-# The Borg and the Crucible: Why SpaceX's Mars Milestones Have No Janeway
+# One Million Martians Who Can't Walk
 
-In [Part 1 of this series](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/), I argued that the SpaceX S-1 filing is a Perky Pat layout — an immersive financial diorama designed to distract from the biological reality that unmitigated human bodies cannot survive the transit to Mars. The numbers are real. The architecture is absent.
+In [Part 1 of this series](/blog-posts/2026/05/26/spacex-s1-perky-pat-layout/), I argued that the SpaceX S-1 filing is a Perky Pat layout — an immersive financial diorama designed to distract from the biological reality that unmitigated human bodies cannot survive the transit to Mars. The numbers are real. The architecture is absent.
 
 But there's a deeper question, one that the numbers alone cannot answer: *why* is the architecture absent? SpaceX is not short of engineering talent. It is not short of capital. It is not short of ambition. It has solved problems — reusable orbital-class rockets, global satellite broadband, the first commercial crew delivery to the ISS — that were widely considered intractable. The company's defining characteristic is its willingness to attempt things that the rest of the aerospace industry considers impossible.
 
-And yet the single most tractable constraint on its primary mission — keeping humans functional during transit — has been left unaddressed. Not deprioritized. Not placed on a roadmap for Starship Block 3. *Unaddressed.* No rotating habitat. No artificial gravity research program. No mention in the S-1 of gravitational architecture as a mission requirement.
+And yet the single most tractable constraint on its primary mission — keeping humans functional during transit — has been left unaddressed. Not deprioritized. Not placed on a roadmap for Starship Block 3. *Unaddressed.* No per-person rotating tori at 1g during sleep. No 8-hour gravity intervention. No mention in the S-1 of gravitational architecture as a mission requirement.
 
 To understand why, we need to look at the incentive structure that shapes what SpaceX considers worth solving. And to understand the incentive structure, we need to look at the person who designed it. This requires a detour through science fiction, a difficult father, and a missing starship captain.
 
@@ -91,9 +92,9 @@ The result is an incentive structure that perfectly mirrors the Borg Collective:
 
 In Part 1, I argued that the SpaceX S-1 is a Perky Pat layout — a financial diorama that distracts from the biological reality of unmitigated human bodies in freefall. The deeper argument, the one I'm making here, is that the Perky Pat layout is not an accident. It is the natural output of an incentive structure that cannot ask qualitative questions.
 
-Why has SpaceX not addressed artificial gravity? Because artificial gravity is not required to meet the milestone. The milestone asks: is there a colony? It does not ask: are the colonists functional?
+Why has SpaceX not addressed the 1g sleep intervention? Because the intervention is not required to meet the milestone. The milestone asks: is there a colony? It does not ask: are the colonists functional upon arrival?
 
-Why has the S-1 not mentioned gravitational architecture as a mission requirement? Because the S-1 is a financial document, and financial documents describe what the company intends to do. If the company does not intend to build rotating habitats, the S-1 does not mention them.
+Why has the S-1 not mentioned gravitational architecture as a mission requirement? Because the S-1 is a financial document, and financial documents describe what the company intends to do. If the company does not intend to build per-person rotating tori providing 1g during sleep, the S-1 does not mention it.
 
 Why has no institutional counterweight emerged? Because every institution that could serve as a counterweight — the board, the investors, the underwriters, the regulators — is structurally aligned with the milestone, not with the humans who would inhabit it.
 
@@ -109,7 +110,7 @@ No one is asking SpaceX that question. Not the board. Not the investors. Not the
 
 The roadshow begins June 4. The listing is expected June 12. Between now and then, institutional investors will receive the S-1, analyze the financials, and place their orders. The narrative will be about TAM, revenue growth, and the transformative potential of Starship. The biological deficit will not be part of the conversation because no one in the room is equipped to raise it.
 
-The next part of this series examines what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. [Part 3](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/) describes the Reduced Gravity Environmental Module: a 40-meter extensible tensegrity shell rotating at 6.7 RPM, with counter-balanced mag-lev sleep trains, capable of providing continuous fractional gravity during the Mars transit.
+The next part of this series examines what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. [Part 3](/blog-posts/2026/05/26/spacex-rgem-cathedral/) describes the Reduced Gravity Environmental Module: a lightweight tensegrity habitat shell with eight per-person rotating tori at 6 RPM, providing eight hours of full Earth gravity during sleep and zero-g for the remaining 16 hours of each day.
 
 But first, we had to establish *why* the solution hasn't emerged organically. The answer, I've argued, is not technical. It is structural. A system with a single metric cannot self-correct. A Collective without a Janeway cannot ask what the metric leaves out.
 
@@ -117,7 +118,7 @@ But first, we had to establish *why* the solution hasn't emerged organically. Th
 
 *This is Part 2 of a 4-part series on the SpaceX S-1 filing and the architecture of human spaceflight:*
 
-- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/)*
+- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/2026/05/26/spacex-s1-perky-pat-layout/)*
 - *Part 2: The Borg and the Crucible (this post)*
-- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/)*
-- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/posts/2026-05-25-spacex-seiza-spatial-play/)*
+- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/2026/05/26/spacex-rgem-cathedral/)*
+- *[Part 4: How to Build a 1g Human — The Per-Person Rotating Torus and the Zero-G Construction Playbook](/blog-posts/2026/05/26/spacex-seiza-spatial-play/)*
