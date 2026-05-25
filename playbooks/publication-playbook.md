@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Publication Playbook"
+permalink: /playbooks/publication/
+---
+
 # Publication Playbook
 
 ## Purpose

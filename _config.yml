@@ -30,7 +30,6 @@ exclude:
   - briefs/
   - debriefs/
   - decisions/
-  - playbooks/
 
 # Defaults
 defaults:
