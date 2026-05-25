@@ -4,9 +4,21 @@ title: "Advisory on Requirements Derivation from System Artefacts — Induced vs
 date: 2026-05-12T12:00:00 +0000
 categories: [ai, systems, requirements]
 tags: [induced-requirements, imposed-requirements, requirements-derivation, edinburgh-protocol]
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-12-induced-requirements/
 canonical_target: [substack]
 published: false
 ---
+
+```text
+- the Advisory style is good in the tone: HR are required to advise you to tie your shoelces before exiting the building...
+- but its format is not convincing
+- so lets keep the tone as the basic style of humour and redo the text in a more coding blog post style
+- we should note that imposed requirements are emergent and probably a good thing as they indicate at least some form of coherent structure
+- imposed requirements range from the realistic to the fanciful
+- induced requirements are typically derived from the systems behaviour
+- with ai coding agents we have opportunities we did not have previously
+- 
+```
 
 # ADVISORY: Requirements Derivation from System Artefacts — Induced vs. Imposed Methodology
 

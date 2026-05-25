@@ -13,7 +13,7 @@ series_order: 3
 
 # The Cathedral: Building Artificial Gravity for a Mars Transit
 
-[Part 1](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/) and [Part 2](/blog-posts/2026/05/25/spacex-borg-crucible-janeway/) of this series established two things. First: the human body cannot survive a Mars transit in freefall and arrive functional. Second: SpaceX's incentive structure, built around a binary milestone (colony yes/no), has no mechanism for asking whether the colonists will arrive intact.
+[Part 1](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/) and [Part 2](/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/) of this series established two things. First: the human body cannot survive a Mars transit in freefall and arrive functional. Second: SpaceX's incentive structure, built around a binary milestone (colony yes/no), has no mechanism for asking whether the colonists will arrive intact.
 
 This post is different. This post describes the cathedral.
 
@@ -122,7 +122,7 @@ The RGEM shell, as described above, is a 12-15 ton structure with a deployment m
 
 A conservative estimate for the development and flight qualification of a single RGEM unit is $2 to $4 billion. By comparison, SpaceX spent $12.7 billion on AI infrastructure in 2025 alone — capital that went to data centers, GPU clusters, and compute buildout with no connection to the Mars mission. The RGEM would require between 16% and 31% of that AI spend — for hardware that directly addresses the single largest constraint on the company's primary stated mission.
 
-The question is not whether it's affordable. It is whether the company is incentivized to build it. And as [Part 2](/blog-posts/2026/05/25/spacex-borg-crucible-janeway/) established, the answer to that question depends on whether the system has a Janeway.
+The question is not whether it's affordable. It is whether the company is incentivized to build it. And as [Part 2](/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/) established, the answer to that question depends on whether the system has a Janeway.
 
 ---
 
@@ -140,7 +140,7 @@ The only question is whether anyone with the authority to make it happen sees th
 
 *This is Part 3 of a 4-part series on the SpaceX S-1 filing and the architecture of human spaceflight:*
 
-- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/)*
-- *[Part 2: The Borg and the Crucible — Why SpaceX's Mars Milestones Have No Janeway](/blog-posts/2026/05/25/spacex-borg-crucible-janeway/)*
+- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/)*
+- *[Part 2: The Borg and the Crucible — Why SpaceX's Mars Milestones Have No Janeway](/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/)*
 - *Part 3: The Cathedral (this post)*
-- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/2026/05/25/spacex-seiza-spatial-play/)*
+- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/posts/2026-05-25-spacex-seiza-spatial-play/)*

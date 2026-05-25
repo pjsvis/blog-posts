@@ -4,10 +4,23 @@ title: "The Architecture of Consistency: Why AI Agents Need Logic Over Completen
 date: 2026-05-13T12:00:00 +0000
 categories: [ai, systems]
 tags: [edinburgh-protocol, agentic-systems, conceptual-entropy]
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-13-the-architecture-of-consistency/
 canonical_target: [substack, medium]
 site_status: draft
 published: false
 ---
+
+```text
+- We should make this post a bit more general.
+- scrape barnacles regularly rather than waiting until you have to careen the ship
+- small inconsitencies are like barnacles on a sailing ship
+- refer to Patrick o Brian's novels for examples of careening and reasons thereof
+- so small inconsistencies are "not a problem?", no they are a problem
+- and its a compounding problem that has a cost and a risk
+- so barnacle scraping is a requirment not a luxury
+- her's how to do it 
+```
+
 
 # The Architecture of Consistency: Why AI Agents Need Logic Over Completeness
 

@@ -13,7 +13,7 @@ series_order: 2
 
 # The Borg and the Crucible: Why SpaceX's Mars Milestones Have No Janeway
 
-In [Part 1 of this series](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/), I argued that the SpaceX S-1 filing is a Perky Pat layout — an immersive financial diorama designed to distract from the biological reality that unmitigated human bodies cannot survive the transit to Mars. The numbers are real. The architecture is absent.
+In [Part 1 of this series](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/), I argued that the SpaceX S-1 filing is a Perky Pat layout — an immersive financial diorama designed to distract from the biological reality that unmitigated human bodies cannot survive the transit to Mars. The numbers are real. The architecture is absent.
 
 But there's a deeper question, one that the numbers alone cannot answer: *why* is the architecture absent? SpaceX is not short of engineering talent. It is not short of capital. It is not short of ambition. It has solved problems — reusable orbital-class rockets, global satellite broadband, the first commercial crew delivery to the ISS — that were widely considered intractable. The company's defining characteristic is its willingness to attempt things that the rest of the aerospace industry considers impossible.
 
@@ -109,7 +109,7 @@ No one is asking SpaceX that question. Not the board. Not the investors. Not the
 
 The roadshow begins June 4. The listing is expected June 12. Between now and then, institutional investors will receive the S-1, analyze the financials, and place their orders. The narrative will be about TAM, revenue growth, and the transformative potential of Starship. The biological deficit will not be part of the conversation because no one in the room is equipped to raise it.
 
-The next part of this series examines what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. [Part 3](/blog-posts/2026/05/25/spacex-rgem-cathedral/) describes the Reduced Gravity Environmental Module: a 40-meter extensible tensegrity shell rotating at 6.7 RPM, with counter-balanced mag-lev sleep trains, capable of providing continuous fractional gravity during the Mars transit.
+The next part of this series examines what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. [Part 3](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/) describes the Reduced Gravity Environmental Module: a 40-meter extensible tensegrity shell rotating at 6.7 RPM, with counter-balanced mag-lev sleep trains, capable of providing continuous fractional gravity during the Mars transit.
 
 But first, we had to establish *why* the solution hasn't emerged organically. The answer, I've argued, is not technical. It is structural. A system with a single metric cannot self-correct. A Collective without a Janeway cannot ask what the metric leaves out.
 
@@ -117,7 +117,7 @@ But first, we had to establish *why* the solution hasn't emerged organically. Th
 
 *This is Part 2 of a 4-part series on the SpaceX S-1 filing and the architecture of human spaceflight:*
 
-- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/)*
+- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/)*
 - *Part 2: The Borg and the Crucible (this post)*
-- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/2026/05/25/spacex-rgem-cathedral/)*
-- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/2026/05/25/spacex-seiza-spatial-play/)*
+- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/)*
+- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/posts/2026-05-25-spacex-seiza-spatial-play/)*

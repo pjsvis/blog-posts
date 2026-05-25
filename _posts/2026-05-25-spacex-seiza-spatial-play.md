@@ -13,7 +13,7 @@ series_order: 4
 
 # The Bouldering Wall at the End of the Universe: Human Life Inside a Rotating Habitat
 
-[Part 3](/blog-posts/2026/05/25/spacex-rgem-cathedral/) described the architecture of artificial gravity: a 40-meter rotating tensegrity shell, 6.7 RPM, full Earth gravity at the rim for sleep, graduated gravity toward the hub, counter-rotating mag-lev crew rings. It was an engineering post. This is a human post.
+[Part 3](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/) described the architecture of artificial gravity: a 40-meter rotating tensegrity shell, 6.7 RPM, full Earth gravity at the rim for sleep, graduated gravity toward the hub, counter-rotating mag-lev crew rings. It was an engineering post. This is a human post.
 
 The question I want to answer is not "does the physics work?" — we've established that it does. The question is: what would it *feel like* to live inside this structure for nine months? What would you do with 37,000 cubic meters of breathable volume in free space, with gravity that changes depending on where you stand?
 
@@ -87,7 +87,7 @@ The fabric envelope is also transparent in the right layers. Selected panels —
 
 ## Why This Matters
 
-I have spent three posts establishing a problem. [Part 1](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/) described the hovel: the human body in freefall, degrading at 90 days, arriving on Mars unable to stand. [Part 2](/blog-posts/2026/05/25/spacex-borg-crucible-janeway/) diagnosed why no one addresses it. [Part 3](/blog-posts/2026/05/25/spacex-rgem-cathedral/) provided the physics of the solution. This post has described what it would feel like to live inside the solution.
+I have spent three posts establishing a problem. [Part 1](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/) described the hovel: the human body in freefall, degrading at 90 days, arriving on Mars unable to stand. [Part 2](/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/) diagnosed why no one addresses it. [Part 3](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/) provided the physics of the solution. This post has described what it would feel like to live inside the solution.
 
 The point is not that SpaceX should build exactly this. The point is that this is possible — physically, economically, with current materials and established engineering principles — and nobody is talking about it. The S-1 filing, for all its 377 pages of financial disclosure and risk factors, contains no discussion of gravitational architecture. Not as a requirement, not as a research program, not as a future capability. The most important structural component of the Mars mission is absent from the most important document the company has ever produced.
 
@@ -97,7 +97,7 @@ The shipping container aesthetic is not a law of nature. It is a product of laun
 
 *This is Part 4 of a 4-part series on the SpaceX S-1 filing and the architecture of human spaceflight:*
 
-- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/2026/05/25/spacex-s1-perky-pat-layout/)*
-- *[Part 2: The Borg and the Crucible — Why SpaceX's Mars Milestones Have No Janeway](/blog-posts/2026/05/25/spacex-borg-crucible-janeway/)*
-- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/2026/05/25/spacex-rgem-cathedral/)*
+- *[Part 1: The S-1 and the Perky Pat Layout](/blog-posts/posts/2026-05-25-spacex-s1-perky-pat-layout/)*
+- *[Part 2: The Borg and the Crucible — Why SpaceX's Mars Milestones Have No Janeway](/blog-posts/posts/2026-05-25-spacex-borg-crucible-janeway/)*
+- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/posts/2026-05-25-spacex-rgem-cathedral/)*
 - *Part 4: The Bouldering Wall at the End of the Universe (this post)*

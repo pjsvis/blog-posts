@@ -4,6 +4,7 @@ title: "Advisory on Ephemeral Session Management and Continuous Context Accumula
 date: 2026-05-11T12:00:00 +0000
 categories: [ai, systems, agentic-workflows]
 tags: [ephemeral-sessions, context-windows, session-management, edinburgh-protocol]
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-11-context-windows-and-session-reset/
 canonical_target: [substack]
 published: false
 ---

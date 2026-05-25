@@ -4,6 +4,7 @@ title: "Advisory on Human-Agent Partnership in Requirements Triage and Induced M
 date: 2026-05-11T12:00:00 +0000
 categories: [ai, systems, requirements]
 tags: [human-agent-partnership, induced-requirements, triage, edinburgh-protocol]
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-11-human-agent-partnership/
 canonical_target: [substack]
 published: false
 ---
