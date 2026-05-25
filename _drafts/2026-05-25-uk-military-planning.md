@@ -1,15 +1,4 @@
----
-layout: post
-title: "The Hype, the Hardware, and the Leak: Why the UK's Defence Strategy Is an Economic Suicide Pact"
-date: 2026-05-25T12:00:00 +0000
-categories: [defence, economics, systems]
-tags: [uk-defence, sdr, drones, procurement, ukraine, economic-growth, rusi, chatham-house]
-canonical_target: [substack, medium]
-canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-25-uk-military-planning/
-published: true
----
-
-# The Hype, the Hardware, and the Leak: Why the UK's Defence Strategy Is an Economic Suicide Pact
+# The Hype, the Hardware, and the Leak: Why the UK’s Defence Strategy Is an Economic Suicide Pact
 
 Why did nobody see the current crisis in the Gulf coming?
 
@@ -37,13 +26,13 @@ This is the "Imperial Mirage" in action. These programs are exceptionally slow t
 
 ## The Alternate Solution: The Union-Wide Wartime Lab
 
-There is a radical, growth-oriented alternative. The UK should formally partner with Ukraine's active, battle-tested defense tech ecosystem—which successfully scaled its domestic production to an astonishing **4.5 million drones in 2025** alone (GIS Reports, 2026).
+There is a radical, growth-oriented alternative. The UK should formally partner with Ukraine’s active, battle-tested defense tech ecosystem—which successfully scaled its domestic production to an astonishing **4.5 million drones in 2025** alone (GIS Reports, 2026).
 
 Instead of chasing a handful of pristine, multi-million-pound platforms, the UK must pivot toward an agile integration model that iterates hardware and software updates in weeks rather than decades (RUSI, 2025). Crucially, this approach nests seamlessly into the economic fabric of the United Kingdom, turning national security into a decentralized engine for the Union:
 
-* **Scotland's Photonics & Space Cluster:** Instead of merely bending heavy steel on the Clyde, Scotland's world-class data science and photonics hubs in Edinburgh and Glasgow become the design labs for autonomous target-routing software, un-jammable AI navigation systems, and quantum sensing (Wikipedia, 2025).
+* **Scotland's Photonics & Space Cluster:** Instead of merely bending heavy steel on the Clyde, Scotland’s world-class data science and photonics hubs in Edinburgh and Glasgow become the design labs for autonomous target-routing software, un-jammable AI navigation systems, and quantum sensing (Wikipedia, 2025).
 * **The Welsh Semiconductor Web:** Wales leverages its advanced electronics and compound semiconductor clusters in the South Wales valleys. Shifting from slow-moving, legacy armored vehicle maintenance to high-velocity autonomous hardware assembly breathes immediate life into Welsh manufacturing.
-* **Northern Ireland's Cyber Shield:** Belfast's hyper-focused, globally recognized cyber-security and kinetic aerospace engineering clusters are plugged directly into a rapid-procurement pipeline for low-cost, AI-driven interceptor drones.
+* **Northern Ireland’s Cyber Shield:** Belfast’s hyper-focused, globally recognized cyber-security and kinetic aerospace engineering clusters are plugged directly into a rapid-procurement pipeline for low-cost, AI-driven interceptor drones.
 
 ---
 
