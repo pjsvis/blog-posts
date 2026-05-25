@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "The S-1 and the Perky Pat Layout: What SpaceX's IPO Filing Doesn't Say About the Human Body in Space"
+title: "What SpaceX's IPO Filing Doesn't Say About the Human Body in Space"
+subtitle: "The Starship and the Perky Pat Layout"
 date: 2026-05-26T12:00:00 +0000
-categories: [space, systems, biology]
-tags: [spacex, s-1, ipo, mars, artificial-gravity, rgem, perky-pat, edinburgh-protocol]
+categories: [space, biology, systems]
+tags: [spacex, s-1, ipo, mars, human-body, perky-pat, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-s1-perky-pat-layout/
 published: true
@@ -11,7 +12,7 @@ series: spacex-ipo
 series_order: 1
 ---
 
-# The S-1 and the Perky Pat Layout: What SpaceX's IPO Filing Doesn't Say About the Human Body in Space
+# What SpaceX's IPO Filing Doesn't Say About the Human Body in Space
 
 On May 20, 2026, SpaceX filed its S-1 registration with the SEC. The document runs 377 pages. It contains $18.67 billion in 2025 revenue, a $4.9 billion net loss, $20.7 billion in capital expenditures — 60% of which went to AI — and 36 pages of risk factors. It proposes a valuation of $1.75 trillion, which would make it the largest IPO in Wall Street history by a factor of five. It includes a CEO compensation package that vests in tranches tied not to revenue or profit but to the establishment of "a permanent human colony on Mars with at least one million inhabitants."
 
@@ -83,7 +84,7 @@ The S-1 contains many numbers. $18.67 billion in revenue. $1.75 trillion in prop
 
 **70%** — the proportion of long-duration astronauts who develop vision impairment from fluid shift.
 
-**0** — the number of rotating-habitat spacecraft currently in development at SpaceX.
+**0** — the number of per-person rotating torus systems providing 1g during sleep currently in development at SpaceX.
 
 **0** — the number of humans who have ever spent more than 14 consecutive months in microgravity (Valeri Polyakov, Mir, 1994-1995).
 
@@ -117,13 +118,8 @@ I am not arguing that the problem is unsolvable. I am arguing that it is unsolve
 
 The S-1 is the Perky Pat layout. The revenue curves, the TAM claims, the compensation tranches, the underwriting syndicate — all of it is real, and all of it is detailed, and all of it is designed to convince you that the diorama is the territory. But the territory is a hovel. The hovel is the human body in freefall. And nobody is talking about it.
 
-And *why* nobody is talking about it — why a company founded by the world's most ambitious industrialist has not addressed the single most tractable constraint on its primary mission — is the subject of [Part 2 of this series](/blog-posts/2026/05/26/spacex-borg-crucible-janeway/).
+The next piece in this series will examine *why* — why a company founded by the world's most ambitious industrialist has not addressed the single most tractable constraint on its primary mission. The answer involves a father, a Borg drone, and a missing starship captain.
 
 ---
 
-*This is Part 1 of a 4-part series on the SpaceX S-1 filing and the architecture of human spaceflight:*
-
-- *Part 1: The S-1 and the Perky Pat Layout (this post)*
-- *[Part 2: The Borg and the Crucible — Why SpaceX's Mars Milestones Have No Janeway](/blog-posts/2026/05/26/spacex-borg-crucible-janeway/)*
-- *[Part 3: The Cathedral — Building Artificial Gravity for a Mars Transit](/blog-posts/2026/05/26/spacex-rgem-cathedral/)*
-- *[Part 4: The Bouldering Wall at the End of the Universe — Human Life Inside a Rotating Habitat](/blog-posts/2026/05/26/spacex-seiza-spatial-play/)*
+*This is Post 1 of a series on the SpaceX S-1 filing and the architecture of human spaceflight. Post 2 will examine the incentive structure that explains why the biological deficit has not been addressed. Post 3 will describe the per-person rotating torus architecture that solves it.*
