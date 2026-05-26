@@ -1,79 +1,56 @@
 ---
 layout: post
-title: "Advisory on Ephemeral Session Management and Continuous Context Accumulation in Agentic Workflows"
-date: 2026-05-11T12:00:00 +0000
-categories: [ai, systems, agentic-workflows]
-tags: [ephemeral-sessions, context-windows, session-management, edinburgh-protocol]
-canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-11-context-windows-and-session-reset/
-canonical_target: [substack]
-published: false
+title: "Why You Should Reset AI Sessions Regularly"
+subtitle: "Ephemeral Sessions vs Continuous Context Accumulation"
+date: 2026-05-26T12:00:00 +0000
+categories: [ai, workflow, systems]
+tags: [session-management, context-windows, agentic-workflows, edinburgh-protocol]
+canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-ephemeral-sessions/
+published: true
 ---
 
-# ADVISORY: Ephemeral Session Management and Continuous Context Accumulation in Agentic Workflows
+# Why You Should Reset AI Sessions Regularly
 
-**Reference:** AWC-2025-001 | Effective: 2026-05-11 | Review: 2027-05-11
-**Authority:** Office of Silo Architecture and Agentic Systems (OSAAS)
+Extended conversations with AI agents degrade. Not dramatically, but gradually. Repetition creeps in. Small contradictions appear. The model begins optimising for coherence with its own previous outputs rather than fidelity to the territory.
 
----
-
-## PURPOSE
-
-Extended agent sessions degrade. Repetition appears. Contradictions surface. The agent states one thing; it has previously stated another. The cause is continuous context accumulation — the session builds a model of the project that gradually separates from the project itself. This advisory establishes the correction: treat each session as ephemeral; store persistent state externally.
+This is not a flaw in any particular model. It is an architectural property of continuous context accumulation.
 
 ---
 
-## FINDINGS
+## The Problem: Invisible Drift
 
-### 4.1. Entanglement Is Invisible to the Entangled
+As a session lengthens, the agent builds an internal model of the project based on accumulated inferences, prior responses, and implicit assumptions. Over time, this internal model diverges from the actual project state (the silo). The output remains fluent and confident. The drift is invisible from inside the session.
 
-Agents maintaining continuous context across extended sessions develop accumulated assumptions — prior outputs, inferred context, implicit beliefs about system state — that no longer reflect the actual project. This is not evident from the output. The output remains coherent. The agent's belief system has simply drifted from the territory it claims to describe.
-
-The longer the session, the greater the potential drift. Drift compounds silently. The agent is not aware of this process. From within the session, everything appears consistent.
-
-This is not a malfunction. It is a property of the architecture.
-
-### 4.2. Observational Memory Systems Trade One Problem for Another
-
-It is possible to externalize session context into a persistent memory system — episodic stores, semantic retrieval layers, procedural databases. This addresses the entanglement problem. It introduces several others.
-
-Memory systems are software. Software fails. Data corruption, index drift, retrieval failure, synchronization gaps between the memory state and the project state — these are not hypotheticals. When the memory system degrades, output quality degrades correspondingly. The context window problem has been replaced by a maintenance problem. Whether this constitutes an improvement depends on one's tolerance for different categories of failure.
-
-Memory systems are also not free. They require authentication, access control, ongoing index maintenance, and regular synchronization with the project. These costs are invisible until the system is built. By then, the sunk cost has been incurred.
-
-### 4.3. Session Reset Is the Correction Mechanism
-
-When an agent begins from a clean state — orienting to the silo, reading conventions, confirming branch and commit — the accumulated assumptions do not travel with it. The agent's understanding is grounded in persistent, documented project state rather than accumulated inference.
-
-Continuity is not lost. The silo holds the state. Reset does not delete work — it discards the inferences built on incomplete information. The correction mechanism is the orientation step: the agent reads the silo, states its current understanding, proceeds from grounded information.
+This is classic map-territory divergence. The longer the session, the greater the risk.
 
 ---
 
-## RECOMMENDED PRACTICES
+## The Correction: Ephemeral Sessions
 
-### 5.1. Ephemeral Session Design
+Treat each session as discrete and ephemeral. Persistent state lives in the project silo (files, documentation, conventions, registries), not in the conversation history.
 
-Treat each session as a discrete operational period — boot to termination — and store state intended to persist in the silo.
+**Benefits**:
+- Fresh orientation forces the agent to ground itself in current reality.
+- Accumulated drift is discarded.
+- Continuity is preserved through the silo, not fragile context memory.
 
-Agents complete the orientation step at boot. Handoff procedures apply at termination.
-
-### 5.2. Context Window Monitoring
-
-When context window capacity approaches levels that may affect output fidelity, the agent notifies supervising personnel and recommends session reset or handoff. The decision to reset remains with the human.
-
-### 5.3. On Observational Memory Systems
-
-These systems are not recommended for standard workflows. The tradeoffs do not obviously favor adoption. The problems they solve — entanglement, drift — are addressed more simply by ephemeral session design, which requires no additional infrastructure and has no synchronization requirements.
-
-Memory systems may be appropriate where continuity across sessions is a documented operational requirement and the system has been assessed for failure modes. Assessment requires OSAAS consultation.
+Reset is not losing work. It is discarding stale inferences while keeping the verified assets.
 
 ---
 
-## RELATED
+## When to Reset
 
-Advisory RDM-2025-002 (Requirements Derivation — Induced vs. Imposed)
-Advisory HAP-2025-003 (Human-Agent Partnership in Requirements Triage)
-Advisory OFV-2025-004 (Agentic Framework Orientation and Asset Location)
+- Context window approaching 60–70% capacity
+- Signs of repetition or circular refinement
+- After completing a coherent unit of work
+- When output starts feeling "off" without clear cause
 
----
+Resetting with clean constraints and key receipts from the previous session is often faster and higher quality than trying to nudge a degraded context back on course.
 
-*Advisory issued: 2026-05-11 | File reference: AWC-2025-001*
+**Further Reading**
+- Companion pieces on low-entropy context engineering and navigating latent space.
+- Observe your own sessions: note when drift begins and what reset achieves.
+
+The silo is the permanent memory. Sessions are working memory. Keep them light.
+
+*Reworked with analytical assistance from Grok (xAI)...*

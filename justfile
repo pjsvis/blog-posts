@@ -66,7 +66,7 @@ reg-sync-fix:
   bun scripts/reg-sync.ts --all --fix
 
 reg-list:
-  @echo "Available: briefs | debriefs | decisions | playbooks"
+  @echo "Available: briefs | debriefs | decisions | playbooks | prompts"
   @echo "Usage: bun scripts/reg-list.ts <registry>"
 
 reg-briefs:
@@ -80,6 +80,9 @@ reg-decisions:
 
 reg-playbooks:
   bun scripts/reg-list.ts playbooks
+
+reg-prompts:
+  bun scripts/reg-list.ts prompts
 
 # How to use the just system
 help:
@@ -105,7 +108,8 @@ help:
   @echo "  just reg-briefs      — list briefs"
   @echo "  just reg-debriefs    — list debriefs"
   @echo "  just reg-decisions   — list decisions"
-  @echo "  just reg-playbooks   — list playbooks"
+  @echo "  just reg-playbooks   — list playbooks
+  just reg-prompts     — list prompts"
   @echo ""
   @echo "  Ask the agent for details on any workflow or playbook."
 

@@ -6,6 +6,7 @@ vendor/
 node_modules/
 Gemfile.lock
 _exported/
+drydock/
 .DS_Store
 
 # Flox environment (generated — use flox.toml at root as source of truth)

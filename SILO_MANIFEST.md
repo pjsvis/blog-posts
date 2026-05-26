@@ -41,6 +41,7 @@ just info
 | **Playbooks registry** | `playbooks/REGISTRY.jsonl` | All playbooks (canonical/project) |
 | **Debriefs registry** | `debriefs/INDEX.jsonl` | All post debriefs |
 | **Decisions registry** | `decisions/INDEX.jsonl` | All ADRs (Proposed/Accepted/Superseded) |
+| **Prompts registry** | `prompts/INDEX.jsonl` | Subject expert personas and writing sleeves |
 | **Export scripts** | `scripts/` | `export-all.ts`, `scrape-and-export.ts`, `reg-sync.ts`, `reg-list.ts` |
 | **Sparkline font** | `assets/fonts/Datatype.woff2` | Datatype — variable font that renders `{l:...}`, `{b:...}`, `{p:...}` as inline charts via ligatures. 73KB. Repo: [franktisellano/datatype](https://github.com/franktisellano/datatype). |
 | **Export output** | `_exported/` | Generated platform-specific output (medium/, substack/, hn/, twitter/) |

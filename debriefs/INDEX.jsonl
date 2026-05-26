@@ -1,3 +1,5 @@
 {"file":"2026-05-17-osaas-advisory-series.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"debrief-post-architecture-of-consistency.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"TEMPLATE.md","date":"2026-05-17","status":"active","summary":"Post debrief template with accomplishments, problems, lessons learned, and platform notes","meta":{}}
+{"file":"2026-05-26-zero-g-persona-architecture.md","date":"2026-05-26","status":"done","summary":"Built zero-g-engineer persona + primer, added Earth-bound application, created barnacle scrape brief","meta":{}}
+{"file":"2026-05-23-multi-platform-publishing-automation.md","date":"2026-05-23","status":"done","summary":"Multi-platform publishing automation complete — export pipeline for Substack, Medium, HN, Twitter built and validated","meta":{"platforms":"substack,medium,hn,twitter"}}

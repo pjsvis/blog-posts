@@ -1,0 +1,59 @@
+name: Publish to Substack
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_posts/*.md"
+  workflow_dispatch:
+    inputs:
+      post_slug:
+        description: "Specific post slug to publish (optional, publishes all if empty)"
+        required: false
+        type: string
+
+jobs:
+  export-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Export posts
+        run: bun run scripts/export-all.ts
+        if: github.event.inputs.post_slug == ''
+        env:
+          NODE_ENV: production
+
+      - name: Export single post
+        run: bun run scripts/export-all.ts --post=${{ github.event.inputs.post_slug }}
+        if: github.event.inputs.post_slug != ''
+
+      - name: Publish to Substack
+        run: |
+          bun scripts/publish-substack.ts --all --canonical
+        env:
+          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+          SUBSTACK_SUBDOMAIN: ${{ secrets.SUBSTACK_SUBDOMAIN }}
+
+      - name: Generate Medium RSS feed
+        run: bun run scripts/export-medium-rss.ts
+        if: github.event.inputs.post_slug == ''
+
+      - name: Upload exports as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports-${{ github.run_id }}
+          path: |
+            _exported/medium/
+            _exported/substack/
+          retention-days: 7

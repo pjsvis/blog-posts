@@ -2,13 +2,17 @@
 {"file":"2026-05-23-brief-github-pages-substack.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"2026-05-23-brief-writing-pipeline.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"2026-05-23-case-against-agent-memory.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"2026-05-23-navigating-latent-space.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"2026-05-23-navigating-latent-space.md","date":"2026-05-23","status":"done","summary":"Practical guide to navigating AI agent sessions — low-entropy context, DOT graphs, staying on path, recovering from bad states","meta":{}}
 {"file":"brief-ai-coding-stack-2026-05-20.md","date":"2026-05-20","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"brief-post-architecture-of-consistency.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"brief-silo-state-and-next-steps.md","date":"2026-05-17","status":"open","summary":"Silo state assessment: P0 local Jekyll preview broken, no blog index, 5 drafts missing title. P1 flox activation untested, template post in _posts/, export never run. P2 first post, homepage design, lexicon decision.","meta":{}}
-{"file":"brief-spacex-ipo-series.md","date":"2026-05-22","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"brief-spacex-ipo-series.md","date":"2026-05-22","status":"done","summary":"SpaceX IPO biological deficit series — 6 posts published: zero-g explainer, perky pat layout, borg crucible/janeway, RGEM cathedral, seiza spatial play, bio-tensegrity","meta":{}}
 {"file":"campaign-spacex-ipo-series.md","date":"2026-05-24","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"courteous-context-engineering.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"epic-multi-platform-publishing-automation-2026-05-23.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"epic-osaas-advisory-series.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"TEMPLATE.md","date":"2026-05-17","status":"active","summary":"Post brief template with content outline, research checklist, and export checklist","meta":{}}
+{"file":"brief-barnacle-scrape-2026-05-26.md","date":"2026-05-26","status":"open","summary":"Scan blog-posts silo for barnacles — registry drift, tradingagents carry-over, stale drafts, front-matter issues","meta":{}}
+{"file":"2026-05-26-brief-the-clipper-moment.md","date":"2026-05-26","status":"open","summary":"Write post on the structural parallel between clipper-era maritime trade and current space logistics — the transport layer that unlocks the economy waiting behind it","meta":{}}
+{"file":"2026-05-26-brief-cargo-not-crew.md","date":"2026-05-26","status":"open","summary":"Write post on the cargo-first framing for space logistics — humans are operators, not cargo; mass budget drives everything; the clipper parallel deepened","meta":{}}
+{"file":"2026-05-26-brief-lloyds-of-lagrange.md","date":"2026-05-26","status":"open","summary":"Write post on the financial and institutional infrastructure required for space commerce — marine insurance as analogy, Lloyd's of London as model, what orbital commerce requires","meta":{}}

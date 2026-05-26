@@ -1,3 +1,5 @@
-{"file":"adr-001-post-front-matter-schema.md","date":"2026-05-17","status":"Proposed","summary":"(auto-generated — add description)","meta":{}}
-{"file":"adr-002-two-mode-silo-agent-architecture.md","date":"2026-05-17","status":"Proposed","summary":"(auto-generated — add description)","meta":{}}
+{"file":"adr-001-post-front-matter-schema.md","date":"2026-05-17","status":"Proposed","summary":"Post front-matter schema — layout, title, date required for Jekyll routing","meta":{}}
+{"file":"adr-002-two-mode-silo-agent-architecture.md","date":"2026-05-17","status":"Proposed","summary":"Two-mode silo agent architecture — developer mode and visitor mode, explicit transitions","meta":{}}
 {"file":"TEMPLATE.md","date":"2026-05-17","status":"Proposed","summary":"ADR template with context, decision, alternatives considered, consequences, and related links","meta":{}}
+{"file":"adr-003-multi-platform-canonical-url-strategy.md","date":"2026-05-23","status":"Accepted","summary":"Multi-platform canonical URL strategy — each export uses platform-specific URL scheme while source URL remains canonical","meta":{}}
+{"file":"adr-004-stable-post-filenames-url-stability.md","date":"2026-05-25","status":"Accepted","summary":"Stable post filenames rule — post filenames include full publish date to prevent 404s on cached URLs after re-publish","meta":{}}

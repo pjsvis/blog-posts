@@ -9,6 +9,7 @@
  *   bun scripts/reg-list.ts debriefs
  *   bun scripts/reg-list.ts decisions
  *   bun scripts/reg-list.ts playbooks
+ *   bun scripts/reg-list.ts prompts
  */
 
 import { readFileSync } from "node:fs"
@@ -27,6 +28,7 @@ const FILE_MAP: Record<string, string> = {
   debriefs: "debriefs/INDEX.jsonl",
   decisions: "decisions/INDEX.jsonl",
   playbooks: "playbooks/REGISTRY.jsonl",
+  prompts: "prompts/INDEX.jsonl",
 }
 
 function getTerminalWidth(): number {
