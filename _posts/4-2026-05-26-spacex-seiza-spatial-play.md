@@ -57,20 +57,11 @@ We have been here before. The clipper solved speed; supporting systems (insuranc
 
 **Further Reading**
 
-- **Stephen Levin** — Orthopaedic surgeon who pioneered the biotensegrity model, viewing the body as a hierarchical tensegrity structure. Foundational for understanding fascia as a continuous tension network.
-- **Donald Ingber** — Cell biologist whose work on cellular tensegrity links mechanical forces to biochemical signalling. Key papers show how cells “feel” their environment through prestressed networks.
-- **Graham Scarr** — *Biotensegrity: The Structural Basis of Life* (2nd edition) — Clear, technical introduction to applying tensegrity principles across scales.
-- **Robert Schleip et al.** — *Fascia: The Tensional Network of the Human Body* — Comprehensive review of fascial research, including mechanotransduction and myofascial chains.
-- **Zero-G Engineer Primer** — Foundational reframe for eliminating 1g assumptions in space habitat design (available via the series resources).
+- **Stephen Levin** — Orthopaedic surgeon who pioneered the biotensegrity model, viewing the body as a hierarchical tensegrity structure.
+- **Donald Ingber** — Cell biologist whose work on cellular tensegrity links mechanical forces to biochemical signalling.
+- **Graham Scarr** — *Biotensegrity: The Structural Basis of Life* (2nd edition) — Technical introduction to tensegrity principles across scales.
+- **Robert Schleip et al.** — *Fascia: The Tensional Network of the Human Body* — Comprehensive review of fascial research and mechanotransduction.
+- **[Post 0: Zero-G Engineering Explainer](/blog-posts/posts/0-2026-05-26-zero-g-engineering-explainer/)** — Foundational reframe and series anchor.
+- **Bio-Tensegrity Explainer (Post 5)** — Life's chosen architecture.
 
-Readers are encouraged to invoke the Zero-G Engineer persona when exploring these concepts. What 1g cargo remains in current designs? How would you reconfigure a workstation or daily routine?
-
-This approach rests on the foundational ideas in **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-zero-g-explainer/)** and the **Bio-Tensegrity Explainer (Post 5)**.
-
-**Further Reading**
-- **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-zero-g-explainer/)** — Practical Earth examples and mindset.
-- **Bio-Tensegrity Explainer (Post 5)** — Life’s chosen architecture.
-- 
 *This concludes the core series on the SpaceX S-1 and human spaceflight architecture. Further pieces on surface habitats, radiation, or economic modelling may follow.*
-
-*Reworked with analytical assistance from Grok (xAI), operating under the Edinburgh Protocol and Zero-G Engineer frameworks for systems thinking, first-principles reframe, and conceptual entropy reduction.*

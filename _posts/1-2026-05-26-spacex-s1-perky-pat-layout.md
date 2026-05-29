@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "What SpaceX's IPO Filing Doesn't Say About the Human Body in Space"
-subtitle: "The Starship and the Perky Pat Layout"
+subtitle: "The Starship and the Human Biology Deficit"
 date: 2026-05-26T12:00:00 +0000
 categories: [space, biology, systems]
-tags: [spacex, s-1, ipo, mars, human-body, perky-pat, edinburgh-protocol, zero-g]
+tags: [spacex, s-1, ipo, mars, human-body, edinburgh-protocol, zero-g]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-s1-perky-pat-layout/
 published: true
@@ -17,20 +17,6 @@ series_order: 1
 On May 20, 2026, SpaceX filed its S-1 registration statement. The document is lengthy, the numbers impressive: roughly $18.67 billion in 2025 revenue (heavily Starlink-driven), a proposed valuation approaching $1.75 trillion, and a CEO compensation structure with tranches tied to the establishment of a permanent human colony on Mars numbering at least one million inhabitants. Risk factors are candid where they address hardware and operations. The financial press has covered the valuation, the dual-class shares, and the TAM claims.
 
 What remains underexamined is the territory the filing does not map: the biological constraints of long-duration spaceflight under the current architectural paradigm.
-
-**We have been here before.**
-
-In the age of clippers and mercantilism, there were no suitable roads or reliable vehicles for long-distance haulage. Valuable stuff—tea, silk, tools, people—had to cross hostile oceans to reach places where it could be turned into things. The clipper ship was a specialised solution for speed under constraint. Insurance, improved navigation, and the empirical habits of mind that would later inform the Scottish Enlightenment emerged as supporting systems. Human cargo frequently arrived physiologically compromised: scurvy, attrition, the slow degradation of bodies unadapted to the voyage.
-
-The parallel is instructive, not perfect. Starship is our clipper. Today, humans (and their physiology) are the critical "stuff" that must arrive functional enough to build the colony ("things"). The question is whether the supporting systems—particularly gravitational architecture—will develop in time.
-
----
-
-## The Perky Pat Layout
-
-In Philip K. Dick’s *The Three Stigmata of Palmer Eldritch*, Mars colonists endure a lethal environment by inhabiting miniature Earth-like dioramas via a drug called Can-D. The Perky Pat layout is detailed, immersive, and entirely artificial—a constructed reality that makes the actual territory bearable.
-
-The SpaceX S-1 is, in this sense, a Perky Pat layout. The financial architecture is real: revenue curves, Starlink margins, reusability gains, the $28.5 trillion TAM. The mission language is elevated. Yet the map omits a central feature of the territory: what prolonged microgravity does to the human body during a six-to-nine-month Mars transit.
 
 This is not hidden malice. It is a category error. An S-1 is a financial and legal document. It describes risks within the categories investors and regulators expect. Biology sits awkwardly between engineering and medicine—acknowledged in risk factors but not treated as the structural constraint it represents for colony-scale ambitions.
 
@@ -78,7 +64,5 @@ As explored in **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-z
 - **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-zero-g-explainer/)** — Foundational reframe.
 - **Bio-Tensegrity Explainer (Post 5)** — Evolutionary and mechanical basis.
 
-*This is Post 1 of a series on the SpaceX S-1 and human spaceflight architecture.
-Reworked with analytical assistance from Grok (xAI), operating under the Edinburgh Protocol and Zero-G Engineer frameworks for systems thinking, first-principles reframe, and conceptual entropy reduction.*
-
----
+*This is Post 1 of the series.
+---*

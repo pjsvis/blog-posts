@@ -116,4 +116,4 @@ The Scottish Enlightenment tradition was built on exactly this: clear-eyed exami
 
 You’ve got this.
 
-*Reworked with analytical assistance from Grok (xAI), operating under the Edinburgh Protocol and Zero-G Engineer frameworks for systems thinking, first-principles reframe, and conceptual entropy reduction.*
+*Written with analytical assistance.*

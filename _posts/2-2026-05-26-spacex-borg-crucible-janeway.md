@@ -63,7 +63,7 @@ Part 1 framed the problem through the lens of human physiology as critical "stuf
 
 Subsequent posts move from diagnosis to prescription. We will examine concrete architectural responses — lightweight tensegrity habitats, inertial mass from drive cylinders, and distributed gravity interventions — that address the constraint directly. The goal is not criticism for its own sake, but clearer maps and better steam engines.
 
-Readers are encouraged to apply the Zero-G Engineer reframe to these questions. What assumptions are we carrying? What does first-principles design actually require once mass is treated as the primary currency?
+The reframe is straightforward: what assumptions are we carrying? What does first-principles design actually require once mass is treated as the primary currency? The answers sit in the architecture that follows.
 
 Starship economics makes targeted gravity solutions tractable. As **[Post 0](/blog-posts/2026/05/26-zero-g-explainer/)** and the **Bio-Tensegrity Explainer (Post 5)** detail, the body is a tensegrity system that responds well to precise loading rather than constant simulation of 1g.
 
@@ -71,6 +71,4 @@ Starship economics makes targeted gravity solutions tractable. As **[Post 0](/bl
 - **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-zero-g-explainer/)** — Core mindset and mass accounting.
 - **Bio-Tensegrity Explainer (Post 5)** — Why targeted loading aligns with biology.
 
-*This is Post 2 of a series on the SpaceX S-1 and human spaceflight architecture. Later entries explore practical zero-g native solutions grounded in tensegrity and targeted gravitational loading.*
-
-*Reworked with analytical assistance from Grok (xAI), operating under the Edinburgh Protocol and Zero-G Engineer frameworks for systems thinking, first-principles reframe, and conceptual entropy reduction.*
+*This is Post 2 of the series. Later entries explore practical zero-g native solutions grounded in tensegrity and targeted gravitational loading.*

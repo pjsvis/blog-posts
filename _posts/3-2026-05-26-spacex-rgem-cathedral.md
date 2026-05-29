@@ -67,12 +67,10 @@ The current freefall baseline is understandable under existing incentives. The r
 
 Subsequent posts will explore daily life inside such a habitat and the broader zero-g construction playbook.
 
-Readers are invited to apply the Zero-G Engineer persona to pressure-test these ideas. What assumptions remain? What mass savings or failure modes have been overlooked?
+The design remains testable: what assumptions remain in the current sketch? What mass savings or failure modes have been overlooked? The engineering conversation begins where the prescription ends.
 
 **Further Reading**
 - **[Post 0: Zero-G Engineering Explainer](/blog-posts/2026/05/26-zero-g-explainer/)** — Tensegrity on Earth and zero-g reframe.
 - **Bio-Tensegrity Explainer (Post 5)** — Biological foundation.
 
-*This is Post 3 of a series on the SpaceX S-1 and human spaceflight architecture.*
-
-*Reworked with analytical assistance from Grok (xAI), operating under the Edinburgh Protocol and Zero-G Engineer frameworks for systems thinking, first-principles reframe, and conceptual entropy reduction.*
+*This is Post 3 of the series.*
