@@ -88,7 +88,7 @@ assets/images/
 | **Location** | `assets/images/` — flat, no subfolders |
 | **Filename** | Descriptive, URL-safe, kebab-case — `topic-descriptor.jpg` |
 | **Reference in post** | `![alt text](https://pjsvis.github.io/blog-posts/assets/images/filename.jpg)` |
-| **Crop ratios** | Hero/featured: 2:1 (1600×800) or 3:2 (1600×1067); Inline: 16:10 or 4:3 |
+| **Crop ratios** | **Preferred: 16:9 (1600×900)** — fits Medium heroes without excessive vertical space; also easy to produce. Inline: 4:3 or 16:10 if square-ish needed |
 | **Hosting** | GitHub Pages at `https://pjsvis.github.io/blog-posts/assets/images/...` |
 
 ### Registry
