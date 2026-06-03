@@ -50,6 +50,50 @@ justify it in one sentence, delete it.
 | Review exports before distributing | Automated export is a first pass; review `_exported/` before pasting into Substack/Medium | 2026-05-17 |
 | Branch before editing | Never commit directly to `main`; use feature branches for draft work and post revisions | 2026-05-17 |
 | Every deliberate folder has a `README.md` | Prevents mystery; draws boundaries between adjacent dirs | 2026-05-17 |
+| Original photography in posts | Use personal camera images processed through DXO; store in `assets/images/`; reference by absolute GitHub Pages URL in posts | 2026-06-03 |
+
+## Image Conventions
+
+### Workflow
+
+```
+1. You: prep photo in DXO → save to assets/images/
+2. Agent: commit + push to main → image is live on GitHub Pages
+3. You: reference by absolute URL in post markdown
+```
+
+### DXO Export Profile
+
+| Attribute | Value |
+|-----------|-------|
+| **Format** | JPEG, baseline |
+| **Quality** | 85% (DXO "High") |
+| **Color space** | sRGB |
+| **Resize** | Fit into box 1600×1200px, do not enlarge if smaller |
+| **Output sharpening** | Screen, Standard |
+| **Watermark** | None |
+| **Metadata** | Strip GPS, keep copyright/caption if present |
+
+### File Organization
+
+```
+assets/images/
+  ├── edinburgh-sunset-hero.jpg
+  ├── zero-g-workshop.jpg
+  └── 2026-06-03-spacex-booster.jpg
+```
+
+| Convention | Rule |
+|------------|------|
+| **Location** | `assets/images/` — flat, no subfolders |
+| **Filename** | Descriptive, URL-safe, kebab-case — `topic-descriptor.jpg` |
+| **Reference in post** | `![alt text](https://pjsvis.github.io/blog-posts/assets/images/filename.jpg)` |
+| **Crop ratios** | Hero/featured: 2:1 (1600×800) or 3:2 (1600×1067); Inline: 16:10 or 4:3 |
+| **Hosting** | GitHub Pages at `https://pjsvis.github.io/blog-posts/assets/images/...` |
+
+### Registry
+
+All pushed images are tracked in `assets/images/INDEX.md`. This is the single source of truth for available images and their URLs.
 
 ## Barnacle Removal Record
 

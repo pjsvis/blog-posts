@@ -115,8 +115,10 @@ canonical_target: [substack, medium]
 
 ### Medium
 - Favors HTML, not Markdown
-- Headings, bold, links, code, blockquotes all render from HTML
-- Images need re-uploaded to Medium (external URLs blocked in free tier)
+- Headings, bold, links, code, blockquotes, images all render from HTML
+- Images are hosted on GitHub Pages and referenced by absolute URL in post markdown
+- The export script passes absolute URLs through untouched and converts them to `<img>` tags
+- Referenced images are also downloaded to `_exported/medium/images/` as a convenience bundle
 - Or: publish directly on Medium and import URL back into `_posts/`
 
 ### Hacker News
@@ -140,3 +142,5 @@ canonical_target: [substack, medium]
 | Hard-code platform links in body text | Use `{{ site.url }}{{ site.baseurl }}` for GitHub Pages links |
 | Import from Medium using raw HTML | Use defuddle to get clean Markdown |
 | Mix `_drafts/` content into export | Only `_posts/` enters the export pipeline |
+| Use local/relative image paths in post Markdown | Use absolute GitHub Pages URLs: `https://pjsvis.github.io/blog-posts/assets/images/filename.jpg` |
+| Reference an image that hasn't been committed | Commit and push images to `main` before referencing them in posts |

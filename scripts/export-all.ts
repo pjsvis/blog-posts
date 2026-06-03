@@ -13,9 +13,9 @@
  *   bun run scripts/export-all.ts --post 2026-05-17-my-post  (single post)
  */
 
-import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
+import { readdir, readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { join, basename, extname } from "node:path";
+import { join, basename, extname, dirname } from "node:path";
 
 const POSTS_DIR = join(process.cwd(), "_posts");
 const EXPORT_DIR = join(process.cwd(), "_exported");
@@ -90,7 +90,7 @@ async function loadPosts(slug?: string): Promise<Post[]> {
       console.error(`No post found matching "${slug}"`);
       process.exit(1);
     }
-    return loadPost(target);
+    return [await loadPost(target)];
   }
 
   return Promise.all(mdFiles.map(loadPost));
@@ -102,10 +102,49 @@ async function loadPost(filename: string): Promise<Post> {
   return { ...meta, filename, rawContent, body };
 }
 
+/** Detect image references in Markdown body and return list of all image URLs */
+function extractImageUrls(body: string): string[] {
+  const urls: string[] = [];
+  const regex = /!\[.*?\]\((.+?)\)/g;
+  let match;
+  while ((match = regex.exec(body)) !== null) {
+    urls.push(match[1]);
+  }
+  return urls;
+}
+
+/** Warn about images that look like local paths (should be absolute GitHub Pages URLs) */
+function validateImageUrls(imageUrls: string[], postFilename: string): void {
+  for (const url of imageUrls) {
+    // Warn if it looks like a relative/local path instead of an absolute URL
+    if (!/^https?:\/\//.test(url) && !/^\/\//.test(url)) {
+      console.warn(`    ⚠️  Image in ${postFilename} uses a local/relative path. Use absolute GitHub Pages URL instead: ${url}`);
+    }
+  }
+}
+
+/** Copy referenced images to the export directory (fetches from GitHub Pages URLs) */
+async function copyImagesToExport(imageUrls: string[], platformDir: string): Promise<void> {
+  const imgDir = join(platformDir, "images");
+  await mkdir(imgDir, { recursive: true });
+  for (const url of imageUrls) {
+    if (!/^https?:\/\//.test(url)) continue;
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const buffer = await response.arrayBuffer();
+        const dest = join(imgDir, basename(new URL(url).pathname));
+        await writeFile(dest, new Uint8Array(buffer));
+      }
+    } catch {
+      // Silently skip images that can't be fetched
+    }
+  }
+}
+
 /** Export to Medium (HTML, no duplicate title — body h1 stripped, title from front-matter only) */
 function exportMedium(post: Post): string {
   // Strip the top-level heading from body (it's the duplicate title)
-  // Body starts with \n# Title — strip the leading newline and the heading line
   const bodyWithoutTitle = post.body.replace(/^\n# .+\n\n?/, "");
 
   const htmlBody = bodyWithoutTitle
@@ -113,6 +152,8 @@ function exportMedium(post: Post): string {
     .replace(/^### (.+)$/gm, "<h3>$1</h3>")
     .replace(/^## (.+)$/gm, "<h2>$1</h2>")
     .replace(/^# (.+)$/gm, "<h1>$1</h1>")
+    // Images
+    .replace(/!\[(.*?)\]\((.+?)\)/g, '<img src="$2" alt="$1" />')
     // Bold/italic
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/\*(.+?)\*/g, "<em>$1</em>")
@@ -134,7 +175,6 @@ function exportMedium(post: Post): string {
 /** Export to Substack (Markdown, title from front-matter only — no body h1 duplicate) */
 function exportSubstack(post: Post): string {
   // Strip the top-level heading from body (title comes from front-matter)
-  // Body starts with \n# Title — strip the leading newline and the heading line
   const bodyWithoutTitle = post.body.replace(/^\n# .+\n\n?/, "");
   return `# ${post.title ?? "Untitled"}\n\n${bodyWithoutTitle}`;
 }
@@ -148,7 +188,6 @@ function exportHN(post: Post): string {
 /** Export to Twitter (section-based thread, ~280 char segments — breaks on ## headings) */
 function exportTwitter(post: Post): string {
   // Strip top-level heading (it's the duplicate title)
-  // Body starts with \n# Title — strip the leading newline and the heading line
   const body = post.body.replace(/^\n# .+\n\n?/, "");
 
   // Split on section headings (## ) to get coherent units
@@ -214,6 +253,13 @@ async function main() {
   for (const post of posts) {
     console.log(`  Exporting: ${post.filename} (${post.title ?? "untitled"})`);
 
+    // Detect and validate images
+    const imageUrls = extractImageUrls(post.body);
+    if (imageUrls.length > 0) {
+      console.log(`    Images detected: ${imageUrls.join(", ")}`);
+      validateImageUrls(imageUrls, post.filename);
+    }
+
     // canonical_target gates all platforms. If not set, export to all.
     const targets = post.canonical_target?.length
       ? post.canonical_target
@@ -221,6 +267,7 @@ async function main() {
 
     if (targets.includes("medium")) {
       await writeExport("medium", post, exportMedium(post));
+      await copyImagesToExport(imageUrls, join(EXPORT_DIR, "medium"));
     }
     if (targets.includes("substack")) {
       await writeExport("substack", post, exportSubstack(post));
