@@ -87,6 +87,7 @@ systems = [
 # bun              curl -fsSL https://bun.sh/install | bash
 # defuddle         see playbooks/defuddle-playbook.md
 # td               go install github.com/marcus/td@latest
+# tuxedo           brew install tuxedo (or cargo install tuxedo)
 #
 # ============================================================
 # Tool availability map
@@ -106,4 +107,5 @@ systems = [
 # fzf              ✅       ✅        no         Fuzzy finder
 # defuddle         ❌       ❌        no         Extract markdown from web pages
 # td               ❌       ❌        no         Task manager (go install)
+# tuxedo           ❌       ✅        no         TUI todo.txt viewer (cargo install)
 # bun              ❌       ✅        no         Bun runtime (curl install)
