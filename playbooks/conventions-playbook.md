@@ -93,7 +93,7 @@ assets/images/
 
 ### Registry
 
-All pushed images are tracked in `assets/images/INDEX.md`. This is the single source of truth for available images and their URLs.
+All pushed images are tracked in `assets/images/INDEX.jsonl`. This is the single source of truth for available images and their URLs. The registry is auto-managed by `reg-sync` like the other indexes.
 
 ## Barnacle Removal Record
 

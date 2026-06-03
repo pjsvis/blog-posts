@@ -48,6 +48,12 @@ const REGISTRIES: Record<string, RegistryDef> = {
     filePattern: /\.md$/,
     exclude: [/REGISTRY\.jsonl/, /README\.md/],
   },
+  images: {
+    indexPath: "assets/images/INDEX.jsonl",
+    dirPath: "assets/images",
+    filePattern: /\.(jpg|jpeg|png|webp|gif)$/i,
+    exclude: [/INDEX\.jsonl/, /INDEX\.md/],
+  },
 }
 
 function loadIndex(path: string): Array<{ file: string; date?: string; status?: string; summary?: string; meta?: Record<string, unknown> }> {
@@ -121,6 +127,15 @@ function checkRegistry(name: string, def: RegistryDef, fix: boolean): boolean {
       const fullPath = join(def.dirPath, f)
       const stat = statSync(fullPath)
       const date = stat.mtime.toISOString().split("T")[0]
+      if (name === "images") {
+        return {
+          file: f,
+          date,
+          url: `https://pjsvis.github.io/blog-posts/assets/images/${f}`,
+          summary: "(auto-generated — add description)",
+          meta: {},
+        }
+      }
       return {
         file: f,
         date,
@@ -158,7 +173,7 @@ function main(): void {
   }
 
   if (targets.length === 0) {
-    console.error("Usage: bun scripts/reg-sync.ts <briefs|debriefs|decisions|playbooks|--all> [--fix]")
+    console.error("Usage: bun scripts/reg-sync.ts <briefs|debriefs|decisions|playbooks|images|--all> [--fix]")
     console.error(`Registries: ${Object.keys(REGISTRIES).join(", ")}`)
     process.exit(1)
   }
