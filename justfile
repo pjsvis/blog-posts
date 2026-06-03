@@ -2,6 +2,19 @@
 
 default: help
 
+# Cold start — orient, check, show next task
+start:
+  @echo "=== Cold Start ==="
+  @echo ""
+  @echo "Global radar:"
+  @echo "  tux"
+  @echo ""
+  @just orient
+  @echo ""
+  @just check
+  @echo ""
+  @echo "Next: td usage --new-session (agent) | td next (highest priority)"
+
 # Activate Flox environment (silently — no stdout pollution)
 # Usage: eval "$(just activate)"  to apply it to the current shell.
 # Without eval, just spawns a subshell that is discarded on exit.
@@ -45,6 +58,18 @@ build:
   @. scripts/env-guard.sh 2>/dev/null; require_ruby_env || exit 1
   @flox activate -c "bundle install --quiet 2>/dev/null || bundle init" 2>/dev/null
   @flox activate -c "bundle exec jekyll build"
+
+# RTK (Rust Token Killer) — compressed git output for context hygiene
+# See playbooks/rtk-usage-playbook.md for decision framework
+
+gst:
+  rtk git status
+
+glog n='5':
+  rtk git log --oneline -{{n}}
+
+gdiff:
+  rtk git diff
 
 # Orient: show current state
 orient:
@@ -110,6 +135,11 @@ help:
   @echo "  just reg-decisions   — list decisions"
   @echo "  just reg-playbooks   — list playbooks
   just reg-prompts     — list prompts"
+  @echo ""
+  @echo "  RTK (context compression):"
+  @echo "  just gst             — compressed git status (safe, always)"
+  @echo "  just glog            — compressed git log (safe, always)"
+  @echo "  just gdiff           — compressed git diff (⚠️ content-sensitive)"
   @echo ""
   @echo "  Ask the agent for details on any workflow or playbook."
 
