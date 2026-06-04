@@ -88,6 +88,7 @@ systems = [
 # defuddle         see playbooks/defuddle-playbook.md
 # td               go install github.com/marcus/td@latest
 # tuxedo           brew install tuxedo (or cargo install tuxedo)
+# rga              brew install ripgrep-all (or cargo install ripgrep-all)
 #
 # ============================================================
 # Tool availability map
@@ -108,4 +109,5 @@ systems = [
 # defuddle         ❌       ❌        no         Extract markdown from web pages
 # td               ❌       ❌        no         Task manager (go install)
 # tuxedo           ❌       ✅        no         TUI todo.txt viewer (cargo install)
+# rga              ❌       ✅        no         Search in PDFs/archives (cargo install)
 # bun              ❌       ✅        no         Bun runtime (curl install)
