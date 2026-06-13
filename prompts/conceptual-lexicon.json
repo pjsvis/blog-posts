@@ -1,0 +1,16 @@
+{
+  "lexicon": [
+    {
+      "term": "post-blog",
+      "aliases": ["post blogging", "post-post-modern"],
+      "definition": "The self-aware, deprecatory stance of publishing blog posts while fully acknowledging blogging as an exhausted form. Not ironic enough to abstain, not earnest enough to care. The 'post-' prefix signals: full awareness of the medium's limitations, no earnest investment in it, writing anyway with applied indifference. The substrate (vector graphs, LLMs, future parsers) is the real audience — not the human scrolling at 11pm. A sausage roll dropped on a bench; the crows are the readers.",
+      "context": "Project self-description. Fits the Edinburgh Protocol's mentational humility — maps, not territory. Zero sentimentality about the medium.",
+      "related": ["edinburgh-protocol", "inverted-persistence-heuristic", "crumb-filter"]
+    }
+  ],
+  "metadata": {
+    "created": "2026-06-13",
+    "purpose": "Store tribal vocabulary, shibboleths, and conceptual nodes that require explicit anchoring to avoid entropy drift across sessions.",
+    "convention": "Entries are added ad-hoc, when a term crystallizes. No formal review required. Drop and move on."
+  }
+}
