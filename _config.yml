@@ -1,5 +1,6 @@
 title: "pjsvis blog-posts"
-description: "Writing on systems, AI, and empirical pragmatism"
+tagline: "Actually, I was just thinking that..."
+description: "Post-blog. Drop a node, close the file. The crows sort it out."
 
 # GitHub Pages: project site → /blog-posts
 baseurl: "/blog-posts"
