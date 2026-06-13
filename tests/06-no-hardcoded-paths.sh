@@ -5,9 +5,9 @@
 set -euo pipefail
 
 # Check for hardcoded /Users/ or /home/ paths in tracked source files
-# Exclude .flox/ (generated paths from nix store) and .git/
+# Exclude build/cache directories
 HARDCODED=$(git ls-files | \
-  grep -vE "^(\.flox/|_site/|_exported/)" | \
+  grep -vE "^(_site/|_exported/)" | \
   xargs grep -l "/Users/petersmith/\|/Users/[a-zA-Z]+/" 2>/dev/null || true)
 
 if [ -n "$HARDCODED" ]; then

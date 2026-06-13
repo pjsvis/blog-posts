@@ -6,12 +6,11 @@
 {"file":"debriefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post debriefs — accomplishments, problems, lessons learned, platform notes, post-debrief checklist","meta":{"source":"project"}}
 {"file":"decisions-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write ADRs — when to write, format, status lifecycle, differences from briefs and debriefs","meta":{"source":"project"}}
 {"file":"export-playbook.md","date":"2026-05-17","status":"canonical","summary":"Multi-platform distribution — export pipeline, Substack/Medium/HN/Twitter workflow, import process","meta":{"source":"project"}}
-{"file":"flox-playbook.md","date":"2026-05-17","status":"canonical","summary":"Flox environment management — reproducible toolchain, cross-platform manifests, activation patterns, common issues","meta":{"source":"project"}}
 {"file":"playbooks-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write and maintain playbooks — when to write, structure, maintenance, deprecation, knowledge system","meta":{"source":"project"}}
 {"file":"publication-playbook.md","date":"2026-05-17","status":"canonical","summary":"GitHub Pages publishing workflow — pre-push checklist, front-matter template, platform distribution sequence, series publication","meta":{"source":"project"}}
 {"file":"registry-playbook.md","date":"2026-05-17","status":"canonical","summary":"Document index system — unified JSONL schema, reg-sync/reg-list tools, justfile integration, registry hygiene","meta":{"source":"project"}}
 {"file":"rga-playbook.md","date":"2026-06-04","status":"active","summary":"(auto-generated — add description)","meta":{}}
 {"file":"rtk-usage-playbook.md","date":"2026-05-26","status":"project","summary":"Rust Token Killer usage playbook — CLI proxy for compressing shell command output before reaching LLM context","meta":{"source":"project"}}
-{"file":"silo-playbook.md","date":"2026-05-17","status":"canonical","summary":"Silo structure and conventions — directory compartments, justfile facade, registry hygiene, flox environment","meta":{"source":"project"}}
+{"file":"silo-playbook.md","date":"2026-05-17","status":"canonical","summary":"Silo structure and conventions — directory compartments, justfile facade, registry hygiene","meta":{"source":"project"}}
 {"file":"td-playbook.md","date":"2026-05-17","status":"canonical","summary":"Solo workflow using td — session startup, claiming work, progress logging, pre-commit gate, branch hygiene","meta":{"source":"project"}}
 {"file":"tuxedo-playbook.md","date":"2026-06-03","status":"active","summary":"(auto-generated — add description)","meta":{}}

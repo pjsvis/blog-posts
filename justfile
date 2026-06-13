@@ -15,12 +15,6 @@ start:
   @echo ""
   @echo "Next: td usage --new-session (agent) | td next (highest priority)"
 
-# Activate Flox environment (silently — no stdout pollution)
-# Usage: eval "$(just activate)"  to apply it to the current shell.
-# Without eval, just spawns a subshell that is discarded on exit.
-activate:
-  @printf '%s' 'eval "$(flox activate 2>/dev/null)"'
-
 # Check front-matter, registries, and export pipeline
 check:
   @echo "=== Front-matter validation ==="
@@ -45,19 +39,15 @@ publish-substack:
   @echo "Done. Check https://${SUBSTACK_SUBDOMAIN:-YOUR_SUBDOMAIN}.substack.com/publish/home"
 
 # Preview Jekyll site locally
-# Guards: validates flox Ruby env before running. Escalates with clear error on failure.
 preview:
-  @. scripts/env-guard.sh 2>/dev/null; require_ruby_env || exit 1
-  @flox activate -c "bundle install --quiet 2>/dev/null || bundle init" 2>/dev/null
-  @flox activate -c "bundle add github-pages webrick --quiet 2>/dev/null || true" 2>/dev/null
-  @flox activate -c "bundle exec jekyll serve --baseurl=''"
+  @bundle install --quiet 2>/dev/null || bundle init 2>/dev/null
+  @bundle add github-pages webrick --quiet 2>/dev/null || true
+  @bundle exec jekyll serve --baseurl=''
 
 # Build site (for local verification)
-# Guards: validates flox Ruby env before running. Escalates with clear error on failure.
 build:
-  @. scripts/env-guard.sh 2>/dev/null; require_ruby_env || exit 1
-  @flox activate -c "bundle install --quiet 2>/dev/null || bundle init" 2>/dev/null
-  @flox activate -c "bundle exec jekyll build"
+  @bundle install --quiet 2>/dev/null || bundle init 2>/dev/null
+  @bundle exec jekyll build
 
 # RTK (Rust Token Killer) — compressed git output for context hygiene
 # See playbooks/rtk-usage-playbook.md for decision framework
@@ -117,7 +107,6 @@ help:
   @echo "  just --list      — see all available recipes"
   @echo ""
   @echo "  Entry points:"
-  @echo "  just activate  — emit flox activation command (use with eval)"
   @echo "  just orient    — current state: branch, status, post count"
   @echo "  just check     — pre-commit validation: front-matter + registry sync"
   @echo "  just help      — this guide"
@@ -134,8 +123,8 @@ help:
   @echo "  just reg-briefs      — list briefs"
   @echo "  just reg-debriefs    — list debriefs"
   @echo "  just reg-decisions   — list decisions"
-  @echo "  just reg-playbooks   — list playbooks
-  just reg-prompts     — list prompts"
+  @echo "  just reg-playbooks   — list playbooks"
+  @echo "  just reg-prompts     — list prompts"
   @echo ""
   @echo "  RTK (context compression):"
   @echo "  just gst             — compressed git status (safe, always)"

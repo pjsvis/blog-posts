@@ -9,8 +9,6 @@ _exported/
 drydock/
 .DS_Store
 
-# Flox environment (generated — use flox.toml at root as source of truth)
-.flox/
 .sidecar/
 .sidecar-agent
 .sidecar-task

@@ -26,15 +26,8 @@ if ! grep -q "^_exported/$" .gitignore 2>/dev/null; then
   exit 1
 fi
 
-# 3. .flox/ must be in .gitignore
-if ! grep -q "^\.flox/$" .gitignore 2>/dev/null; then
-  echo "FAIL: .flox/ is not in .gitignore"
-  exit 1
-fi
-
-# 4. Check for any accidentally tracked files in _exported/ or .flox/
+# 3. Check for any accidentally tracked files in _exported/
 EXPORTED_TRACKED=$(git ls-files _exported/ 2>/dev/null | wc -l)
-FLOX_TRACKED=$(git ls-files .flox/ 2>/dev/null | wc -l)
 
 if [ "$EXPORTED_TRACKED" -gt 0 ]; then
   echo "FAIL: _exported/ contains tracked files — add to .gitignore"
@@ -42,11 +35,5 @@ if [ "$EXPORTED_TRACKED" -gt 0 ]; then
   exit 1
 fi
 
-if [ "$FLOX_TRACKED" -gt 0 ]; then
-  echo "FAIL: .flox/ contains tracked files — add to .gitignore"
-  git ls-files .flox/
-  exit 1
-fi
-
-echo "PASS: git clean — .gitignore clean, _exported/ and .flox/ excluded"
+echo "PASS: git clean — .gitignore clean, _exported/ excluded"
 exit 0

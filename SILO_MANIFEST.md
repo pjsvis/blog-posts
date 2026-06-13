@@ -34,7 +34,6 @@ just info
 |-------|----------|-------------|
 | **Project identity** | `AGENTS.md` | Blog posts agent orientation, Edinburgh Protocol, hard rules |
 | **Task runner** | `justfile` | 20+ recipes: publish, export, preview, registries, help, info |
-| **Environment** | `flox.toml` | Reproducible toolchain (just, jq, glow, gum, gh, rg, fd, tree) |
 | **Silo reference** | `SILO_MANIFEST.md` | This file — asset map, conventions, quick reference |
 | **Architecture** | `playbooks/blog-posts-playbook.md` | Jekyll pipeline, front-matter invariant, publishing workflow |
 | **Briefs registry** | `briefs/INDEX.jsonl` | All post briefs (open/in_progress/done) |

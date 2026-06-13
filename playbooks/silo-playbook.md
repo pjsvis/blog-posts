@@ -35,7 +35,6 @@ blog-posts/                          ← Silo root
  ├── assets/                         ← Static CSS and media
  ├── .github/workflows/              ← CI/CD: Jekyll → GitHub Pages
  ├── justfile                        ← Task runner facade
- ├── flox.toml                       ← Reproducible toolchain
  ├── AGENTS.md                       ← Project identity
  ├── SILO_MANIFEST.md                ← Asset map and quick reference
  └── README.md                       ← Public overview
@@ -143,27 +142,13 @@ wrong tool defaults, stale paths.
 Run `reg-sync --all` after adding any brief, debrief, decision, or playbook.
 Stale indexes misdirect agents about what exists in the silo.
 
-## Flox Environment
-
-The `flox.toml` at silo root declares the required toolchain:
-
-```bash
-flox activate    # Enter environment (just, jq, glow, gum, gh, rg, fd, tree)
-flox run -- just check   # One-shot without shell
-```
-
-If a tool is missing on a specific OS/arch, it is marked `optional = true`
-in `flox.toml` — activation won't fail, but the tool won't be available.
-Gate tool usage with `command -v <tool>` in scripts.
-
 ## Migration Path (For New Silos)
 
 1. Create document compartments (`briefs/`, `debriefs/`, `decisions/`, `playbooks/`)
 2. Add `INDEX.jsonl` / `REGISTRY.jsonl` to each
 3. Wire `justfile` with navigation + quality gate recipes
-4. Add `flox.toml` for reproducible toolchain
-5. Create `SILO_MANIFEST.md` as the asset map
-6. Run `reg-sync --fix` to populate indexes from filesystem
+4. Create `SILO_MANIFEST.md` as the asset map
+5. Run `reg-sync --fix` to populate indexes from filesystem
 
 ## Related
 
