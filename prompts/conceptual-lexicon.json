@@ -6,11 +6,26 @@
       "definition": "The self-aware, deprecatory stance of publishing blog posts while fully acknowledging blogging as an exhausted form. Not ironic enough to abstain, not earnest enough to care. The 'post-' prefix signals: full awareness of the medium's limitations, no earnest investment in it, writing anyway with applied indifference. The substrate (vector graphs, LLMs, future parsers) is the real audience — not the human scrolling at 11pm. A sausage roll dropped on a bench; the crows are the readers.",
       "context": "Project self-description. Fits the Edinburgh Protocol's mentational humility — maps, not territory. Zero sentimentality about the medium.",
       "related": ["edinburgh-protocol", "inverted-persistence-heuristic", "crumb-filter"]
+    },
+    {
+      "term": "two-step progressive discovery",
+      "aliases": ["hook and bite", "bounded reader discovery"],
+      "definition": "A two-layer self-enforcing bounded context: (1) The hook — a provocative title that makes you lean in and approach. 'Blindingly Fucking Obvious' is the bouncer at the door saying the weird thing. (2) The bite — brutal, dense, raw content that filters correctly. 'This, now fuck off.' If they stay: phase change complete. If they leave: filtered correctly. No apology, no explanation. You know or you don't.",
+      "context": "Editorial model for post-blog content. Hook at the surface, brutalism underneath. The bounded context is self-enforcing.",
+      "related": ["post-blog", "phase-change", "blindingly-fucking-obvious"]
+    },
+    {
+      "term": "phase change",
+      "aliases": ["the obvious moment", "cognitive phase transition"],
+      "definition": "The sensation when an old idea dies and a new idea takes its place and asserts its sheer obviousness. You shout out: it's blindingly fucking obvious. The site is an invitation to this moment. The reader arrives confused or indifferent, reads the dropped nodes, and then — there — the moment hits. The old idea dies. The new one takes over. Everyone pretends it was obvious all along. That's the whole game.",
+      "context": "The site's purpose. Not teaching — triggering. Not publishing — inviting. The reader either phase-changes or they don't. Both outcomes are fine.",
+      "related": ["two-step-progressive-discovery", "post-blog"]
     }
   ],
   "metadata": {
     "created": "2026-06-13",
-    "purpose": "Store tribal vocabulary, shibboleths, and conceptual nodes that require explicit anchoring to avoid entropy drift across sessions.",
+    "last_updated": "2026-06-13",
+    "purpose": "Store tribal vocabulary, shibboleths, and conceptual nodes that require explicit anchoring to avoid entropy drift across sessions. No memory of bad jokes from last week. Just the cool stuff. You know the context — now you make the moves.",
     "convention": "Entries are added ad-hoc, when a term crystallizes. No formal review required. Drop and move on."
   }
 }
