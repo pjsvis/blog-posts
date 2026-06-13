@@ -78,6 +78,7 @@ orient:
   @echo "=== Last commit ===" && git log -1 --oneline 2>/dev/null || echo "(no commits)"
   @echo "=== Posts ===" && ls _posts/*.md 2>/dev/null | wc -l | xargs echo "Count:"
   @echo "=== Drafts ===" && ls _drafts/*.md 2>/dev/null | wc -l | xargs echo "Count:"
+  @echo "=== Lexicon ===" && cat prompts/conceptual-lexicon.json 2>/dev/null | python3 -c "import json,sys; d=json.load(sys.stdin); [print('  -', x['term']) for x in d.get('lexicon',[])]" || echo "  (empty)"
 
 # Open GitHub Pages in browser
 live:
