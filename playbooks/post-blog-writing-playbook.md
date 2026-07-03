@@ -232,6 +232,80 @@ The principle: every assertion gets a checksum. Broken link or unsupported claim
 
 ---
 
+## The "Me and Jimmy" Use Case
+
+Two people tasked with a shared problem. Independent work → exchange packets → assess concurrence.
+
+**The loop:**
+
+1. **Independent work** — Each develops their own Shannon Packet
+2. **Exchange** — AIs assess the other person's packet
+3. **Assess concurrence** — "I'm 60% aligned with Jimmy's proposal"
+4. **Reinterpretation** — I grab Jimmy's references, interpret them differently, Jimmy agrees with my reinterpretation — we proceed with enriched understanding
+5. **Revision** — Both update based on the other's thinking (because neither knows everything)
+6. **Repeat** — Converge or acknowledge honest divergence
+
+**Why this works:**
+
+- Autonomy preserved — Jimmy doesn't influence your thinking until you share
+- Verification built in — AIs check the checksum before the human does the work
+- Semantic negotiation — Not just "do we agree" but "how do we refine the meaning together"
+- Iterative — Each round reduces entropy or surfaces irreconcilable difference
+
+**The reinterpretation loop is the semantic checksum in action:**
+
+```
+Jimmy's references → I grab them, interpret differently → Jimmy agrees → proceed
+```
+
+The packet becomes a shared asset that both parties can reinterpret and verify. Semantic agreement percentage increases through negotiation.
+
+---
+
+## The Blog as Reusable Verification Asset
+
+The post-blog format generates Shannon Packets. Every post is:
+
+- Compact assertion (TL;DR)
+- Evidence links (Links section)
+- Attribution (Bibliography)
+- Agent-verifiable checksum
+
+**The reader loop:**
+
+```
+Reader scans TL;DR → agrees or disagrees
+Reader returns → confirms details
+Reader reinterprets → agent verifies against evidence
+Reader and author converge or diverge
+```
+
+The blog post is not a one-time read. It is a reusable verification asset. Readers come back, check the checksum, confirm or revise their understanding.
+
+**The comparison:**
+
+| The Medium performance | The Shannon Packet blog |
+|------------------------|------------------------|
+| 3000 words, nugget of truth buried | Compact assertion, evidence linked |
+| One-time read, unverifiable | Reusable asset, checksum repeatedly |
+| "Trust me" | "Verify me" |
+| Performance over content | Verification over performance |
+| Nothing better than this | Better than nothing — and better than the alternative |
+
+**Extended use cases:**
+
+| Context | Application |
+|---------|-------------|
+| M&A due diligence | Two parties independently assess a deal, exchange packets, measure concurrence before negotiation |
+| Academic peer review | Structured assertion + evidence, reviewer assesses semantic agreement with author |
+| Business strategy | Two teams develop independent proposals, cross-assess, measure alignment before committing |
+| Legal case assessment | Two lawyers independently assess liability, share packets, identify where reasoning diverges |
+| Negotiation | Each party presents their position as a packet, agents assess overlap, focus discussion on delta |
+
+The Shannon Packet is a tool. It works when both parties want to find the truth. Adversarial contexts break the protocol.
+
+---
+
 ## Status
 
 Playbook active. Process refined from sculpting "The Thermodynamics of Vocabulary."
