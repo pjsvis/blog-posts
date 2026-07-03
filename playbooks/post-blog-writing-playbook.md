@@ -187,6 +187,51 @@ The format serves all four without compromising any.
 
 ---
 
+## The Shannon Packet
+
+**Definition:** A self-contained, verifiable unit of structured communication. Named after Claude Shannon's checksum — if the links break or the evidence doesn't support the assertion, the checksum fails.
+
+**The format:**
+
+```
+TL;DR: Compact assertions
+Links: Evidence (external verification)
+Attribution: Sources
+Agent: Examines, gathers, reports
+Channel Quality: Closer or further from agreement?
+```
+
+**The verification loop:**
+
+1. Present your packet — TL;DR of position + link to full verification
+2. Accept theirs temporarily — Follow their line of reasoning without being sidetracked
+3. Agent examines — Gathers evidence, verifies links, reports back on quality
+4. Assess — Do their assertions hold? Are we closer or further from agreement?
+
+**The channel assessment:**
+
+| Signal | Meaning |
+|--------|---------|
+| Links hold, evidence supports assertion | Checksum passes — channel is clean |
+| Links break or contradict assertion | Checksum fails — noise in the channel |
+| Both packets verified, still disagree | Honest disagreement — move on |
+| Both packets verified, converge | Phase change — agreement reached |
+
+**Broader application:**
+
+The Shannon Packet is not limited to blog posts. It is a communication protocol for:
+
+- **Discussions** — Present assertions via TL;DR, accept opponent's temporarily, agent examines, report back
+- **Proposals** — Full verification package, agent assesses, return with quality assessment
+- **Information exchange** — Rapid way to transmit complex ideas with built-in verification
+- **Agreement tracking** — Are we closer or further from consensus?
+
+The principle: every assertion gets a checksum. Broken link or unsupported claim = red flag. Verified claim = channel clean.
+
+**James Watt:** The packet earns its place if it increases agreement velocity without increasing noise.
+
+---
+
 ## Status
 
 Playbook active. Process refined from sculpting "The Thermodynamics of Vocabulary."
