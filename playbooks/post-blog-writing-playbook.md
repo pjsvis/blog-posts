@@ -116,7 +116,32 @@ efficiency rather than guessing. The test: does this component deliver more work
 than it consumes? Applied to every mechanism in the system. If it fails, strip it out.
 ```
 
-### Step 5: Cut
+### Step 5: Flag Links
+
+While drafting, indicate links so they can be swept for and filled in later:
+
+```markdown
+Claude Shannon (1948) [[link pending: A Mathematical Theory of Communication]]
+```
+
+Or in a `Links` section at the bottom:
+```markdown
+## Links
+
+[Shannon 1948]: link-pending
+[Lehman 1970s]: link-pending
+[Edinburgh Protocol]: canon/edinburgh-protocol.md
+```
+
+**Why this works:**
+- The post remains consistent whether you follow the links or not
+- Links allow the pickiest critic to review the evidence
+- Links decrease entropy — they provide evidence without bloating prose
+- James Watt would approve: links earn their place if they reduce entropy without adding maintenance cost
+
+Sweep later. Fill in the URLs. The post is readable either way.
+
+### Step 6: Cut
 
 After the first draft, apply these cuts:
 
