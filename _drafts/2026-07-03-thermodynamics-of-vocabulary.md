@@ -12,7 +12,7 @@ A repository is a closed information system. Before an LLM can do useful work in
 
 **The semantic test:** Do your terms conflict? If the lexicon requires two definitions for the same word, the context has ruptured — spin off a component.
 
-**The maintenance test (late 18th century):** Is the energy spent maintaining the mechanism equal to or less than the energy saved by its operation? If not, strip it out.
+**The maintenance test:** Is the energy spent maintaining the mechanism equal to or less than the energy saved by its operation? If not, strip it out.
 
 **The state machine:**
 - Index != Disk → Stop. Tidy.
@@ -21,7 +21,7 @@ A repository is a closed information system. Before an LLM can do useful work in
 
 **What we conclude:** Semantic entropy is a directional vector. Internal entropy (Index != Disk) is a tidy signal — fix the baseline. External entropy (context over-saturated) is a spin-off signal — cut the tissue. The moment you stop verifying the baseline, you are computing over a corrupted channel.
 
-*See Bibliography below.*
+Bibliography follows.
 
 ---
 
@@ -84,7 +84,7 @@ Within a Bounded Context, a word has exactly one meaning. The moment a term requ
 
 ## The James Watt Test
 
-All of this — the parity checks, the lexicon, the bounded contexts — must justify itself through the James Watt test. James Watt (1736–1819), Scottish inventor and mechanical engineer, improved the steam engine not by inventing it but by making it efficient enough to be useful. His principle: every component in a system must earn its place by delivering more work than it consumes.
+All of this — the parity checks, the lexicon, the bounded contexts — must justify itself through the James Watt test. His principle, applied to thermodynamic systems: every component in a system must earn its place by delivering more work than it consumes.
 
 Is the energy spent maintaining the mechanism equal to or less than the energy saved by its operation? If not, strip it out.
 
@@ -106,4 +106,4 @@ Second Law (Increasing Complexity): as a system evolves, complexity increases un
 Ubiquitous Language and Bounded Contexts. A word has exactly one meaning inside a bounded context. The moment a term requires two definitions, you have crossed a semantic border. In our architecture, lexicon conflicts trigger the same mandated action as external entropy: cut the tissue, spin off the component.
 
 **James Watt — Pragmatic Utility Test (late 18th century)**
-The only test that matters: does this component deliver more work than it consumes? If it fails, strip it out. The date is the point — this is not a new idea.
+Does this component deliver more work than it consumes? If it fails, strip it out.
