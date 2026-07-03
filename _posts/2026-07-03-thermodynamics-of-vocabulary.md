@@ -97,8 +97,8 @@ Second Law (Increasing Complexity): as a system evolves, complexity increases un
 **Eric Evans — Domain-Driven Design (2003)** [Domain-Driven Design: Tackling Complexity in the Heart of Software (2003)](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
 Ubiquitous Language and Bounded Contexts. A word has exactly one meaning inside a bounded context. The moment a term requires two definitions, you have crossed a semantic border. In our architecture, lexicon conflicts trigger the same mandated action as external entropy: cut the tissue, spin off the component.
 
-**James Watt — Pragmatic Utility Test (late 18th century)** ["Thermodynamics of James Watt" (2021)](https://doi.org/10.31857/s020596060016355-2)
-Does this component deliver more work than it consumes? If it fails, strip it out.
+**James Watt — Pragmatic Utility Test (1736–1819)**
+Scottish mechanical engineer. Took the Newcomen steam engine — a coal-hungry apparatus that lifted water a few yards — and made it lift considerably more per unit of fuel. The biographical record is flattering: legend has him watching a kettle, the kettle is almost certainly invention. What survives independent of the legend: separate condenser, parallel motion linkage, the watt as a unit of measurable power. The pragmatic test he left us — a component earns its place by delivering more work than it consumes. If it fails, strip it out. James stays our mystery man: useful, durable, not over-cited.
 
 ---
 
@@ -107,5 +107,4 @@ Does this component deliver more work than it consumes? If it fails, strip it ou
 [shannon-1948]: https://ia803209.us.archive.org/27/items/bstj27-3-379/bstj27-3-379_text.pdf
 [lehman-laws]: https://gwern.net/doc/cs/1996-lehman.pdf
 [evans-ddd]: https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf
-[watt-utility]: https://doi.org/10.31857/s020596060016355-2
 [edinburgh-protocol]: canon/edinburgh-protocol.md
