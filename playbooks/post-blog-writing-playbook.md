@@ -14,6 +14,7 @@ Every post has three parts:
 TL;DR
   ← Is this of interest? Quick gut check.
   ← Here is the structure. Here is what we concluded.
+  ← End with pointer to Bibliography for scanners.
 
 Content
   ← Lean. Pre-structured by the TL;DR.
@@ -51,6 +52,12 @@ The TL;DR has three components:
 2. **The mechanism** — how does it work?
 3. **The conclusion** — what do we conclude?
 
+The TL;DR must end with a pointer to the bibliography. This allows scanners to grab TL;DR + refs and exit without reading the content:
+
+```
+*See Bibliography below.*
+```
+
 Example:
 ```
 A repository is a closed information system. Before an LLM can do useful work
@@ -64,6 +71,8 @@ The maintenance test: Is the energy spent maintaining the mechanism equal to or
 less than the energy saved by its operation? If not, strip it out.
 
 What we conclude: Semantic entropy is a directional vector...
+
+*See Bibliography below.*
 ```
 
 ### Step 3: Write the Content
@@ -73,16 +82,8 @@ The content is structured by the TL;DR. Each section in the content maps to a po
 Rules:
 - No throat-clearing introductions — start from the first sentence
 - No padding — every paragraph either advances the argument or provides evidence
-- Use diagrams where they communicate faster than prose (ASCII is fine)
+- Use diagrams only where they communicate faster than text (ASCII is fine when it earns its place)
 - James Watt test applies to every sentence: is this earning its place?
-
-Structure the content as a numbered progression if it helps:
-1. The closed world invariant
-2. Shannon's channel and the parity of disk
-3. Measuring entropy direction (Lehman)
-4. Evans' bounded contexts and the signal to splinter
-5. The James Watt test
-6. The state machine
 
 ### Step 4: Write the Narrativised Bibliography
 
@@ -94,22 +95,31 @@ For each citation, answer three questions in one paragraph:
 Not: a raw link or a citation string.
 Yes: a one-paragraph narrative that makes the reference useful.
 
+**Context for historical figures:** When citing figures (Watt, Shannon, Evans), add minimal context:
+- Date/location if it helps the reader understand their frame (e.g., Watt: Scotland, late 18th century)
+- One line on why they matter in this specific argument
+
 Example:
 ```
-**Claude Shannon — A Mathematical Theory of Communication (1948)**
-The Noisy-Channel Coding Theorem. Proved that reliable communication is possible
-over unreliable media by introducing parity checks. In our architecture, Index == Disk
-is the parity bit. If the check fails, the channel is corrupted and you stop before
-computing.
+**James Watt (1736–1819) — Pragmatic Utility Test**
+Scottish mechanical engineer. Improved the steam engine by measuring thermodynamic
+efficiency rather than guessing. The test: does this component deliver more work
+than it consumes? Applied to every mechanism in the system. If it fails, strip it out.
 ```
 
 ### Step 5: Cut
 
-After the first draft, ask:
-- Is every section pulling its weight?
-- Is the TL;DR complete enough that a scanner can get the gist without reading content?
-- Is the bibliography giving context rather than dumping links?
-- Is there any padding that could be cut without losing meaning?
+After the first draft, apply these cuts:
+
+**Cut without mercy:**
+- Throat-clearing introductions (TL;DR already covered it)
+- Decorative ASCII diagrams (only keep if the diagram does work that text cannot)
+- Self-referential definitions (if the definition uses the word being defined, it is broken)
+- Sections already delivered in the TL;DR (reference them, don't repeat)
+
+**Context matters:** When citing a figure, add minimal context. Readers should understand who they are and why the citation matters without external research.
+
+**Keep what earns its place:** Every paragraph either advances the argument or provides essential evidence. If it doesn't, cut it.
 
 Cut ruthlessly. The TL;DR already told the reader everything — the content is for those who want the full reasoning path.
 
@@ -145,7 +155,7 @@ The format serves all four without compromising any.
 
 ## Status
 
-Playbook draft. Process derived from sculpting "The Thermodynamics of Vocabulary." Will refine after next post.
+Playbook active. Process refined from sculpting "The Thermodynamics of Vocabulary."
 
 ---
 
