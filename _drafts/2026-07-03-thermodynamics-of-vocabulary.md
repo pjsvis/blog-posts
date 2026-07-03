@@ -12,7 +12,7 @@ A repository is a closed information system. Before an LLM can do useful work in
 
 **The semantic test:** Do your terms conflict? If the lexicon requires two definitions for the same word, the context has ruptured — spin off a component.
 
-**The maintenance test (James Watt, Scotland, late 18th century):** Is the energy spent maintaining the mechanism equal to or less than the energy saved by its operation? If not, strip it out.
+**The maintenance test (late 18th century):** Is the energy spent maintaining the mechanism equal to or less than the energy saved by its operation? If not, strip it out.
 
 **The state machine:**
 - Index != Disk → Stop. Tidy.
@@ -105,5 +105,5 @@ Second Law (Increasing Complexity): as a system evolves, complexity increases un
 **Eric Evans — Domain-Driven Design (2003)**
 Ubiquitous Language and Bounded Contexts. A word has exactly one meaning inside a bounded context. The moment a term requires two definitions, you have crossed a semantic border. In our architecture, lexicon conflicts trigger the same mandated action as external entropy: cut the tissue, spin off the component.
 
-**James Watt (1736–1819) — Pragmatic Utility Test**
-Scottish mechanical engineer. Improved the steam engine by measuring thermodynamic efficiency rather than guessing. The test: does this component deliver more work than it consumes? Applied to every mechanism in the system. If it fails, strip it out.
+**James Watt — Pragmatic Utility Test (late 18th century)**
+The only test that matters: does this component deliver more work than it consumes? If it fails, strip it out. The date is the point — this is not a new idea.
