@@ -44,13 +44,13 @@ What did we choose? One sentence.
 ## Consequences
 
 **What became easier:**
-- 
+-
 
 **What became harder:**
-- 
+-
 
 **Constraints this imposes:**
-- 
+-
 
 ## Related
 - Debrief: `debriefs/YYYY-MM-DD-topic.md`
@@ -96,3 +96,55 @@ Before committing an ADR:
 - [ ] Consequences include both "easier" and "harder"
 - [ ] Constraints are specific and actionable
 - [ ] Related links are correct and files exist
+
+---
+
+## Palimpsest Mitigation Protocol
+
+A **palimpsest** forms when the implementation direction shifts but the old approach is only partially removed — leaving artifacts of both paths active simultaneously. The codebase carries the ghost of the superseded strategy, and the agent continues building on a substrate it no longer fully understands.
+
+This is especially prone to happening when:
+- The new approach touches different files or layers than the old one
+- The old approach involved multiple moving parts spread across the codebase
+- The direction change happened mid-session without a formal cleanup step
+
+### The Protocol
+
+Run this whenever a decision is reversed, a tool or approach is superseded, or the implementation strategy shifts significantly.
+
+**Step 1 — Map the abandonment surface**
+
+Before acting on the new direction, explicitly surface what the old approach left behind:
+
+- List files modified as part of the superseded path
+- Note any stubs, helpers, or scaffolding added but no longer consumed
+- Identify configuration, environment variables, or dependencies introduced by the old approach
+- Flag any code paths that were conditional on the old approach (feature flags, env checks, conditional imports)
+
+**Step 2 — Classify each artifact**
+
+For each item surfaced in Step 1:
+
+| Classification | Meaning | Action |
+|---|---|---|
+| **Orphaned** | No longer referenced by any live code | Remove or comment with `// TODO: stale — superseded by ADR NNN` |
+| **Shared** | Referenced by both old and new paths | Update all references to the new approach, then treat as orphaned |
+| **Valid** | Still needed regardless of direction change | Leave as-is; document why in the ADR |
+
+**Step 3 — Update the ADR status**
+
+If an ADR exists for the superseded approach, update its status to `Superseded` and add `Superseded by: decisions/NNN-slug.md`. If no ADR exists, consider writing one briefly to capture *why* the approach was abandoned — this is exactly the kind of context that vanishes over time.
+
+**Step 4 — Commit the cleanup as part of the same change**
+
+Do not leave the palimpsest cleanup for a future session. The abandonment and the new implementation belong in the same commit. A codebase with orphaned stubs from abandoned approaches is harder to reason about than one where the artifact removal is visible in the git history alongside the new direction.
+
+### When to Skip the Protocol
+
+- Trivial changes (renaming a variable, adjusting a CSS value) — no abandonment surface worth mapping
+- Reversions back to a previous state with no new work between — git handles this cleanly
+- When the old and new approaches share no files, no config, and no dependencies — the overlap is genuinely zero
+
+---
+
+(End of file)

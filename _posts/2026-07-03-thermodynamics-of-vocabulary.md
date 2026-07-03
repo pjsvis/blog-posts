@@ -88,24 +88,24 @@ This is not a philosophical position. It is a thermodynamic constraint.
 
 ## Narrativised Bibliography
 
-**Claude Shannon — A Mathematical Theory of Communication (1948)** [[link pending: shannon-1948]]
+**Claude Shannon — A Mathematical Theory of Communication (1948)** [BSTJ 27:3, July 1948](https://ia803209.us.archive.org/27/items/bstj27-3-379/bstj27-3-379_text.pdf)
 The Noisy-Channel Coding Theorem. Proved that reliable communication is possible over unreliable media by introducing parity checks. In our architecture, Index == Disk is the parity bit. If the check fails, the channel is corrupted and you stop before computing.
 
-**Manny Lehman — Laws of Software Evolution (1970s)** [[link pending: lehman-laws]]
+**Manny Lehman — Laws of Software Evolution (1970s)** ["Laws of Software Evolution Revisited" (1996)](https://gwern.net/doc/cs/1996-lehman.pdf)
 Second Law (Increasing Complexity): as a system evolves, complexity increases unless active work is done to reduce it. We apply this to repositories and add a directional diagnostic: internal entropy is a tidy signal; external entropy is a spin-off signal.
 
-**Eric Evans — Domain-Driven Design (2003)** [[link pending: evans-ddd]]
+**Eric Evans — Domain-Driven Design (2003)** [Domain-Driven Design: Tackling Complexity in the Heart of Software (2003)](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
 Ubiquitous Language and Bounded Contexts. A word has exactly one meaning inside a bounded context. The moment a term requires two definitions, you have crossed a semantic border. In our architecture, lexicon conflicts trigger the same mandated action as external entropy: cut the tissue, spin off the component.
 
-**James Watt — Pragmatic Utility Test (late 18th century)** [[link pending: watt-utility]]
+**James Watt — Pragmatic Utility Test (late 18th century)** ["Thermodynamics of James Watt" (2021)](https://doi.org/10.31857/s020596060016355-2)
 Does this component deliver more work than it consumes? If it fails, strip it out.
 
 ---
 
 ## Links
 
-[shannon-1948]: link-pending
-[lehman-laws]: link-pending
-[evans-ddd]: link-pending
-[watt-utility]: link-pending
+[shannon-1948]: https://ia803209.us.archive.org/27/items/bstj27-3-379/bstj27-3-379_text.pdf
+[lehman-laws]: https://gwern.net/doc/cs/1996-lehman.pdf
+[evans-ddd]: https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf
+[watt-utility]: https://doi.org/10.31857/s020596060016355-2
 [edinburgh-protocol]: canon/edinburgh-protocol.md

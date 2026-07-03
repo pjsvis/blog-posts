@@ -3,4 +3,5 @@
 {"file":"adr-003-multi-platform-canonical-url-strategy.md","date":"2026-05-23","status":"Accepted","summary":"Multi-platform canonical URL strategy — each export uses platform-specific URL scheme while source URL remains canonical","meta":{}}
 {"file":"adr-004-stable-post-filenames-url-stability.md","date":"2026-05-25","status":"Accepted","summary":"Stable post filenames rule — post filenames include full publish date to prevent 404s on cached URLs after re-publish","meta":{}}
 {"file":"adr-005-image-pipeline-absolute-urls.md","date":"2026-06-03","status":"Proposed","summary":"(auto-generated — add description)","meta":{}}
+{"file":"adr-006-spacex-snp-500-analysis.md","date":"2026-06-05","status":"Proposed","summary":"(auto-generated — add description)","meta":{}}
 {"file":"TEMPLATE.md","date":"2026-05-17","status":"Proposed","summary":"ADR template with context, decision, alternatives considered, consequences, and related links","meta":{}}

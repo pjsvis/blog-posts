@@ -1,0 +1,37 @@
+# inference arbitrage
+
+- I use lots of models
+- and I keep an eye on new models
+- benchmarks are pretty meaningless
+- I have one benchmark that need sto be met
+- the substrate should not be a  muppet
+- this requires and evel so I have a CLI that does that
+- two tests, one deterministic regex, 
+- and the other an evaluative substrate (gemini-2,5-flash)
+- after we have screened out the muppets we want to normalise the models
+- so that they operate in the same way
+- we do this using the Edinburgh Protocol as a constraint-stack
+- lets explain what a constraint stack is
+- and how the edinburgh protocol implements it
+- then we need some shared and bounded context for the models 
+- so they can operate in a consistent manner
+- we accomplish this through a set if folders:
+- briefs, decisions, debriefs, playbooks
+- we have playbooks describing how briefs, decisions, debriefs, and palybooksand etc all work
+- we have three loops running
+- the alpha-loop produces briefs, typically following a chat session with Gemini 3
+- the gamma-loop implements briefs using selectedplaybooks as required
+- the delta loop uses the lessons learned from the debriefs and updates the playbooks
+- when an agent instantiates in a repo it has a number of simple commands available
+- just help and just about are for general information
+- just orient is the one for a coding agent
+- so the process is spin up an instance of Pi with the Edinburgh protocol
+- get it to just orient in a repo
+- then ask it to review the briefs and select one to implement
+- the agent uses the local td task database to create an epic with subtasks
+- then it implements the brief using the gamma loop
+- once complete it hands of to a review agent
+- once reviewed and updated as appropriate the changes are pushed to a PR
+- the PR is reviewed by server side review agents
+- patches are mde to stisfy the review issues
+- and finally the changes are merged

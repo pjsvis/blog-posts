@@ -306,6 +306,51 @@ The Shannon Packet is a tool. It works when both parties want to find the truth.
 
 ---
 
+## The Resonance Loop
+
+The human-agent loop is a resonance system — non-deterministic by design.
+
+**The insight:**
+
+Two parties, given the same brief, will produce different Shannon Packets. Not because one is wrong — because the human-agent resonance is unique each time.
+
+```
+Me + Agent A → Shannon Packet Alpha
+Jimmy + Agent B → Shannon Packet Beta
+
+Alpha ≠ Beta (inevitably)
+```
+
+**Why this matters:**
+
+The difference is a feature, not a bug. The packets capture:
+- The specific resonance between human and agent
+- The unique interpretive lens each pair brings
+- The diversity of understanding that exists in any complex problem
+
+**The resonance loop:**
+
+```
+Human → Agent → Human → Agent → ... (non-deterministic)
+                              ↓
+                      Shannon Packet emerges
+```
+
+Each oscillation shifts the meaning slightly. The final packet is the product of that specific resonance at that specific moment. Run the same loop again — different result.
+
+**The comparison is where the value lives:**
+
+You don't compare packets to find out which is "correct." You compare them to find out:
+- Where the resonance produced different interpretations
+- Where the evidence supported different conclusions
+- Where the semantic distance between the two positions lies
+
+The % agreement is measured across two unique emergent artifacts. Both are valid. Both are partial.
+
+**James Watt:** The resonance loop earns its place if it produces packets that, when compared, reduce entropy in the shared decision. Two different packets that help you understand where you disagree = useful. Two identical packets = wasted loop.
+
+---
+
 ## Status
 
 Playbook active. Process refined from sculpting "The Thermodynamics of Vocabulary."

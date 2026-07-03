@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Draft: The Borg and the Crucible: Why SpaceX's Mars Milestones Have No Janeway"
+title: "One Million Martians Who Can't Walk"
+subtitle: "The Borg and the Crucible"
 draft: true
 ---
 
-# The Borg and the Crucible: Why SpaceX's Mars Milestones Have No Janeway
+# One Million Martians Who Can't Walk
 
 In Post 1 of this series, I argued that the SpaceX S-1 filing is a Perky Pat layout — an immersive financial diorama designed to distract from the biological reality that unmitigated human bodies cannot survive the transit to Mars. The numbers are real. The architecture is absent.
 
@@ -102,10 +103,10 @@ No one is asking SpaceX that question. Not the board. Not the investors. Not the
 
 The roadshow begins June 4. The listing is expected June 12. Between now and then, institutional investors will receive the S-1, analyze the financials, and place their orders. The narrative will be about TAM, revenue growth, and the transformative potential of Starship. The biological deficit will not be part of the conversation because no one in the room is equipped to raise it.
 
-The next piece in this series will examine what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. It will describe the Reduced Gravity Environmental Module: a 40-meter extensible tensegrity shell rotating at 6.7 RPM, with counter-balanced mag-lev sleep trains, capable of providing continuous fractional gravity during the Mars transit. It will explain why the solution exists in principle, why it hasn't been built, and what it would cost relative to the $20.7 billion SpaceX spent on AI infrastructure last year alone.
+The next piece in this series will examine what *would* be required — architecturally, not aspirationally — to solve the problem this series has identified. It will describe the Reduced Gravity Environmental Module: a lightweight tensegrity habitat shell with eight per-person rotating tori at 6 RPM, providing eight hours of full Earth gravity during sleep and zero-g for the remaining 16 hours of each day. It will explain why the solution exists in principle, why it hasn't been built, and what it would cost relative to the $20.7 billion SpaceX spent on AI infrastructure last year alone.
 
 But first, we had to establish *why* the solution hasn't emerged organically. The answer, I've argued, is not technical. It is structural. A system with a single metric cannot self-correct. A Collective without a Janeway cannot ask what the metric leaves out.
 
 ---
 
-*This is Post 4 of a series on the SpaceX S-1 filing and the architecture of human spaceflight. Post 2 will examine the Reduced Gravity Environmental Module (RGEM) as a structural solution to the biological deficit identified in Post 1 and the incentive deficit analyzed here.*
+*This is Post 2 of a series on the SpaceX S-1 filing and the architecture of human spaceflight. Post 3 will examine the Reduced Gravity Environmental Module (RGEM): a lightweight tensegrity habitat shell with eight per-person rotating tori at 6 RPM, providing eight hours of 1g during sleep and zero-g for the rest of the day.*
