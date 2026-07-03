@@ -17,3 +17,4 @@ drydock/
 .sidecar-base
 .td-root
 .env
+*.swp
