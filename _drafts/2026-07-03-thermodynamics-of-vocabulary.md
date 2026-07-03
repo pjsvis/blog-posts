@@ -49,17 +49,9 @@ In the 1970s, Manny Lehman formalised what practitioners had long observed: as a
 
 But entropy is not random. It has a direction.
 
-**Internal entropy** — entropy increasing toward the core — means the Index != Disk parity check fails. The map no longer reflects the terrain. This is a tidy signal. The system is telling you that the baseline has drifted. The mandated next action is stop and tidy: run index reconciliation scripts before any other work.
+**Internal entropy** is what happens when the map no longer matches the terrain. You look at the repository and something feels wrong — files missing from the index, the index pointing to files that are gone, files moved without being registered. This is drift. Things change. The repair is housekeeping: stop what you're doing, update the map, verify the terrain. The signal is tidy — this is a known problem with a known solution.
 
-**External entropy** — entropy increasing toward the edges — means the core is tight (Index == Disk) but the boundary is fraying. The domain model is trying to capture too much reality inside a single closed world. This is a spin-off signal. The mandated next action is to cut the tissue: spin off that folder partition into its own sovereign repository with its own distinct central index.
-
-```
-Measured State              Entropy Vector   Mandated Next Action
-─────────────────────────────────────────────────────────────────
-Index != Disk               Internal         Stop and Tidy
-Index == Disk + sprawl      External         Spin off / Encapsulate
-Index == Disk + tight       Zero             Green Light — proceed
-```
+**External entropy** is what happens when the core is sound but the boundary is straining. The map matches the terrain but you keep adding more and more to the edge — a house extended so many times it's lost its original shape, a word stretched to cover too many cases until it means nothing precisely. This is growth. The domain has outgrown the container. The signal is surgical — identify the straining edge, cut it free, give it its own closed world.
 
 ---
 
