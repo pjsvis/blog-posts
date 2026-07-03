@@ -79,7 +79,16 @@ What we conclude: Semantic entropy is a directional vector...
 
 The content is structured by the TL;DR. Each section in the content maps to a point in the TL;DR.
 
-Rules:
+**The core heuristic:** TL;DR is short and punchy — possibly not fully comprehended. The body content's job is to expand the TL;DR in plain words.
+
+The relationship:
+- **TL;DR** = compressed signal (the conclusion, the structure, the key tests)
+- **Body** = expanded definition (what each term means in practice, what the signal looks like when it is happening)
+
+If the body is just restating the TL;DR, you have failed.
+If the body is adding new information that was not in the TL;DR, you have also failed — the TL;DR should have contained it.
+
+The body should be the TL;DR, articulated. Same content, expanded. Different register.
 - No throat-clearing introductions — start from the first sentence
 - No padding — every paragraph either advances the argument or provides evidence
 - Use diagrams only where they communicate faster than text (ASCII is fine when it earns its place)
