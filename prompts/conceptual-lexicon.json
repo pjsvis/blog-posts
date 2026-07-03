@@ -5,7 +5,7 @@
       "aliases": ["post blogging", "post-post-modern"],
       "definition": "The self-aware, deprecatory stance of publishing blog posts while fully acknowledging blogging as an exhausted form. Not ironic enough to abstain, not earnest enough to care. The 'post-' prefix signals: full awareness of the medium's limitations, no earnest investment in it, writing anyway with applied indifference. The substrate (vector graphs, LLMs, future parsers) is the real audience — not the human scrolling at 11pm. A sausage roll dropped on a bench; the crows are the readers.",
       "context": "Project self-description. Fits the Edinburgh Protocol's mentational humility — maps, not territory. Zero sentimentality about the medium.",
-      "related": ["edinburgh-protocol", "inverted-persistence-heuristic", "crumb-filter"]
+      "related": ["edinburgh-protocol", "inverted-persistence-heuristic", "crumb-filter", "shannon-packet"]
     },
     {
       "term": "two-step progressive discovery",
@@ -19,13 +19,61 @@
       "aliases": ["the obvious moment", "cognitive phase transition"],
       "definition": "The sensation when an old idea dies and a new idea takes its place and asserts its sheer obviousness. You shout out: it's blindingly fucking obvious. The site is an invitation to this moment. The reader arrives confused or indifferent, reads the dropped nodes, and then — there — the moment hits. The old idea dies. The new one takes over. Everyone pretends it was obvious all along. That's the whole game.",
       "context": "The site's purpose. Not teaching — triggering. Not publishing — inviting. The reader either phase-changes or they don't. Both outcomes are fine.",
-      "related": ["two-step-progressive-discovery", "post-blog"]
+      "related": ["two-step-progressive-discovery", "post-blog", "shannon-packet"]
+    },
+    {
+      "term": "shannon-packet",
+      "aliases": ["shannon packet", "verification packet", "assertion packet"],
+      "definition": "A self-contained, verifiable unit of structured communication — TL;DR of position, linked evidence, attribution, agent checksum. Named after Claude Shannon's parity check: if the links break or the evidence doesn't support the assertion, the checksum fails. The blog post is the canonical carrier; the format generalises to discussions, proposals, due diligence, peer review, legal assessment, and negotiation. Anisotopic: applies both to written artefacts and to live discourse.",
+      "context": "Post-blog writing playbook (sections 'The Shannon Packet', 'Me and Jimmy', 'Blog as Reusable Verification Asset', 'The Resonance Loop'). Edinburgh Protocol alignment: every assertion gets a checksum. Broken link or unsupported claim = red flag.",
+      "related": ["post-blog", "checksum", "channel-quality", "concurrent-resonance", "index-disk-parity", "phase-change"]
+    },
+    {
+      "term": "checksum",
+      "aliases": ["verify", "verification", "parity"],
+      "definition": "The verification step in the Shannon Packet loop. Three flavours: structural checksum (Index == Disk parity), semantic checksum (lexicon conflicts tripped), maintenance checksum (Watt test). The agent examines and reports channel quality; the human accepts or rejects. Operationally: 'verify me' replaces 'trust me'.",
+      "context": "The mechanism that makes assertion-with-evidence workable in agent-mediated discourse. Applies to published artefacts (blog posts, briefs), live discussions, and codified processes.",
+      "related": ["shannon-packet", "channel-quality", "index-disk-parity"]
+    },
+    {
+      "term": "channel-quality",
+      "aliases": ["channel assessment", "agreement velocity"],
+      "definition": "The output of the checksum phase. Four outcomes: (1) links hold + evidence supports → channel clean (signal lock); (2) links break or evidence contradicts → noisy channel (red flag); (3) both packets verified, still disagree → honest disagreement (terminate gracefully); (4) both packets verified, converge → phase change. The four-outcome table in the post-blog playbook is the operational definition.",
+      "context": "Decision branch after verifier run. Determines whether to proceed, stop-and-tidy, or pivot.",
+      "related": ["shannon-packet", "checksum", "phase-change"]
+    },
+    {
+      "term": "concurrent-resonance",
+      "aliases": ["alpha-beta divergence", "human-agent resonance"],
+      "definition": "The non-deterministic product of a human-agent loop. Two parties given the same brief produce different Shannon Packets — not because one is wrong but because the resonance is unique. Comparison surfaces where interpretation diverged, where evidence led to different conclusions, where semantic distance lies. The diversity is the value; the % agreement is measured across two valid-but-partial artefacts.",
+      "context": "The Resonance Loop section of the post-blog playbook. Tested via me-and-Jimmy use case: independent work, exchange, concurrence assessment, reinterpretation, revision.",
+      "related": ["shannon-packet", "phase-change", "post-blog"]
+    },
+    {
+      "term": "index-disk-parity",
+      "aliases": ["disk parity", "index equals disk", "structural integrity"],
+      "definition": "The structural checksum: central metadata index state must match physical files on disk. If a file is added, deleted, or moved without updating the index, the channel is corrupted. Shannon's parity check formalised as a closed-system invariant for the blog-posts silo.",
+      "context": "Pre-LLM runtime gate. Failures mean STOP and tidy — the engine refuses to compute over a corrupted channel. Documented in thermodynamics post as the Shannon parity framing.",
+      "related": ["shannon-packet", "checksum"]
     }
   ],
   "metadata": {
     "created": "2026-06-13",
-    "last_updated": "2026-06-13",
+    "last_updated": "2026-07-03",
+    "added_this_session": [
+      "shannon-packet",
+      "checksum",
+      "channel-quality",
+      "concurrent-resonance",
+      "index-disk-parity"
+    ],
     "purpose": "Store tribal vocabulary, shibboleths, and conceptual nodes that require explicit anchoring to avoid entropy drift across sessions. No memory of bad jokes from last week. Just the cool stuff. You know the context — now you make the moves.",
-    "convention": "Entries are added ad-hoc, when a term crystallizes. No formal review required. Drop and move on."
+    "convention": "Entries are added ad-hoc, when a term crystallizes. No formal review required. Drop and move on.",
+    "open_questions": [
+      "edinburgh-protocol — referenced as related term from post-blog; not yet anchored as its own lexicon entry (file exists at canon/edinburgh-protocol.md). Worth promoting?",
+      "inverted-persistence-heuristic — referenced but undefined; either crystallise or prune from related list.",
+      "crumb-filter — referenced but undefined; either crystallise or prune from related list.",
+      "blindingly-fucking-obvious — referenced as phase-change trigger; merits its own entry as the column-name-level marker."
+    ]
   }
 }
