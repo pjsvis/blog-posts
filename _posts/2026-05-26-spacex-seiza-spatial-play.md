@@ -62,7 +62,7 @@ We have been here before. The clipper solved speed; supporting systems (insuranc
 - **Donald Ingber** — Cell biologist whose work on cellular tensegrity links mechanical forces to biochemical signalling.
 - **Graham Scarr** — *Biotensegrity: The Structural Basis of Life* (2nd edition) — Technical introduction to tensegrity principles across scales.
 - **Robert Schleip et al.** — *Fascia: The Tensional Network of the Human Body* — Comprehensive review of fascial research and mechanotransduction.
-- **[Post 0: Zero-G Engineering Explainer](/blog-posts/posts/0-2026-05-26-zero-g-engineering-explainer/)** — Foundational reframe and series anchor.
+- **[Post 0: Zero-G Engineering Explainer](/blog-posts/posts/2026-05-26-zero-g-explainer/)** — Foundational reframe and series anchor.
 - **Bio-Tensegrity Explainer (Post 5)** — Life's chosen architecture.
 
 *This concludes the core series on the SpaceX S-1 and human spaceflight architecture. Further pieces on surface habitats, radiation, or economic modelling may follow.*
