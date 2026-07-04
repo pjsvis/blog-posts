@@ -7,6 +7,7 @@ categories: [space, systems, incentives]
 tags: [spacex, s-1, ipo, mars, incentives, architecture, edinburgh-protocol, zero-g]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-borg-crucible-janeway/
+permalink: /posts/2026-05-26-spacex-borg-crucible-janeway/
 published: true
 series: spacex-ipo
 series_order: 2

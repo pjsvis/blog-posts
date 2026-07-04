@@ -7,6 +7,7 @@ categories: [space, human-factors, architecture]
 tags: [spacex, zero-g, tensegrity, habitat-design, biotensegrity, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-seiza-spatial-play/
+permalink: /posts/2026-05-26-spacex-seiza-spatial-play/
 published: true
 series: spacex-ipo
 series_order: 4

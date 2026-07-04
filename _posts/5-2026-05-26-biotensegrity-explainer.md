@@ -7,6 +7,7 @@ categories: [biology, systems, space]
 tags: [biotensegrity, fascia, tensegrity, buckminster-fuller, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-biotensegrity-explainer/
+permalink: /posts/2026-05-26-biotensegrity-explainer/
 published: true
 ---
 

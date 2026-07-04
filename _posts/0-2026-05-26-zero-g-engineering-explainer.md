@@ -7,6 +7,7 @@ categories: [space, engineering, systems]
 tags: [zero-g, tensegrity, buckminster-fuller, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-zero-g-explainer/
+permalink: /posts/2026-05-26-zero-g-explainer/
 published: true
 series: spacex-ipo
 series_order: 0

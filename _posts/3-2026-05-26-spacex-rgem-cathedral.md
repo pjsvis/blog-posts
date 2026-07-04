@@ -7,6 +7,7 @@ categories: [space, engineering, architecture]
 tags: [spacex, artificial-gravity, tensegrity, rgem, zero-g, edinburgh-protocol]
 canonical_target: [substack, medium]
 canonical_url: https://pjsvis.github.io/blog-posts/posts/2026-05-26-spacex-rgem-cathedral/
+permalink: /posts/2026-05-26-spacex-rgem-cathedral/
 published: true
 series: spacex-ipo
 series_order: 3
