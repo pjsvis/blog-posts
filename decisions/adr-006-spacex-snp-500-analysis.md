@@ -84,9 +84,9 @@ S&P stood alone. This validates the "Impartial Spectator" principle — external
 ## Related
 
 - Brief: `briefs/campaign-spacex-ipo-series.md`
-- Post 1: `_posts/1-2026-05-26-spacex-s1-perky-pat-layout.md`
-- Post 2: `_posts/2-2026-05-26-spacex-borg-crucible-janeway.md`
-- Post 3: `_posts/3-2026-05-26-spacex-rgem-cathedral.md`
+- Post 1: `_posts/2026-05-26-spacex-s1-perky-pat-layout.md`
+- Post 2: `_posts/2026-05-26-spacex-borg-crucible-janeway.md`
+- Post 3: `_posts/2026-05-26-spacex-rgem-cathedral.md`
 - Debrief: `debriefs/2026-05-31-spacex-ipo-series.md` (planned)
 - ADR-002: Two-mode silo agent architecture
 - Edinburgh Protocol: `canon/edinburgh-protocol.html` — "Systems Over Villains" principle
