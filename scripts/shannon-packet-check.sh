@@ -95,12 +95,18 @@ for f in $FILES; do
   tldr=""
   in_tldr=0
   while IFS= read -r line; do
-    if [[ "$in_tldr" -eq 0 ]] && [[ "$line" =~ ^##[[:space:]]+TL\.DR ]]; then
+    # Glob-match on the heading to dodge bash regex's misparsing of ';' inside [[ ... ]]
+    if [[ "$in_tldr" -eq 0 ]] && [[ "$line" == "## TL;DR"* ]]; then
       in_tldr=1; continue
     fi
     if [[ "$in_tldr" -eq 1 ]] && [[ "$line" =~ ^##[[:space:]] ]]; then break; fi
     if [[ "$in_tldr" -eq 1 ]]; then tldr+="$line"$'\n'; fi
   done < "$f"
+
+  # If TL;DR was never found, dump a banner so the rule isn't silently bypassed.
+  if [[ "$in_tldr" -eq 0 ]]; then
+    fails+=("WATT: '## TL;DR' heading not found (cannot enforce Watt rule)")
+  fi
 
   tldr_words=$(printf '%s' "$tldr" | wc -w)
   if [[ "$tldr_words" -gt "$TLDR_MAX_WORDS" ]]; then
