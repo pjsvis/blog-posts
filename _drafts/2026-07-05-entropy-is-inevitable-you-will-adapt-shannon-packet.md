@@ -171,7 +171,6 @@ Markdown + YAML + minimum `type` field as a self-describing payload standard. Th
 [okf-spec]: https://github.com/google/open-knowledge-format
 
 [silo-manifesto]: _drafts/2026-06-11-silo-manifesto-shannon-packet.md
-[sibling-beyond-okf]: _drafts/2026-07-05-beyond-okf-operational-repositories.md
 [sibling-repo-entropy]: _drafts/2026-07-03-repo-entropy.md
 [thermo-vocab]: _posts/2026-07-03-thermodynamics-of-vocabulary.md
 [edinburgh-protocol]: canon/edinburgh-protocol.md
