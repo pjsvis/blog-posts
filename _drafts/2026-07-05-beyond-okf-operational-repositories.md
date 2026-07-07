@@ -247,6 +247,8 @@ last_verified: 2026-06-15  # YYYY-MM-DD of last human review
 
 The rule: a playbook with `last_verified` older than 90 days adds 1 point to the entropy vector. A decision with `last_verified` older than a year adds 2 points. An unverified playbook is not trustworthy; it might be describing a system that no longer exists.
 
+Knowledge decay is not a hypothetical failure mode. A 2026 essay on AI and authenticity used the "most expensive hyphen in history" as its opening anchor — Mariner 1, 1962, an $80 million spacecraft destroyed because of a single wrong character in its guidance code. The story is vivid, structurally perfect (consequence → character → catastrophe → lesson), and wrong on every technical detail. The actual cause was a missing superscript bar over a guidance variable in the Fortran source — a transcription error from handwritten formulas to code, not a hyphen. A hyphen in a navigation variable doesn't produce the physics that destroyed the spacecraft; a missing bar does. The author's knowledge base had absorbed the myth, not the reality, and it passed through without friction because there was no `last_verified` gate forcing a check against primary sources. This is what unverified knowledge looks like in the wild: not obviously wrong, just wrong in exactly the way that feels right. The Shannon checksum fires before the verification is complete.
+
 **4. Entropy cost weighting.** Each outstanding brief or uncommitted decision has an entropy cost. The brief author estimates this when creating the document:
 
 ```yaml
