@@ -2,14 +2,14 @@
 title: "BRIEF: Fix the reg-sync --fix UX gap and clear registry drift"
 date: 2026-08-10
 type: brief
-status: open
+status: done
 tags: [registry, reg-sync, justfile, ux, drift, foundation-tests, infrastructure]
 ---
 
 # Brief: Fix the reg-sync `--fix` UX gap and clear registry drift
 
 **Date:** 2026-08-10
-**Status:** Open — ready to execute
+**Status:** Done — Tasks 1–3 complete (commits 7bcba90, bc1a2b5, e88906c). Foundation-test criterion blocked by 2 pre-existing issues — see Execution Log.
 **Silo:** blog-posts
 **Scope:** `justfile` (1 recipe), `scripts/reg-sync.ts` (message only), then index regeneration
 
@@ -122,8 +122,23 @@ Order: Task 1 first (so Task 2 uses the nicer `just reg-sync --fix`), then Task 
 ## Done
 
 When:
-- [ ] `just reg-sync` is variadic; `just reg-sync --fix` regenerates indexes
-- [ ] `reg-sync-fix` recipe preserved unchanged
-- [ ] All five registries report `✓ up to date`; stub summaries replaced with real descriptions
-- [ ] `bash tests/00-foundation.sh` passes all 3 tests
-- [ ] `canon/` wired into reg-sync (per `brief-reg-canon-index-2026-07-05.md`)
+- [x] `just reg-sync` is variadic; `just reg-sync --fix` regenerates indexes
+- [x] `reg-sync-fix` recipe preserved unchanged
+- [x] All **six** registries report `✓ up to date`; 64 stub summaries replaced with title-derived descriptions
+- [ ] `bash tests/00-foundation.sh` passes all 3 tests — **BLOCKED**, pre-existing (see Execution Log)
+- [x] `canon/` wired into reg-sync (per `brief-reg-canon-index-2026-07-05.md`)
+
+## Execution Log (2026-08-10)
+
+Tasks 1–3 complete and pushed to `main` (`bc1a2b5..e88906c`).
+
+- **Task 1** (7bcba90): `reg-sync` now variadic (`*args`); `just reg-sync --fix` works. `reg-sync-fix` unchanged.
+- **Task 2** (bc1a2b5): regenerated all indexes; 57 stub summaries filled from each file's own H1/title (1 correction: `ai-writing-detection-04`).
+- **Task 3** (e88906c): `canon/` added as 6th registry; `canon/INDEX.jsonl` created (7 entries, bare-basename convention). Resolves `brief-reg-canon-index-2026-07-05.md`.
+
+**Foundation suite — not fully green, but NOT from this work:**
+- **Test 1 (`just build`)** — pre-existing environmental failure: `Gemfile.lock` requires bundler 4.0.11 but system Ruby is 2.6 with no matching bundler. Needs a Ruby/bundler setup (rbenv/chruby), out of scope.
+- **Test 2 (`just check`)** — registry drift cleared (Test 3 passes), but `check-posts.sh` now flags a **published** post with no front-matter: `_posts/2026-07-03-thermodynamics-of-vocabulary.md` starts with an H1, not `---`. Adding front-matter would *publish it properly on the live site* — a publishing decision, deferred to the user.
+- **Test 3 (`just reg-sync`)** — PASS (no drift).
+
+**Carried forward (out of scope, captured):** empty `scripts/code-index.ts` (0 bytes) still untracked — delete or fill.

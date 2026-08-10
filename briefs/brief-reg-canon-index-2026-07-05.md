@@ -2,14 +2,14 @@
 title: "BRIEF: Wire canon/INDEX.jsonl into reg-sync"
 date: 2026-07-05
 type: brief
-status: open
+status: done
 tags: [registry, reg-sync, canon, jsonl, automation, barnacle-prevention]
 ---
 
 # Brief: Wire canon/INDEX.jsonl into reg-sync
 
 **Date:** 2026-07-05
-**Status:** Open — ready to execute
+**Status:** Done — executed 2026-08-10 via commit e88906c (canon wired in as 6th registry; bare-basename convention; canon/INDEX.jsonl created with 7 entries).
 **Silo:** blog-posts
 **Scope:** Single-file change to `scripts/reg-sync.ts`
 
