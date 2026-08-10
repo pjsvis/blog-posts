@@ -75,8 +75,8 @@ live:
   open "https://pjsvis.github.io/blog-posts"
 
 # Registry commands
-reg-sync:
-  bun scripts/reg-sync.ts --all
+reg-sync *args:
+  bun scripts/reg-sync.ts --all {{args}}
 
 reg-sync-fix:
   bun scripts/reg-sync.ts --all --fix
