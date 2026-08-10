@@ -48,6 +48,12 @@ const REGISTRIES: Record<string, RegistryDef> = {
     filePattern: /\.md$/,
     exclude: [/REGISTRY\.jsonl/, /README\.md/],
   },
+  canon: {
+    indexPath: "canon/INDEX.jsonl",
+    dirPath: "canon",
+    filePattern: /\.md$/,
+    exclude: [/INDEX\.jsonl/, /README\.md/],
+  },
   images: {
     indexPath: "assets/images/INDEX.jsonl",
     dirPath: "assets/images",
@@ -173,7 +179,7 @@ function main(): void {
   }
 
   if (targets.length === 0) {
-    console.error("Usage: bun scripts/reg-sync.ts <briefs|debriefs|decisions|playbooks|images|--all> [--fix]")
+    console.error("Usage: bun scripts/reg-sync.ts <briefs|debriefs|decisions|playbooks|canon|images|--all> [--fix]")
     console.error(`Registries: ${Object.keys(REGISTRIES).join(", ")}`)
     process.exit(1)
   }
