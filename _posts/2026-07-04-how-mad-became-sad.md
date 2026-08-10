@@ -6,6 +6,9 @@ categories: uk-defence nuclear-strategy geopolitics
 canonical_target: medium github
 permalink: /2026/07/04/how-mad-became-sad/
 ---
+# todo
+
+- see *-uk-defense-*.md docs also
 
 In 1209, during the siege of Béziers, the Papal Legate Arnaud Amalric issued the foundational operational directive for indiscriminate slaughter: *"Kill them all, God will know his own."* The military executioner of that decree, Simon de Montfort, spent the next decade weaponizing indiscriminate terror across Southern France until 1218, when a rock launched from a civilian-built trebuchet at the Siege of Toulouse accurately split his skull.
 
