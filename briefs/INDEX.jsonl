@@ -1,23 +1,48 @@
-{"file":"2026-05-23-brief-github-pages-medium.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"2026-05-23-brief-github-pages-substack.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"2026-05-23-brief-writing-pipeline.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"2026-05-23-case-against-agent-memory.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"2026-05-23-brief-github-pages-medium.md","date":"2026-05-23","status":"active","summary":"Github pages medium","meta":{}}
+{"file":"2026-05-23-brief-github-pages-substack.md","date":"2026-05-23","status":"active","summary":"Github pages substack","meta":{}}
+{"file":"2026-05-23-brief-writing-pipeline.md","date":"2026-05-23","status":"active","summary":"Writing pipeline","meta":{}}
+{"file":"2026-05-23-case-against-agent-memory.md","date":"2026-05-23","status":"active","summary":"The Case Against Agent Memory: Why Your AI Needs Amnesia","meta":{}}
 {"file":"2026-05-23-navigating-latent-space.md","date":"2026-05-23","status":"done","summary":"Practical guide to navigating AI agent sessions — low-entropy context, DOT graphs, staying on path, recovering from bad states","meta":{}}
 {"file":"2026-05-26-brief-cargo-not-crew.md","date":"2026-05-26","status":"open","summary":"Write post on the cargo-first framing for space logistics — humans are operators, not cargo; mass budget drives everything; the clipper parallel deepened","meta":{}}
 {"file":"2026-05-26-brief-lloyds-of-lagrange.md","date":"2026-05-26","status":"open","summary":"Write post on the financial and institutional infrastructure required for space commerce — marine insurance as analogy, Lloyd's of London as model, what orbital commerce requires","meta":{}}
 {"file":"2026-05-26-brief-the-clipper-moment.md","date":"2026-05-26","status":"open","summary":"Write post on the structural parallel between clipper-era maritime trade and current space logistics — the transport layer that unlocks the economy waiting behind it","meta":{}}
-{"file":"2026-06-04-brief-configure-document-rga.md","date":"2026-06-04","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"brief-ai-coding-stack-2026-05-20.md","date":"2026-05-20","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"2026-06-04-brief-configure-document-rga.md","date":"2026-06-04","status":"active","summary":"Brief: Configure and Document ripgrep-all (rga)","meta":{}}
+{"file":"2026-06-05-brief-ai-writing-detection-01.md","date":"2026-06-05","status":"active","summary":"Brief: AI-Signs Detection Engine","meta":{}}
+{"file":"2026-06-05-brief-ai-writing-detection-02.md","date":"2026-06-05","status":"active","summary":"Ai writing detection 02","meta":{}}
+{"file":"2026-06-05-brief-ai-writing-detection-03.md","date":"2026-06-05","status":"active","summary":"Ai writing detection 03","meta":{}}
+{"file":"2026-06-05-brief-ai-writing-detection-04.md","date":"2026-06-05","status":"active","summary":"AI-Signs Detection: categories.yaml as general-purpose evaluation engine","meta":{}}
+{"file":"2026-06-13-blindingly-fucking-obvious.md","date":"2026-06-13","status":"active","summary":"Blindingly fucking obvious","meta":{}}
+{"file":"2026-06-13-brief-index-post-pipeline.md","date":"2026-06-13","status":"active","summary":"Brief: Index Post Pipeline","meta":{}}
+{"file":"2026-06-13-brief-muppet-filter-kimi-eval.md","date":"2026-06-13","status":"active","summary":"Brief: The Muppet Filter & Why Kimi K2.6 Hasn't Benchmaxxed","meta":{}}
+{"file":"2026-06-14-brief-medium-substack-plain-text.md","date":"2026-06-13","status":"active","summary":"Brief: Plain Text Publishing to Medium and Substack","meta":{}}
+{"file":"2026-07-01-action-plan.md","date":"2026-07-01","status":"active","summary":"Action Plan — July 2026","meta":{}}
+{"file":"2026-07-01-deployment-plan.md","date":"2026-07-01","status":"active","summary":"Deployment Plan — July 2026","meta":{}}
+{"file":"2026-07-03-brief-shannon-packet-capture.md","date":"2026-07-03","status":"done","summary":"Formalise self-verifying protocol in post-blog playbook — name, format, verification loop, channel assessment, two use cases (me-and-Jimmy + blog-as-reusable-asset). Playbook complete, exemplar published.","meta":{"sections_added":4,"exemplar":"2026-07-03-thermodynamics-of-vocabulary.md"}}
+{"file":"2026-07-05-brief-entropy-is-inevitable.md","date":"2026-07-07","status":"active","summary":"Brief: Publish 'Entropy is inevitable, you will adapt'","meta":{}}
+{"file":"2026-07-07-brief-add-pandiculation-analysis.md","date":"2026-07-07","status":"active","summary":"Add pandiculation analysis","meta":{}}
+{"file":"2026-07-07-brief-ai-bar-stories.md","date":"2026-07-07","status":"active","summary":"Brief: The Algorithmic Dentistry Protocol (Satirical Sub-Genre)","meta":{}}
+{"file":"2026-07-07-brief-axis-datum.md","date":"2026-07-07","status":"active","summary":"Project Brief: Axis-Datum","meta":{}}
+{"file":"2026-07-07-brief-claude-shannon-post-style.md","date":"2026-07-07","status":"active","summary":"Brief: The Shannon Signature & Editorial Architecture","meta":{}}
+{"file":"2026-07-07-brief-entropy-circuit-proposal.md","date":"2026-07-07","status":"open","summary":"Propose tightening the entropy essay lineage prose into a closed-loop circuit (message, channel, signal, receiver, tripwire checksum); locate entropy-injection and selection-pressure points. Approach B: tighten, not append.","meta":{"approach":"B-tighten","target":"2026-07-05-entropy-is-inevitable-you-will-adapt","scope":"lineage section only"}}
+{"file":"2026-07-07-brief-everything-but-the-agent.md","date":"2026-07-08","status":"active","summary":"Brief: Everything But the Agent — Why Your Codebase Should Outlive Your LLM","meta":{}}
+{"file":"2026-07-07-brief-repo-as-thermostat.md","date":"2026-07-07","status":"open","summary":"Blog-form framing of the operational repo as thermostat-grade homeostatic loop, not CNS. Entropy as homeostatic variable optimised not minimised. Functional not phenomenal mapping. Sibling to POB book-length brief.","meta":{"sibling_repo":"pob","lineage":"entropy-is-inevitable"}}
+{"file":"2026-07-08-brief-paris-protocol.md","date":"2026-07-08","status":"active","summary":"Brief: The Paris Protocol — The Eval the Edinburgh Protocol Can't Pass","meta":{}}
+{"file":"2026-07-09-brief-missilies-and-drones.md","date":"2026-07-10","status":"active","summary":"missiles and drones","meta":{}}
+{"file":"2026-07-20-brief-prententious-claptrap.md","date":"2026-07-20","status":"active","summary":"Prententious claptrap","meta":{}}
+{"file":"2026-07-22-brief-constraint-stack-alignment.md","date":"2026-07-22","status":"active","summary":"Draft Asset: The Harness is the Mind","meta":{}}
+{"file":"2026-07-23-brief-as-well-as-me.md","date":"2026-07-23","status":"active","summary":"Brief: As Well As Me","meta":{}}
+{"file":"2026-07-23-brief-go-mermaid-tui.md","date":"2026-07-23","status":"active","summary":"brief: Mermaid TUI renderer experiment","meta":{}}
+{"file":"2026-08-08-brief-shannon-packet-consistency-gate.md","date":"2026-08-08","status":"active","summary":"Brief: Shannon Packet — Consistency, Not Veracity","meta":{}}
+{"file":"2026-08-10-brief-registry-fix-pipeline.md","date":"2026-08-10","status":"active","summary":"BRIEF: Fix the reg-sync --fix UX gap and clear registry drift","meta":{}}
+{"file":"brief-ai-coding-stack-2026-05-20.md","date":"2026-05-20","status":"active","summary":"Brief: My Tech Stack for AI-Assisted Coding in 2026","meta":{}}
 {"file":"brief-barnacle-scrape-2026-05-26.md","date":"2026-05-26","status":"open","summary":"Scan blog-posts silo for barnacles — registry drift, tradingagents carry-over, stale drafts, front-matter issues","meta":{}}
-{"file":"brief-image-pipeline-github-pages-2026-06-03.md","date":"2026-06-03","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"brief-post-architecture-of-consistency.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"brief-image-pipeline-github-pages-2026-06-03.md","date":"2026-06-03","status":"active","summary":"Brief: Image Pipeline — GitHub Pages Hosting + DXO Export Spec","meta":{}}
+{"file":"brief-post-architecture-of-consistency.md","date":"2026-05-17","status":"active","summary":"Brief: Architecture of Consistency — First Post Dry Run","meta":{}}
+{"file":"brief-reg-canon-index-2026-07-05.md","date":"2026-07-07","status":"active","summary":"BRIEF: Wire canon/INDEX.jsonl into reg-sync","meta":{}}
 {"file":"brief-silo-state-and-next-steps.md","date":"2026-05-17","status":"open","summary":"Silo state assessment: P0 local Jekyll preview broken, no blog index, 5 drafts missing title. P1 flox activation untested, template post in _posts/, export never run. P2 first post, homepage design, lexicon decision.","meta":{}}
 {"file":"brief-spacex-ipo-series.md","date":"2026-05-22","status":"done","summary":"SpaceX IPO biological deficit series — 6 posts published: zero-g explainer, perky pat layout, borg crucible/janeway, RGEM cathedral, seiza spatial play, bio-tensegrity","meta":{}}
-{"file":"campaign-spacex-ipo-series.md","date":"2026-05-24","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"courteous-context-engineering.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"epic-multi-platform-publishing-automation-2026-05-23.md","date":"2026-05-23","status":"active","summary":"(auto-generated — add description)","meta":{}}
-{"file":"epic-osaas-advisory-series.md","date":"2026-05-17","status":"active","summary":"(auto-generated — add description)","meta":{}}
+{"file":"campaign-spacex-ipo-series.md","date":"2026-05-24","status":"active","summary":"SpaceX IPO Series — Campaign Plan","meta":{}}
+{"file":"courteous-context-engineering.md","date":"2026-05-23","status":"active","summary":"Courteous Context Engineering: An AI’s Guide to Data-Driven Politeness","meta":{}}
+{"file":"epic-multi-platform-publishing-automation-2026-05-23.md","date":"2026-05-23","status":"active","summary":"Epic: Multi-Platform Publishing Automation","meta":{}}
+{"file":"epic-osaas-advisory-series.md","date":"2026-05-17","status":"active","summary":"Epic: OSAAS Advisory Series — Agentic Workflow Architecture","meta":{}}
 {"file":"TEMPLATE.md","date":"2026-05-17","status":"active","summary":"Post brief template with content outline, research checklist, and export checklist","meta":{}}
-{"file":"2026-07-03-brief-shannon-packet-capture.md","date":"2026-07-03","status":"done","summary":"Formalise self-verifying protocol in post-blog playbook — name, format, verification loop, channel assessment, two use cases (me-and-Jimmy + blog-as-reusable-asset). Playbook complete, exemplar published.","meta":{"sections_added":4,"exemplar":"2026-07-03-thermodynamics-of-vocabulary.md"}}
-{"file":"2026-07-07-brief-entropy-circuit-proposal.md","date":"2026-07-07","status":"open","summary":"Propose tightening the entropy essay lineage prose into a closed-loop circuit (message, channel, signal, receiver, tripwire checksum); locate entropy-injection and selection-pressure points. Approach B: tighten, not append.","meta":{"approach":"B-tighten","target":"2026-07-05-entropy-is-inevitable-you-will-adapt","scope":"lineage section only"}}
-{"file":"2026-07-07-brief-repo-as-thermostat.md","date":"2026-07-07","status":"open","summary":"Blog-form framing of the operational repo as thermostat-grade homeostatic loop, not CNS. Entropy as homeostatic variable optimised not minimised. Functional not phenomenal mapping. Sibling to POB book-length brief.","meta":{"sibling_repo":"pob","lineage":"entropy-is-inevitable"}}
