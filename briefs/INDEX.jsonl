@@ -34,6 +34,7 @@
 {"file":"2026-07-23-brief-go-mermaid-tui.md","date":"2026-07-23","status":"active","summary":"brief: Mermaid TUI renderer experiment","meta":{}}
 {"file":"2026-08-08-brief-shannon-packet-consistency-gate.md","date":"2026-08-08","status":"active","summary":"Brief: Shannon Packet — Consistency, Not Veracity","meta":{}}
 {"file":"2026-08-10-brief-registry-fix-pipeline.md","date":"2026-08-10","status":"active","summary":"BRIEF: Fix the reg-sync --fix UX gap and clear registry drift","meta":{}}
+{"file": "2026-08-16-vonnegut-rules.md", "date": "2026-08-16", "status": "active", "summary": "Cross-validate the Shannon Packet against Vonnegut's eight rules (primary-verified)", "meta": {}}
 {"file":"brief-ai-coding-stack-2026-05-20.md","date":"2026-05-20","status":"active","summary":"Brief: My Tech Stack for AI-Assisted Coding in 2026","meta":{}}
 {"file":"brief-barnacle-scrape-2026-05-26.md","date":"2026-05-26","status":"open","summary":"Scan blog-posts silo for barnacles — registry drift, tradingagents carry-over, stale drafts, front-matter issues","meta":{}}
 {"file":"brief-image-pipeline-github-pages-2026-06-03.md","date":"2026-06-03","status":"active","summary":"Brief: Image Pipeline — GitHub Pages Hosting + DXO Export Spec","meta":{}}

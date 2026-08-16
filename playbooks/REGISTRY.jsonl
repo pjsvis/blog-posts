@@ -1,3 +1,4 @@
+{"file": "atuin-playbook.md", "date": "2026-08-14", "status": "active", "summary": "Atuin Shell Memory & Copilot Playbook", "meta": {}}
 {"file":"barnacle-playbook.md","date":"2026-05-17","status":"canonical","summary":"Barnacle identification and removal — misdirection detection, Chesterton's Fence escalation, quarantine workflow","meta":{"source":"project"}}
 {"file":"blog-playbook.md","date":"2026-05-17","status":"active","summary":"Virtual Information Systems Architecture","meta":{}}
 {"file":"blog-posts-playbook.md","date":"2026-05-17","status":"canonical","summary":"Jekyll pipeline reference — layout, front-matter invariant, publishing workflow, anti-patterns","meta":{"source":"project"}}
