@@ -201,6 +201,11 @@ Sharpened (user note, 2026-08-16, mid-Wikipedia):
   launders influence into "originality"; fanfic wears the source as its
   address. AI derivation (from everything at once) is what makes provenance
   load-bearing.
+- **Delany's Equinox** (Lancer 1973, as *The Tides of Lust*; own name, no
+  pseudonym): the controlled case — author constant, register the only
+  transformed variable, voice persists as the residue. Verified history
+  (title negotiation, Savoy 1980 seizure, the +100-ages compliance mutation)
+  parked in the Sovereign Colophon draft.
 
 Provenance acknowledged: the trigger for this tightening was an eight-minute
 listicle. Channel ≠ payload — the checksum exists to separate them, and on
