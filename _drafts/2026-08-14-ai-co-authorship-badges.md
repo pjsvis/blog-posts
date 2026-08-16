@@ -12,6 +12,14 @@ Design and publish a suite of open-source 88×31 web badges and state-signifier 
 ## Post Details
 
 **Proposed Title:** The Sovereign Colophon: Why We Need 88×31 Badges for the Latent Space Era
+
+**Proposed dek / taglines** (standard: click-baity but true — codified 2026-08-16):
+- *Feed register (user original, 2026-08-16):* "AI-generated text is a bit like fan fiction: there's lots of it, some is good, most is bad, and it's hard to tell what's worth reading — unless…"
+- *Recursive register:* "Fan fiction of everything, uncredited." (the unnamed-canon thesis in five words)
+- *Auditor register:* "You don't read your way to good fanfic. You filter your way there. Same fix for AI text."
+- *Noir register:* "Everything is derivative. Some of it is tagged. Know the difference."
+
+Structural rule: the unless-gap is closed by the TL;DR, never the body — the gap earns the click, the header repays it, the body detonates. (Telegraph the collision, not the impact.)
 **Target Platform(s):** all
 **Categories:** ai-governance, edinburgh-protocol, epistemology, web-culture, tooling
 
