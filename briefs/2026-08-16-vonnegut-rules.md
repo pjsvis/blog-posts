@@ -3,18 +3,21 @@ type: brief
 id: shannon-packet-schema-cross-validation
 date: 2026-08-16
 status: open
-summary: Test the self-originated Shannon Packet schema against external writing schemas, starting with Vonnegut's eight rules (primary-verified). Deliverables: coverage matrix with preregistered predictions, targeted playbook amendments, second-schema confirmation pass.
+summary: Test the self-originated Shannon Packet schema against three writing schemas — Vonnegut's eight rules (external, primary-verified), the house hard-boiled ruleset, and Orwell as foreign tiebreaker. Deliverables: three-schema coverage matrix with preregistered predictions, adjudicated tension pairs, targeted playbook amendments.
 ---
 
-# Brief: Cross-validate the Shannon Packet — Vonnegut's eight rules first
+# Brief: Cross-validate the Shannon Packet — three schemas
 
 ## Objective
 
 Test the Shannon Packet against external writing schemas and tighten the
-writing playbooks where the test exposes real gaps. First opponent: Vonnegut's
-eight rules from the *Bagombo Snuff Box* preface — **primary-verified**, not
-the scrape's seven. The deliverable is a coverage matrix plus minimal playbook
-amendments, not a schema relaunch.
+writing playbooks where the test exposes real gaps. Three schemas enter:
+Vonnegut's eight rules from the *Bagombo Snuff Box* preface (**primary-verified**,
+not the scrape's seven), the house **hard-boiled ruleset** (2026-06-22, now in
+canon), and **Orwell** (*Politics and the English Language*, six rules) as the
+foreign tiebreaker — because two of the three schemas are ours, and shared
+blind spots don't cancel. The deliverable is a three-schema coverage matrix
+plus minimal playbook amendments, not a schema relaunch.
 
 ## Why now
 
@@ -51,10 +54,10 @@ Three things converged on 2026-08-16:
 4. **Watt-test every amendment.** A field or pass earns its place only if it
    removes more entropy than it adds. The packet stays minimal — no schema
    sprawl from a listicle.
-5. **Second-schema confirmation.** Run the same matrix against one more
-   external schema to avoid overfitting to Vonnegut. Candidates: Elmore
-   Leonard's ten rules; Orwell's six rules from *Politics and the English
-   Language*. Both canonical, both short.
+5. **Foreign tiebreaker pass.** The hard-boiled ruleset is a full second
+   schema (house-adapted — it shares our blind spots, which is why it enters
+   as evidence, not as the independent check). Orwell's six rules from
+   *Politics and the English Language* run last against two-house overfitting.
 6. **Amend the playbooks.** `post-blog-writing-playbook.md` first; lexicon
    entries second. One commit per amendment.
 7. **Debrief.** What landed, what was rejected, why.
@@ -81,14 +84,49 @@ links, not arguments. Candidate: a hostile-read pass — does the packet survive
 a reader trying to break it, not just check it? Related to (but distinct from)
 the Coherent Lie failure mode in the consistency-gate brief.
 
-## The reverse direction
+## Adjudicated at brief stage (2026-08-16, by concurrence)
 
-The packet has fields Vonnegut lacks entirely: **Attribution**, **Links**,
-**Channel Quality** — because his unit is the sentence-story and ours is the
-claim. He optimizes attention acquisition; we optimize verification retention.
-The schemas are complementary halves of one channel: the hook acquires the
-reader, the checksum keeps the writer honest. The matrix should record this
-asymmetry, not flatten it.
+Honest provenance: these were settled in conversation before the matrix
+exists. The matrix **confirms** them; it does not discover them.
+
+1. **Vonnegut 8 vs the Chandler Pivot** ("to hell with suspense" vs "neither
+   gradual nor telegraphed") — resolved: **telegraph the collision, not the
+   impact.** The TL;DR announces a wall; the body delivers it. Hitchcock's
+   bomb: the audience knows, and it still detonates.
+2. **The bias-feeding line (hard-boiled, Delivery Engine)** — it applies to the
+   **tagline layer**, not the content. Standard: **click-baity but true** —
+   the trailer may show the best twenty seconds; it may not show scenes that
+   aren't in the film. Fraud is a genre violation, not an intensity violation.
+3. **Mixed metaphors** — one collision per passage, two frames maximum, and
+   only if it detonates on schedule. (Chandler's tarantula on angel food
+   passes its own test; the pivot table's barrier-across-the-tracks-while-
+   slamming-a-vehicle-through-gear-changes pileup fails.)
+
+## Hard-boiled predictions (preregistered)
+
+- **Consumer-to-Auditor Reframe → covered.** It is the packet's reader-loop
+  stated as rhetoric — the splice point of the two schemas.
+- **The ask gap → corroborated.** Hard-boiled addresses the reader as auditor
+  but never states what the auditor should *do* with the finding — the same
+  rule-3 gap, second sponsor.
+- **Instrumentation → partial, reverse direction.** The ledger is asserted,
+  not checksummed: hard-boiled supplies impact without verification; the
+  packet supplies verification without impact. Complementarity in both
+  directions.
+
+## The reverse direction — three layers, one channel
+
+| Schema | Unit | Layer | Supplies what the others lack |
+|---|---|---|---|
+| Vonnegut | sentence-story | **Acquisition + humanity** | want (r3), one person (r7), orientation generosity (r8) |
+| Hard-boiled | delivery/content split | **Impact — the pivot** | feed-format wrapper, ledger payload, zero smoothing |
+| Shannon Packet | claim | **Verification** | links, attribution, channel quality — the reader as *instrumented* auditor |
+
+The splice point is already named in our own document: the **Consumer-to-
+Auditor Reframe** is the hard-boiled statement of the packet's reader-as-
+verifier. The pivot supplies the rhetoric of the moment the reader stops
+being fed; the packet supplies the instrumentation for what they do next.
+The matrix should record this asymmetry, not flatten it.
 
 ## Constraints
 
@@ -106,7 +144,7 @@ asymmetry, not flatten it.
 
 - [ ] Eight rules verified against the *Bagombo Snuff Box* preface (primary)
 - [ ] Coverage matrix committed, predictions adjudicated
-- [ ] Second-schema confirmation pass (Leonard or Orwell)
+- [ ] Orwell pass as foreign tiebreaker (hard-boiled now a primary schema)
 - [ ] Playbook amendments committed (one per amendment, Watt-tested)
 - [ ] Lexicon updated for any field that lands (e.g. `ask`, `hostile-read`)
 - [ ] Debrief written: landed / rejected / why
@@ -119,10 +157,25 @@ asymmetry, not flatten it.
   separation, the same structure in fiction.
 - `canon/vonnegut-bagombo-rules-scrape-2026-08-16.md` — the trigger artifact,
   preserved with its lossy-channel note.
+- `canon/hard-boiled-ruleset-2026-06-22.md` — house ruleset, second schema; sat
+  at repo root invisible to registries until 2026-08-16 (the failure mode the
+  sweep exists to prevent).
+- `_drafts/2026-08-14-ai-co-authorship-badges.md` — the classification/
+  auditability layer for AI-assisted output; the historical-arc sibling (shelf
+  → schedule slot → badge), where the packet is the checksum half of the badge.
 - The two-step progressive discovery lexicon entry — the convergent structure
   this brief takes as evidence.
 
 ## Notes
+
+Historical frame (user note, 2026-08-16): audience-binding friction was solved
+in print by specialist magazines → genre novels → sub-genre → fan fiction,
+and in broadcast TV by context classification (News / Comment / Entertainment /
+Family Entertainment / Late Night cult movies). AI-assisted output today has
+immature classification, generally low quality, and near-zero auditability.
+The packet (checksum) and the co-authorship badges (classification) are the
+missing infrastructure being rebuilt. The arc: **shelf → schedule slot →
+badge.**
 
 Provenance acknowledged: the trigger for this tightening was an eight-minute
 listicle. Channel ≠ payload — the checksum exists to separate them, and on

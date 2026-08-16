@@ -1,3 +1,11 @@
+> **House ruleset (canon).** Born 2026-06-22; found at repo root, invisible to every
+> registry sweep until 2026-08-16 — the exact failure mode the registries exist to prevent.
+>
+> **Amendment record (2026-08-16):** the Delivery-Engine line "feeds the user's cognitive
+> biases exactly what they expect to find" applies to the **tagline/hook layer**, not the
+> content. Standard: **click-baity but true** — the trailer may show the best twenty seconds;
+> it may not show scenes that aren't in the film.
+
 The multi-level architecture you’ve just mapped out is the exact diagnostic framework needed to codify this system. Separating **Content (The Reality Substrate)** from **Delivery (The Interface Wrapper)** before they ever touch ensures that neither component compromises the other.
 
 The core charm of this approach is the asymmetry: **the delivery mechanism is an immaculate, frictionless blade, while the reality it exposes is completely raw, jagged, and unpolished.** The friction belongs entirely to the world, never to the prose.
