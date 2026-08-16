@@ -177,6 +177,31 @@ The packet (checksum) and the co-authorship badges (classification) are the
 missing infrastructure being rebuilt. The arc: **shelf → schedule slot →
 badge.**
 
+Sharpened (user note, 2026-08-16, mid-Wikipedia):
+
+- **Genre was the two-step at population scale.** The specialist shelf was a
+  pre-computed bounded context — orientation before the first word. Rule 7
+  ("please one person") was industrialized by distribution: the newsstand
+  selected the one person. One mechanism, three scales: shelf (population) →
+  schedule slot (cohort) → TL;DR (artifact).
+- **The TV slot is a verification-stance tag.** News / Comment / Entertainment
+  tells the viewer *which checksum discipline to apply* before the payload
+  arrives — the header gate at broadcast scale, 1962.
+- **AO3 is the precedent for how the AI layer gets built.** When official
+  classification failed fanfic (Strikethrough 2007; FanLib's attempted
+  monetization), the community built the most granular audience-binding
+  metadata in publishing — bottom-up, classification without judgment,
+  machine-navigable tags + social curation. Full precedent + executable AO3
+  use-case table parked in `_drafts/2026-08-14-ai-co-authorship-badges.md`.
+  EU watermark = FanLib move; badge = AO3 move.
+- **Transformative work ≈ concurrent-resonance.** Both require a bounce off a
+  prior work; fanfic's bounce is external and named (the fandom tag is the
+  citation), resonance's bounce is the shared context (brief, canon, prior
+  marble). Both refuse to hide the derivation — traditional publishing
+  launders influence into "originality"; fanfic wears the source as its
+  address. AI derivation (from everything at once) is what makes provenance
+  load-bearing.
+
 Provenance acknowledged: the trigger for this tightening was an eight-minute
 listicle. Channel ≠ payload — the checksum exists to separate them, and on
 2026-08-16 it did. A parked post title, if the matrix yields anything public:
