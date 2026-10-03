@@ -18,3 +18,6 @@ drydock/
 .td-root
 .env
 *.swp
+
+# VMark editor state (local, per-directory)
+.vmark/
