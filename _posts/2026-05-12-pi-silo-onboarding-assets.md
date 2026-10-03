@@ -9,22 +9,6 @@ canonical_target: [substack]
 published: false
 ---
 
-```text
-- this is to specific to pi and silos
-- we can generalise the argument to make an argument for a silo
-- we start by stating why its a good idea for agents
-- we can even extol the virtues of the just file as a faade
-- we continue with the required orientation step
-- then we note the barnacle issue, but we deal with it in another post
-- so we summarise with the idea of a repeateable constraint-stack and context-initialisation process
-- the process is repeatable and idempotent: ie it gets consistent results over multiple turns
-- persisting lessons-learned and maintaining decision logs and playbooks is a key part of the process
-- projects will accrue imposed requirements and generate induced requirements: maybe explain those
-- maybe refer to our induced requirements blog post
-- summarise the good things to sdo and refer to other blog posts as available 
-- maybe even suggest creating additional explanatory blog posts
-```
-
 
 
 # ADVISORY: Agentic Framework Orientation and Asset Location Verification for Silo Onboarding
