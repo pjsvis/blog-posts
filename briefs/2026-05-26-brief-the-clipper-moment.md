@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-CLIPPER-MOMENT
 layout: none
 title: "Brief: The Clipper Moment — Logistics Infrastructure as Economic Unlock"
 date: 2026-05-26

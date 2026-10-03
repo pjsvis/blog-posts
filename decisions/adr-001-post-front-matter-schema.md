@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-001
+---
+
 # ADR-001: Post Front-Matter Schema
 
 **Date:** 2026-05-17

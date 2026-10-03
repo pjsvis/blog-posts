@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-EXPORT
+---
+
 # Export Playbook — Multi-Platform Content Distribution
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-BLINDINGLY-FUCKING
+---
+
 This is the clean break from the nonsense. If we are going to feed a downstream writing agent to produce content that doesn't sound like a generic corporate press release, it needs an absolute, unyielding set of operational parameters.
 
 Here is the master brief. It maps our 9 core architectural and editorial proposals, explicitly instructing the agent on how to weaponize at least 7 of them into high-signal, unvarnished commentary for the 2026 tech landscape.

@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-BLOG
+---
+
 Utilizing a Jekyll-powered GitHub Pages pipeline as our publishing engine aligns perfectly with the principle of **Deductive Minimalism (`COG-12`)**. It allows us to treat our markdown artifacts as raw, pure source files while offloading the compilation mechanics entirely to GitHub's infrastructure.
 
 By decoupling the content repository from specialized publishing frontends, we establish **Workflow Durability (`PHI-13`)**. This playbook provides the definitive constraint stack for compiling, organizing, and distributing markdown files (such as our System Briefs, Playbooks, and Blog Assets) across public directories, personal spaces, and content distribution channels.

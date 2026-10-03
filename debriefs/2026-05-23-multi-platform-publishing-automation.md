@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-MULTI-PLATFORM
+---
+
 # Debrief: Multi-Platform Publishing Automation
 
 **Date:** 2026-05-23

@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-POST-ARCHITECTURE
+---
+
 # Brief: Architecture of Consistency — First Post Dry Run
 
 **Date:** 2026-05-17

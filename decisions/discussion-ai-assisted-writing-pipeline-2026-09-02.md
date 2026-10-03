@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-DISCUSSION-AI
+---
+
 # Discussion: AI-Assisted Writing — Marble, Two Panels, and Reversing the Pipeline
 
 **Date:** 2026-09-02

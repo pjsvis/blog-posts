@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-SILO-STATE
+---
+
 # Brief: blog-posts silo — state assessment and next steps
 
 **Date:** 2026-05-17

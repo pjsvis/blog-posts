@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-INDEX-POST
+---
+
 # Brief: Index Post Pipeline
 
 ## Problem

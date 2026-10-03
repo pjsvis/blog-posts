@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-004
+---
+
 # ADR-004: Stable Post Filenames — URL Stability After Publish
 
 **Date:** 2026-05-25

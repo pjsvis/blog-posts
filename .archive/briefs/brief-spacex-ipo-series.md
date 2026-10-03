@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-SPACEX-IPO
+---
+
 # space-x ipo blog post plan
 
 ref: Gemini and NoteBookLm

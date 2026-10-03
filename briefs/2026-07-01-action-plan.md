@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-ACTION-PLAN
+---
+
 # Action Plan — July 2026
 
 **Generated:** 2026-07-01

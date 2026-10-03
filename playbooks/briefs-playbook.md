@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-BRIEFS
+---
+
 # Briefs Playbook
 
 ## Writing a Brief
@@ -69,7 +74,16 @@ When all `[ ]` items are checked and exports reviewed.
 
 ## Archiving
 
-Completed briefs stay in `briefs/`. Keep them — they're a record of what was decided and why.
+Completed briefs move to `.archive/briefs/` — same filename, checked in
+to git, out of the default listing and search. `briefs/INDEX.jsonl`
+rows drop on move (`bun scripts/reg-sync.ts --all --fix`); the archive
+tier keeps its own registry (resolution-read, search-excluded). Update
+filename references when moving; callsign citations survive the move.
+
+A completed brief is work that shipped; keeping it in `briefs/` makes
+the open list a graveyard. The archive is the permanent record; the
+live list is the work queue. (Fleet policy, 2026-10-03 — supersedes
+"completed briefs stay in briefs/"; okuda ADR-052 is the reference.)
 
 ## Epic Structure (Multi-Post Series)
 

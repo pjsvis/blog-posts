@@ -1,4 +1,5 @@
 ---
+callsign: BRF-REG-CANON
 title: "BRIEF: Wire canon/INDEX.jsonl into reg-sync"
 date: 2026-07-05
 type: brief

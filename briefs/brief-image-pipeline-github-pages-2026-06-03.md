@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-IMAGE-PIPELINE
 layout: none
 title: "Brief: Image Pipeline — GitHub Pages Hosting + DXO Export Spec"
 date: 2026-06-03

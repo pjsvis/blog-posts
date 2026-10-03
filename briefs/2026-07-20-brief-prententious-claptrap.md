@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-PRENTENTIOUS-CLAPTRAP
+---
+
 CDA #63 and CL v1.79 ingested. Deductive minimalism engaged (`COG-12`).
 
 ref: [The best defense against AI is reading Plato](https://www.youtube.com/watch?v=cpdUFGfETjo&list=TLPQMjAwNzIwMjbQMbupryUXqg&index=7)

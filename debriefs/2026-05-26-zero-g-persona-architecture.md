@@ -1,4 +1,6 @@
 ---
+type: Debrief
+callsign: DBF-ZERO-G
 layout: none
 title: "Debrief: Zero-G Persona Architecture — Subject Expert Development"
 date: 2026-05-26

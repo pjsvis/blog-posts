@@ -1,4 +1,5 @@
 ---
+callsign: BRF-CLAUDE-SHANNON
 type: brief
 id: editorial-structural-integrity
 upstream: decisions/05-repository-entropy-framework

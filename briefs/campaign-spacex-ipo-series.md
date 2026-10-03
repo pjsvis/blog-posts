@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-CAMPAIGN-SPACEX
+---
+
 # SpaceX IPO Series — Campaign Plan
 
 **Date:** 2026-05-24

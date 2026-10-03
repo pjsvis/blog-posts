@@ -1,4 +1,5 @@
 ---
+callsign: BRF-AI-BAR
 type: brief
 id: stylistic-algorithmic-dentistry
 upstream: briefs/editorial-structural-integrity

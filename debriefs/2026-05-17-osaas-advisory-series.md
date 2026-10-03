@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-OSAAS-ADVISORY
+---
+
 # Debrief: OSAAS Advisory Series — Agentic Workflow Architecture
 
 **Date:** 2026-05-17

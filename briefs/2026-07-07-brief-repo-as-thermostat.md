@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-REPO-THERMOSTAT
 layout: none
 title: "Brief: The Repo as Thermostat"
 date: 2026-07-07

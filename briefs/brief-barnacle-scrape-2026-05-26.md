@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-BARNACLE-SCRAPE
 layout: none
 title: "Brief: Barnacle Scrape — Registry Drift and TradingAgents Carry-Over"
 date: 2026-05-26

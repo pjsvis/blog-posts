@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-POST-ARCHITECTURE
+---
+
 # Debrief: Architecture of Consistency — First Post Dry Run
 
 **Date:** 2026-05-17

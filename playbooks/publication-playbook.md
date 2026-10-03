@@ -1,4 +1,6 @@
 ---
+type: Playbook
+callsign: PLY-PUBLICATION
 layout: default
 title: "Publication Playbook"
 permalink: /playbooks/publication/

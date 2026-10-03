@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-MISSILIES-DRONES
+---
+
 # missiles and drones
 
 Ref: [Prof Gerdes](https://www.youtube.com/watch?v=RfQjOC0Va0w&list=TLPQMDkwNzIwMjbL3cPMdYGhbg&index=15)

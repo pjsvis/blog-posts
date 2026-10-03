@@ -1,4 +1,6 @@
 ---
+type: Debrief
+callsign: DBF-ENTROPY-INEVITABLE
 layout: none
 title: "Debrief: 'Entropy is inevitable, you will adapt' publication"
 date: 2026-07-05

@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-DEPLOYMENT-PLAN
+---
+
 # Deployment Plan — July 2026
 
 **Generated:** 2026-07-01

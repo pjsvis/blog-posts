@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-404-FIX
+---
+
 # Debrief: 404 fix — SpaceX IPO series naming
 
 **Date:** 2026-07-04

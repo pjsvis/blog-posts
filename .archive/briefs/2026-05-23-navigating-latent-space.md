@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-NAVIGATING-LATENT
+---
+
 # Brief: Navigating Latent Space
 
 **Status:** Done (published: `_posts/2026-05-26-navigating-latent-space.md`)

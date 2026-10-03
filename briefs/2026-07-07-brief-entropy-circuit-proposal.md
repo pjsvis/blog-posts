@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-ENTROPY-CIRCUIT
 layout: none
 title: "Brief: Propose the circuit framing for 'Entropy is inevitable'"
 date: 2026-07-07

@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-003
+---
+
 # ADR-003: Multi-Platform Canonical URL Strategy
 
 **Date:** 2026-05-23

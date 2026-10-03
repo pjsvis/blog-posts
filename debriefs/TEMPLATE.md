@@ -1,4 +1,6 @@
 ---
+type: Debrief
+callsign: DBF-TEMPLATE
 date: [YYYY-MM-DD]
 tags: [writing, distribution]
 agent: [claude | cursor | local-ai]

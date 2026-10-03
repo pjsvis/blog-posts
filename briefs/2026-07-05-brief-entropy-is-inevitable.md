@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-ENTROPY-INEVITABLE
 layout: none
 title: "Brief: Publish 'Entropy is inevitable, you will adapt'"
 date: 2026-07-05

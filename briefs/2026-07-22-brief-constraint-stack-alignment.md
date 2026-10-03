@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-CONSTRAINT-STACK
+---
+
 # Draft Asset: The Harness is the Mind
 
 **Working Subtitle:** Why LLMs Don’t Need Epistemic Convictions—They Need Better Factories

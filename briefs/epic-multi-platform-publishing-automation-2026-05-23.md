@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-EPIC-MULTI
+---
+
 # Epic: Multi-Platform Publishing Automation
 
 **Date:** 2026-05-23

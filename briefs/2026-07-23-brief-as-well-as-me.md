@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-WELL-ME
+---
+
 # Brief: As Well As Me
 
 **Date:** 2026-07-23

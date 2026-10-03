@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-RGA
+---
+
 # RGA Playbook — ripgrep-all Configuration & Operation
 
 ## What This Is

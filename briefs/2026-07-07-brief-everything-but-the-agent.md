@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-EVERYTHING-BUT
 layout: none
 title: "Brief: Everything But the Agent — Why Your Codebase Should Outlive Your LLM"
 date: 2026-07-07

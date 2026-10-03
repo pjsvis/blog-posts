@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-MUPPET-FILTER
+---
+
 # Brief: The Muppet Filter & Why Kimi K2.6 Hasn't Benchmaxxed
 
 **Date:** 2026-06-13

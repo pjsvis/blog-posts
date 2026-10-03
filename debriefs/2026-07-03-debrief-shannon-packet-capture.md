@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-SHANNON-PACKET
+---
+
 # Debrief: Shannon Packet Capture — 2026-07-03
 
 ## What We Did

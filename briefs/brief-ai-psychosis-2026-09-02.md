@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-PSYCHOSIS
+---
+
 # Brief: AI-Psychosis (and Fiction-Psychosis)
 
 **Date:** 2026-09-02

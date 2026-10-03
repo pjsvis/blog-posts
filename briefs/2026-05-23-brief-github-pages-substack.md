@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-GITHUB-PAGES-2
+---
+
 You can automate publishing to Medium from GitHub using **GitHub Actions** and Medium's API.
 
 ### Steps to Automate

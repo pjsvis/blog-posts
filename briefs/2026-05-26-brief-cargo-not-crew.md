@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-CARGO-CREW
 layout: none
 title: "Brief: Cargo, Not Crew — Mass Budget as the Primary Design Constraint"
 date: 2026-05-26

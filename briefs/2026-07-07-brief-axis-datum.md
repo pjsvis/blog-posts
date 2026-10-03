@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AXIS-DATUM
+---
+
 # Project Brief: Axis-Datum
 
 ## Mechanics of Hierarchical Tension Regulation via Rigid Reference Planes

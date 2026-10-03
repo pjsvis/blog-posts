@@ -1,20 +1,20 @@
-{"file": "atuin-playbook.md", "date": "2026-08-14", "status": "active", "summary": "Atuin Shell Memory & Copilot Playbook", "meta": {}}
-{"file":"barnacle-playbook.md","date":"2026-05-17","status":"canonical","summary":"Barnacle identification and removal — misdirection detection, Chesterton's Fence escalation, quarantine workflow","meta":{"source":"project"}}
-{"file":"blog-playbook.md","date":"2026-05-17","status":"active","summary":"Virtual Information Systems Architecture","meta":{}}
-{"file":"blog-posts-playbook.md","date":"2026-05-17","status":"canonical","summary":"Jekyll pipeline reference — layout, front-matter invariant, publishing workflow, anti-patterns","meta":{"source":"project"}}
-{"file":"blog-research.md","date":"2026-07-01","status":"active","summary":"Blog research","meta":{}}
-{"file":"briefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post briefs and epics — objective, content outline, research checklist, export checklist","meta":{"source":"project"}}
-{"file":"conventions-playbook.md","date":"2026-05-17","status":"canonical","summary":"Active conventions and barnacle removal — Jekyll underscore dirs, front-matter requirement, process barnacles","meta":{"source":"project"}}
-{"file":"debriefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post debriefs — accomplishments, problems, lessons learned, platform notes, post-debrief checklist","meta":{"source":"project"}}
-{"file":"decisions-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write ADRs — when to write, format, status lifecycle, differences from briefs and debriefs","meta":{"source":"project"}}
-{"file":"export-playbook.md","date":"2026-05-17","status":"canonical","summary":"Multi-platform distribution — export pipeline, Substack/Medium/HN/Twitter workflow, import process","meta":{"source":"project"}}
-{"file":"medium-substack-playbook.md","date":"2026-06-04","status":"active","summary":"Medium + Substack Publishing Playbook","meta":{}}
-{"file":"playbooks-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write and maintain playbooks — when to write, structure, maintenance, deprecation, knowledge system","meta":{"source":"project"}}
-{"file":"post-blog-writing-playbook.md","date":"2026-07-03","status":"active","summary":"Post-Blog Writing Playbook","meta":{}}
-{"file":"publication-playbook.md","date":"2026-05-17","status":"canonical","summary":"GitHub Pages publishing workflow — pre-push checklist, front-matter template, platform distribution sequence, series publication","meta":{"source":"project"}}
-{"file":"registry-playbook.md","date":"2026-05-17","status":"canonical","summary":"Document index system — unified JSONL schema, reg-sync/reg-list tools, justfile integration, registry hygiene","meta":{"source":"project"}}
-{"file":"rga-playbook.md","date":"2026-06-04","status":"active","summary":"RGA Playbook — ripgrep-all Configuration & Operation","meta":{}}
-{"file":"rtk-usage-playbook.md","date":"2026-05-26","status":"project","summary":"Rust Token Killer usage playbook — CLI proxy for compressing shell command output before reaching LLM context","meta":{"source":"project"}}
-{"file":"silo-playbook.md","date":"2026-05-17","status":"canonical","summary":"Silo structure and conventions — directory compartments, justfile facade, registry hygiene","meta":{"source":"project"}}
-{"file":"td-playbook.md","date":"2026-05-17","status":"canonical","summary":"Solo workflow using td — session startup, claiming work, progress logging, pre-commit gate, branch hygiene","meta":{"source":"project"}}
-{"file":"tuxedo-playbook.md","date":"2026-06-03","status":"active","summary":"Tuxedo Playbook — Global Task Radar","meta":{}}
+{"file":"atuin-playbook.md","date":"2026-08-14","status":"active","summary":"Atuin Shell Memory & Copilot Playbook","meta":{},"callsign":"PLY-ATUIN"}
+{"file":"barnacle-playbook.md","date":"2026-05-17","status":"canonical","summary":"Barnacle identification and removal — misdirection detection, Chesterton's Fence escalation, quarantine workflow","meta":{"source":"project"},"callsign":"PLY-BARNACLE"}
+{"file":"blog-playbook.md","date":"2026-05-17","status":"active","summary":"Virtual Information Systems Architecture","meta":{},"callsign":"PLY-BLOG"}
+{"file":"blog-posts-playbook.md","date":"2026-05-17","status":"canonical","summary":"Jekyll pipeline reference — layout, front-matter invariant, publishing workflow, anti-patterns","meta":{"source":"project"},"callsign":"PLY-BLOG-POSTS"}
+{"file":"blog-research.md","date":"2026-07-01","status":"active","summary":"Blog research","meta":{},"callsign":"PLY-BLOG-RESEARCH"}
+{"file":"briefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post briefs and epics — objective, content outline, research checklist, export checklist","meta":{"source":"project"},"callsign":"PLY-BRIEFS"}
+{"file":"conventions-playbook.md","date":"2026-05-17","status":"canonical","summary":"Active conventions and barnacle removal — Jekyll underscore dirs, front-matter requirement, process barnacles","meta":{"source":"project"},"callsign":"PLY-CONVENTIONS"}
+{"file":"debriefs-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write post debriefs — accomplishments, problems, lessons learned, platform notes, post-debrief checklist","meta":{"source":"project"},"callsign":"PLY-DEBRIEFS"}
+{"file":"decisions-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write ADRs — when to write, format, status lifecycle, differences from briefs and debriefs","meta":{"source":"project"},"callsign":"PLY-DECISIONS"}
+{"file":"export-playbook.md","date":"2026-05-17","status":"canonical","summary":"Multi-platform distribution — export pipeline, Substack/Medium/HN/Twitter workflow, import process","meta":{"source":"project"},"callsign":"PLY-EXPORT"}
+{"file":"medium-substack-playbook.md","date":"2026-06-04","status":"active","summary":"Medium + Substack Publishing Playbook","meta":{},"callsign":"PLY-MEDIUM-SUBSTACK"}
+{"file":"playbooks-playbook.md","date":"2026-05-17","status":"canonical","summary":"How to write and maintain playbooks — when to write, structure, maintenance, deprecation, knowledge system","meta":{"source":"project"},"callsign":"PLY-DOC"}
+{"file":"post-blog-writing-playbook.md","date":"2026-07-03","status":"active","summary":"Post-Blog Writing Playbook","meta":{},"callsign":"PLY-POST-BLOG"}
+{"file":"publication-playbook.md","date":"2026-05-17","status":"canonical","summary":"GitHub Pages publishing workflow — pre-push checklist, front-matter template, platform distribution sequence, series publication","meta":{"source":"project"},"callsign":"PLY-PUBLICATION"}
+{"file":"registry-playbook.md","date":"2026-05-17","status":"canonical","summary":"Document index system — unified JSONL schema, reg-sync/reg-list tools, justfile integration, registry hygiene","meta":{"source":"project"},"callsign":"PLY-REGISTRY"}
+{"file":"rga-playbook.md","date":"2026-06-04","status":"active","summary":"RGA Playbook — ripgrep-all Configuration & Operation","meta":{},"callsign":"PLY-RGA"}
+{"file":"rtk-usage-playbook.md","date":"2026-05-26","status":"project","summary":"Rust Token Killer usage playbook — CLI proxy for compressing shell command output before reaching LLM context","meta":{"source":"project"},"callsign":"PLY-RTK-USAGE"}
+{"file":"silo-playbook.md","date":"2026-05-17","status":"canonical","summary":"Silo structure and conventions — directory compartments, justfile facade, registry hygiene","meta":{"source":"project"},"callsign":"PLY-SILO"}
+{"file":"td-playbook.md","date":"2026-05-17","status":"canonical","summary":"Solo workflow using td — session startup, claiming work, progress logging, pre-commit gate, branch hygiene","meta":{"source":"project"},"callsign":"PLY-TD"}
+{"file":"tuxedo-playbook.md","date":"2026-06-03","status":"active","summary":"Tuxedo Playbook — Global Task Radar","meta":{},"callsign":"PLY-TUXEDO"}

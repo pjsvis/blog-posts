@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-SHANNON-PACKET-2
+---
+
 # Debrief: Shannon-Packet Pilot Retro-fits — 2026-07-03
 
 ## What We Did

@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-WRITING
+---
+
 # Brief: AI-Signs Detection Engine
 
 **Date:** 2026-06-05

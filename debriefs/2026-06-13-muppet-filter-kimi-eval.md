@@ -1,4 +1,6 @@
 ---
+type: Debrief
+callsign: DBF-MUPPET-FILTER
 date: 2026-06-13
 tags: [ai-eval, edinburgh-protocol, model-evaluation, blogging]
 agent: local-ai

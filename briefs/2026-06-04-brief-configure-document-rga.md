@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-CONFIGURE-DOCUMENT
 layout: none
 title: "Brief: Configure and Document ripgrep-all (rga)"
 date: 2026-06-04

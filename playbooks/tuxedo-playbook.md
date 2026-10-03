@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-TUXEDO
+---
+
 # Tuxedo Playbook — Global Task Radar
 
 ## What This Is

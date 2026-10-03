@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-EPIC-OSAAS
+---
+
 # Epic: OSAAS Advisory Series — Agentic Workflow Architecture
 
 **Date:** 2026-05-11

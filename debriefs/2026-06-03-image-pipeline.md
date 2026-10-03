@@ -1,4 +1,6 @@
 ---
+type: Debrief
+callsign: DBF-IMAGE-PIPELINE
 date: 2026-06-03
 tags: [infrastructure, images, export-pipeline]
 agent: claude

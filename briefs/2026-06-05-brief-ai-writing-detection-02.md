@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-WRITING-2
+---
+
 To ensure your coding agent executes this project effectively, the strategy must shift from "scripting" to **"Systemic Orchestration."** Because you are using Mastra, you are moving away from linear execution toward a modular agentic flow.
 
 ### The Operational Heuristic for the Coding Agent

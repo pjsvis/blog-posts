@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-BLOG-RESEARCH
+---
+
 The moment an abstract workflow crystallizes into a functional *tool* is when writing stops being a painful creative exercise and becomes a predictable engineering pipeline.
 
 Your insight about the best material getting buried at the bottom is a systemic failure of chronological writing. When we write lineally, we tend to clear our throats for three pages, find our actual breakthrough in the final paragraphs, and leave it there because we're too exhausted to refactor.

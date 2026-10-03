@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-006
+---
+
 # Decision: SpaceX S&P 500 Index Exclusion — Systems Integrity vs. Scale Pressure
 
 **Date:** 2026-06-04

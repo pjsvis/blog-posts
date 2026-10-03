@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-WRITING-4
+---
+
 The `categories.yaml` file is the **Systemic Root**. By externalizing the logic, you transform the AI-Detector from a static script into a **General Purpose Evaluation Engine**.
 
 ### The `categories.yaml` Template

@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-ATUIN
+---
+
 # Atuin Shell Memory & Copilot Playbook
 
 

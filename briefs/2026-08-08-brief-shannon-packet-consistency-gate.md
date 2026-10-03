@@ -1,4 +1,5 @@
 ---
+callsign: BRF-SHANNON-PACKET
 type: brief
 id: shannon-packet-consistency-gate
 date: 2026-08-08

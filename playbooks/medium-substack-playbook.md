@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-MEDIUM-SUBSTACK
+---
+
 # Medium + Substack Publishing Playbook
 
 ## What This Is

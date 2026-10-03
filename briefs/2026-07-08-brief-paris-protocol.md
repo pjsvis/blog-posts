@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-PARIS-PROTOCOL
 layout: none
 title: "Brief: The Paris Protocol — The Eval the Edinburgh Protocol Can't Pass"
 date: 2026-07-08

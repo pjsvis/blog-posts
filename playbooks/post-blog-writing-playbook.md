@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-POST-BLOG
+---
+
 # Post-Blog Writing Playbook
 
 ## Overview

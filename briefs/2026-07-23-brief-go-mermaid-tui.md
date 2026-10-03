@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-GO-MERMAID
+---
+
 An experiment brief structured under your playbook conventions, followed by a grounded evaluation of turning it into a Pi extension
 
 ```markdown

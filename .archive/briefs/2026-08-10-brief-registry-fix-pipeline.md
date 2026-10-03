@@ -1,4 +1,5 @@
 ---
+callsign: BRF-REGISTRY-FIX
 title: "BRIEF: Fix the reg-sync --fix UX gap and clear registry drift"
 date: 2026-08-10
 type: brief

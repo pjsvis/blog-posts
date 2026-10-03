@@ -1,4 +1,5 @@
 ---
+callsign: BRF-VONNEGUT-RULES
 type: brief
 id: shannon-packet-schema-cross-validation
 date: 2026-08-16

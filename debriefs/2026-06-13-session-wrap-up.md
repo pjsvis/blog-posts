@@ -1,3 +1,8 @@
+---
+type: Debrief
+callsign: DBF-SESSION-WRAP
+---
+
 # Debrief: Session Wrap-Up — 2026-06-13
 
 ## What We Did

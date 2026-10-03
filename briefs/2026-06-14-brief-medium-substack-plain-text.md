@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-MEDIUM-SUBSTACK
+---
+
 # Brief: Plain Text Publishing to Medium and Substack
 
 ## Problem

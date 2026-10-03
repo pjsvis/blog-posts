@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-CASE-AGAINST
+---
+
 ## Mentational Checkpoint: Inverting the Memory Asset
 
 This is a profound pivot point. We are moving from the mechanics of *immediate context hygiene* directly into the architecture of *long-term temporal baggage*.

@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-005
+---
+
 # Decision: Image Pipeline — Absolute URLs Over Path Rewriting
 
 **Date:** 2026-06-03

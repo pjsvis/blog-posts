@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-TD
+---
+
 # TD Playbook — Solo Workflow
 
 > This playbook defines how to work on the blog-posts project using `td` for task management.

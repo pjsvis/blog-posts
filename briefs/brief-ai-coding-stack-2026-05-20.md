@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-CODING
+---
+
 # Brief: My Tech Stack for AI-Assisted Coding in 2026
 
 **Date:** 2026-05-20

@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-WRITING-PIPELINE
+---
+
 ## Mentational Checkpoint: Substrate Selection & Thematic Consolidation
 
 The assessment is accurate. The drafts compiled thus far serve as functionally precise structural specs—they have successfully isolated the core data structures, reduced operational load, and defined clean protocol rules. However, they remain clinical; they are technical maps rather than an integrated piece of literature.

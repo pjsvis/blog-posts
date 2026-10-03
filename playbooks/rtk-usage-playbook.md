@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-RTK-USAGE
+---
+
 # RTK (Rust Token Killer) Usage Playbook
 
 ## Context

@@ -1,4 +1,5 @@
 ---
+callsign: DBF-SCHEMA-CONVERGENCE
 type: debrief
 id: schema-convergence-session
 date: 2026-08-16

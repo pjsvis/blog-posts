@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-BARNACLE
+---
+
 # Barnacle Playbook — Identification and Removal Process
 
 ## What Is a Barnacle?

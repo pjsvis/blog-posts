@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-LLOYDS-LAGRANGE
 layout: none
 title: "Brief: Lloyd's of Lagrange — Financial Infrastructure for Orbital Commerce"
 date: 2026-05-26

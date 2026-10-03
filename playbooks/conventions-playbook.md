@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-CONVENTIONS
+---
+
 # Conventions Playbook
 
 ## What This Is

@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-007
+---
+
 # adr-007: CSS isolation pattern — total isolation apart from custom properties
 
 **Date:** 2026-07-17

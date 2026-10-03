@@ -1,4 +1,6 @@
 ---
+type: Brief
+callsign: BRF-SHANNON-PACKET-2
 layout: none
 title: "Brief: Capture Shannon Packet in Post-Blog Playbook"
 date: 2026-07-03

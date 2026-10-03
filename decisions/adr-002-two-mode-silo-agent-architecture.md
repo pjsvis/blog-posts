@@ -1,3 +1,8 @@
+---
+type: ADR
+callsign: ADR-ADR-002
+---
+
 # ADR-002: Two-Mode Silo Agent Architecture
 
 **Date:** 2026-05-17

@@ -1,3 +1,8 @@
+---
+type: Playbook
+callsign: PLY-BLOG-POSTS
+---
+
 # Blog Posts Playbook — Jekyll & GitHub Pages Pipeline
 
 ## Purpose

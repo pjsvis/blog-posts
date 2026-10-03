@@ -1,3 +1,8 @@
+---
+type: Brief
+callsign: BRF-AI-WRITING-3
+---
+
 To prevent architectural drift and ensure the coding agent remains aligned with your "Silo" philosophy, we will anchor the project in these three rigid elements. These define the "Contract of Truth" for the engine.
 
 ### 1. The Configuration Schema (`categories.yaml`)
